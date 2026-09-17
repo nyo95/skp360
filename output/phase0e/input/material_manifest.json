@@ -1,0 +1,2103 @@
+{
+  "schema": "rad-ai360-material-manifest",
+  "version": 1,
+  "source": {
+    "obj": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "extraction": "Blender native OBJ import material data; no AI interpretation.",
+    "import_duration_seconds": 2.243
+  },
+  "identity_rule": "Material ID is deterministic by sorted imported source material name for this source OBJ.",
+  "materials": [
+    {
+      "id": "MAT_001",
+      "source_name": "_",
+      "base_color": [
+        0.85098,
+        0.85098,
+        0.85098
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_.png"
+    },
+    {
+      "id": "MAT_002",
+      "source_name": "_0137_Black_1",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_003",
+      "source_name": "_10",
+      "base_color": [
+        0.807843,
+        0.729412,
+        0.627451
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_10.jpg"
+    },
+    {
+      "id": "MAT_004",
+      "source_name": "_14",
+      "base_color": [
+        0.156863,
+        0.156863,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_14.jpg"
+    },
+    {
+      "id": "MAT_005",
+      "source_name": "_159",
+      "base_color": [
+        0.403922,
+        0.368627,
+        0.329412
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_159.jpg"
+    },
+    {
+      "id": "MAT_006",
+      "source_name": "_16",
+      "base_color": [
+        0.517647,
+        0.47451,
+        0.423529
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_16.jpg"
+    },
+    {
+      "id": "MAT_007",
+      "source_name": "_18",
+      "base_color": [
+        0.411765,
+        0.415686,
+        0.403922
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_18.jpg"
+    },
+    {
+      "id": "MAT_008",
+      "source_name": "_2",
+      "base_color": [
+        0.639216,
+        0.639216,
+        0.639216
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_009",
+      "source_name": "_268",
+      "base_color": [
+        0.109804,
+        0.109804,
+        0.109804
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_010",
+      "source_name": "_3",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_011",
+      "source_name": "_4",
+      "base_color": [
+        0.007843,
+        0.007843,
+        0.007843
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_012",
+      "source_name": "_42",
+      "base_color": [
+        0.619608,
+        0.603922,
+        0.568627
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_013",
+      "source_name": "_46",
+      "base_color": [
+        0.686275,
+        0.556863,
+        0.262745
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_46.jpg"
+    },
+    {
+      "id": "MAT_014",
+      "source_name": "_5",
+      "base_color": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_5.png"
+    },
+    {
+      "id": "MAT_015",
+      "source_name": "_6",
+      "base_color": [
+        0.607843,
+        0.45098,
+        0.231373
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_6.jpg"
+    },
+    {
+      "id": "MAT_016",
+      "source_name": "_7",
+      "base_color": [
+        0.329412,
+        0.368627,
+        0.376471
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_7.jpg"
+    },
+    {
+      "id": "MAT_017",
+      "source_name": "_8",
+      "base_color": [
+        0.407843,
+        0.333333,
+        0.254902
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_018",
+      "source_name": "_87",
+      "base_color": [
+        0.458824,
+        0.588235,
+        0.643137
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_87.jpg"
+    },
+    {
+      "id": "MAT_019",
+      "source_name": "_9",
+      "base_color": [
+        0.627451,
+        0.627451,
+        0.627451
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_020",
+      "source_name": "_97",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 0.0
+    },
+    {
+      "id": "MAT_021",
+      "source_name": "__",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_022",
+      "source_name": "___",
+      "base_color": [
+        0.835294,
+        0.835294,
+        0.835294
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/___.jpg"
+    },
+    {
+      "id": "MAT_023",
+      "source_name": "_____",
+      "base_color": [
+        0.176471,
+        0.176471,
+        0.176471
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_024",
+      "source_name": "______",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_025",
+      "source_name": "_auto_1",
+      "base_color": [
+        0.356863,
+        0.356863,
+        0.356863
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_026",
+      "source_name": "_auto_7",
+      "base_color": [
+        0.239216,
+        0.239216,
+        0.239216
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_027",
+      "source_name": "_auto_9",
+      "base_color": [
+        0.243137,
+        0.243137,
+        0.243137
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_028",
+      "source_name": "_Charcoal_2",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_029",
+      "source_name": "_Color_001_1",
+      "base_color": [
+        0.768627,
+        0.768627,
+        0.768627
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_030",
+      "source_name": "_Color_009_1",
+      "base_color": [
+        0.247059,
+        0.247059,
+        0.247059
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_031",
+      "source_name": "_Color_A08_1",
+      "base_color": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_032",
+      "source_name": "_Color_H03_1",
+      "base_color": [
+        0.819608,
+        0.819608,
+        0.819608
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Color_H03_1.jpg"
+    },
+    {
+      "id": "MAT_033",
+      "source_name": "_Color_I07_1",
+      "base_color": [
+        0.0,
+        0.0,
+        0.6
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_034",
+      "source_name": "_Color_M01_1",
+      "base_color": [
+        0.129412,
+        0.129412,
+        0.129412
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_035",
+      "source_name": "_Color_M03_1",
+      "base_color": [
+        0.666667,
+        0.666667,
+        0.666667
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_036",
+      "source_name": "_Color_M04_1",
+      "base_color": [
+        0.607843,
+        0.607843,
+        0.607843
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_037",
+      "source_name": "_Color_M08_1",
+      "base_color": [
+        0.219608,
+        0.219608,
+        0.219608
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_038",
+      "source_name": "_Color_M08_2",
+      "base_color": [
+        0.337255,
+        0.337255,
+        0.337255
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_039",
+      "source_name": "_Color_M08_3",
+      "base_color": [
+        0.247059,
+        0.247059,
+        0.247059
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_040",
+      "source_name": "_Color_M08_4",
+      "base_color": [
+        0.309804,
+        0.309804,
+        0.309804
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_041",
+      "source_name": "_Color_M08_6",
+      "base_color": [
+        0.286275,
+        0.286275,
+        0.286275
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_042",
+      "source_name": "_Color_M09_1",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_043",
+      "source_name": "_Color_M09_4",
+      "base_color": [
+        0.047059,
+        0.047059,
+        0.047059
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_044",
+      "source_name": "_DimGray_2",
+      "base_color": [
+        0.164706,
+        0.203922,
+        0.239216
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_045",
+      "source_name": "_Fencing_Lattice_Natural_1",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Fencing_Lattice_Natural_1.png"
+    },
+    {
+      "id": "MAT_046",
+      "source_name": "_Ivory_3",
+      "base_color": [
+        1.0,
+        1.0,
+        0.937255
+      ],
+      "opacity": 0.48
+    },
+    {
+      "id": "MAT_047",
+      "source_name": "_Metal_Corrogated_Shiny_1",
+      "base_color": [
+        0.752941,
+        0.752941,
+        0.752941
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Metal_Corrogated_Shiny_1.jpg"
+    },
+    {
+      "id": "MAT_048",
+      "source_name": "_Metal_Corrogated_Shiny_2",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Metal_Corrogated_Shiny_2.jpg"
+    },
+    {
+      "id": "MAT_049",
+      "source_name": "_Metal_Corrogated_Shiny_3",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Metal_Corrogated_Shiny_3.jpg"
+    },
+    {
+      "id": "MAT_050",
+      "source_name": "_Metal_Corrogated_Shiny_4",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Metal_Corrogated_Shiny_4.jpg"
+    },
+    {
+      "id": "MAT_051",
+      "source_name": "_Metal_Corrogated_Shiny_5",
+      "base_color": [
+        0.403922,
+        0.403922,
+        0.403922
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Metal_Corrogated_Shiny_5.jpg"
+    },
+    {
+      "id": "MAT_052",
+      "source_name": "_Metal_Corrogated_Shiny_6",
+      "base_color": [
+        0.752941,
+        0.752941,
+        0.752941
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Metal_Corrogated_Shiny_6.jpg"
+    },
+    {
+      "id": "MAT_053",
+      "source_name": "_Slate_2",
+      "base_color": [
+        0.294118,
+        0.317647,
+        0.313725
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Slate_2.jpg"
+    },
+    {
+      "id": "MAT_054",
+      "source_name": "_Translucent_Glass_Dark_Green_2",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.756863
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_055",
+      "source_name": "_Translucent_Glass_Dark_Green_3",
+      "base_color": [
+        0.243137,
+        0.356863,
+        0.019608
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_056",
+      "source_name": "_Translucent_Glass_Gray_1",
+      "base_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_057",
+      "source_name": "_Wood__Floor_2",
+      "base_color": [
+        0.533333,
+        0.466667,
+        0.415686
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Wood__Floor_2.jpg"
+    },
+    {
+      "id": "MAT_058",
+      "source_name": "_Wood_Floor_2",
+      "base_color": [
+        0.388235,
+        0.27451,
+        0.196078
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Wood_Floor_2.jpg"
+    },
+    {
+      "id": "MAT_059",
+      "source_name": "_Wood_Veneer_01_2",
+      "base_color": [
+        0.376471,
+        0.305882,
+        0.184314
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/_Wood_Veneer_01_2.jpg"
+    },
+    {
+      "id": "MAT_060",
+      "source_name": "Abu_Muda",
+      "base_color": [
+        0.607843,
+        0.607843,
+        0.607843
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_061",
+      "source_name": "Aluminum",
+      "base_color": [
+        0.701961,
+        0.701961,
+        0.701961
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Aluminum.jpg"
+    },
+    {
+      "id": "MAT_062",
+      "source_name": "Asphalt_New",
+      "base_color": [
+        0.262745,
+        0.235294,
+        0.243137
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Asphalt_New.jpg"
+    },
+    {
+      "id": "MAT_063",
+      "source_name": "benteng",
+      "base_color": [
+        0.337255,
+        0.337255,
+        0.337255
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_064",
+      "source_name": "billiani_doll1",
+      "base_color": [
+        0.827451,
+        0.823529,
+        0.803922
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/billiani_doll1.png"
+    },
+    {
+      "id": "MAT_065",
+      "source_name": "billiani_doll3",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_066",
+      "source_name": "billiani_doll_55",
+      "base_color": [
+        0.517647,
+        0.431373,
+        0.333333
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/billiani_doll_55.jpg"
+    },
+    {
+      "id": "MAT_067",
+      "source_name": "black",
+      "base_color": [
+        0.321569,
+        0.282353,
+        0.235294
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/black.png"
+    },
+    {
+      "id": "MAT_068",
+      "source_name": "Blacktop_Old_01",
+      "base_color": [
+        0.517647,
+        0.533333,
+        0.545098
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Blacktop_Old_01.jpg"
+    },
+    {
+      "id": "MAT_069",
+      "source_name": "bnxxng0c8d850c1",
+      "base_color": [
+        0.458824,
+        0.431373,
+        0.384314
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/bnxxng0c8d850c1.png"
+    },
+    {
+      "id": "MAT_070",
+      "source_name": "Calacatta_Marble__IA408Q_",
+      "base_color": [
+        0.898039,
+        0.886275,
+        0.882353
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Calacatta_Marble__IA408Q_.jpg"
+    },
+    {
+      "id": "MAT_071",
+      "source_name": "Cama1",
+      "base_color": [
+        0.647059,
+        0.647059,
+        0.647059
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Cama1.jpg"
+    },
+    {
+      "id": "MAT_072",
+      "source_name": "Carpet_Plush_Forest",
+      "base_color": [
+        0.709804,
+        0.635294,
+        0.584314
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Carpet_Plush_Forest.jpg"
+    },
+    {
+      "id": "MAT_073",
+      "source_name": "carport",
+      "base_color": [
+        0.380392,
+        0.388235,
+        0.384314
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/carport.jpg"
+    },
+    {
+      "id": "MAT_074",
+      "source_name": "Carrera_Marble",
+      "base_color": [
+        0.486275,
+        0.486275,
+        0.486275
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Carrera_Marble.jpg"
+    },
+    {
+      "id": "MAT_075",
+      "source_name": "CELING_LUAR",
+      "base_color": [
+        0.839216,
+        0.839216,
+        0.839216
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_076",
+      "source_name": "Ceramic_White",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_077",
+      "source_name": "Chrome",
+      "base_color": [
+        0.576471,
+        0.576471,
+        0.576471
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_078",
+      "source_name": "chrome_Glaze",
+      "base_color": [
+        0.568627,
+        0.568627,
+        0.568627
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_079",
+      "source_name": "Chrome_Polished",
+      "base_color": [
+        0.007843,
+        0.007843,
+        0.007843
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_080",
+      "source_name": "cluster_60x120_taupe_06_abeff",
+      "base_color": [
+        0.631373,
+        0.631373,
+        0.619608
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/cluster_60x120_taupe_06_abeff.jpg"
+    },
+    {
+      "id": "MAT_081",
+      "source_name": "Color_001",
+      "base_color": [
+        0.886275,
+        0.886275,
+        0.886275
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_082",
+      "source_name": "Color_007",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_083",
+      "source_name": "Color_008",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Color_008.jpg"
+    },
+    {
+      "id": "MAT_084",
+      "source_name": "Color_A02",
+      "base_color": [
+        0.188235,
+        0.188235,
+        0.184314
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_085",
+      "source_name": "Color_A04",
+      "base_color": [
+        0.537255,
+        0.392157,
+        0.392157
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_086",
+      "source_name": "Color_C02",
+      "base_color": [
+        1.0,
+        0.8,
+        0.6
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_087",
+      "source_name": "Color_C03",
+      "base_color": [
+        1.0,
+        0.698039,
+        0.396078
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_088",
+      "source_name": "Color_C07",
+      "base_color": [
+        0.6,
+        0.6,
+        0.588235
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_089",
+      "source_name": "Color_C08",
+      "base_color": [
+        0.568627,
+        0.568627,
+        0.568627
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Color_C08.jpg"
+    },
+    {
+      "id": "MAT_090",
+      "source_name": "Color_C25",
+      "base_color": [
+        0.2,
+        0.176471,
+        0.156863
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_091",
+      "source_name": "Color_G03",
+      "base_color": [
+        0.643137,
+        0.611765,
+        0.545098
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Color_G03.jpg"
+    },
+    {
+      "id": "MAT_092",
+      "source_name": "Color_H03",
+      "base_color": [
+        0.839216,
+        0.839216,
+        0.839216
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Color_H03.jpg"
+    },
+    {
+      "id": "MAT_093",
+      "source_name": "Color_M00",
+      "base_color": [
+        0.807843,
+        0.807843,
+        0.807843
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_094",
+      "source_name": "Color_M02",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.776471
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_095",
+      "source_name": "Color_M04",
+      "base_color": [
+        0.717647,
+        0.717647,
+        0.717647
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_096",
+      "source_name": "Color_M05",
+      "base_color": [
+        0.447059,
+        0.447059,
+        0.447059
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_097",
+      "source_name": "Color_M06",
+      "base_color": [
+        0.337255,
+        0.337255,
+        0.337255
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_098",
+      "source_name": "Color_M07",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_099",
+      "source_name": "Color_M07__Besi_",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_100",
+      "source_name": "dark_wood1",
+      "base_color": [
+        0.376471,
+        0.329412,
+        0.270588
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/dark_wood1.jpg"
+    },
+    {
+      "id": "MAT_101",
+      "source_name": "Demountable_Ceiling_Tile_Stack__ENV3SF_",
+      "base_color": [
+        0.466667,
+        0.466667,
+        0.466667
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Demountable_Ceiling_Tile_Stack__ENV3SF_.jpg"
+    },
+    {
+      "id": "MAT_102",
+      "source_name": "Demountable_Ceiling_Tile_Stack__ENV3SF_1",
+      "base_color": [
+        0.376471,
+        0.376471,
+        0.376471
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Demountable_Ceiling_Tile_Stack__ENV3SF_1.jpg"
+    },
+    {
+      "id": "MAT_103",
+      "source_name": "Dots Stroke",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_104",
+      "source_name": "FrontColor",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_105",
+      "source_name": "Gdblack",
+      "base_color": [
+        0.094118,
+        0.07451,
+        0.047059
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_106",
+      "source_name": "genteng",
+      "base_color": [
+        0.188235,
+        0.176471,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/genteng.jpg"
+    },
+    {
+      "id": "MAT_107",
+      "source_name": "Granite_Stack__USPW7I_",
+      "base_color": [
+        0.607843,
+        0.607843,
+        0.6
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Granite_Stack__USPW7I_.jpg"
+    },
+    {
+      "id": "MAT_108",
+      "source_name": "Grass_04",
+      "base_color": [
+        0.415686,
+        0.45098,
+        0.262745
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Grass_04.png"
+    },
+    {
+      "id": "MAT_109",
+      "source_name": "Groundcover_Rock_Crushed_2_inch",
+      "base_color": [
+        0.509804,
+        0.498039,
+        0.501961
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Groundcover_Rock_Crushed_2_inch.jpg"
+    },
+    {
+      "id": "MAT_110",
+      "source_name": "Hood",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_111",
+      "source_name": "Kolecka",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Kolecka.jpg"
+    },
+    {
+      "id": "MAT_112",
+      "source_name": "KUSEN",
+      "base_color": [
+        0.337255,
+        0.227451,
+        0.129412
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_113",
+      "source_name": "KUSEN1",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_114",
+      "source_name": "kusen_coklat",
+      "base_color": [
+        0.309804,
+        0.203922,
+        0.121569
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_115",
+      "source_name": "Len_ol",
+      "base_color": [
+        0.898039,
+        0.894118,
+        0.87451
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Len_ol.jpg"
+    },
+    {
+      "id": "MAT_116",
+      "source_name": "Light_metal",
+      "base_color": [
+        0.054902,
+        0.058824,
+        0.066667
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_117",
+      "source_name": "Limestone__R3U0R2_",
+      "base_color": [
+        0.458824,
+        0.458824,
+        0.458824
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Limestone__R3U0R2_.jpg"
+    },
+    {
+      "id": "MAT_118",
+      "source_name": "lisplang2",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_119",
+      "source_name": "lukisan",
+      "base_color": [
+        0.909804,
+        0.886275,
+        0.862745
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/lukisan.jpg"
+    },
+    {
+      "id": "MAT_120",
+      "source_name": "M_0136_Charcoal",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_121",
+      "source_name": "M_0137_Black",
+      "base_color": [
+        0.858824,
+        0.858824,
+        0.858824
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_122",
+      "source_name": "M_03030002",
+      "base_color": [
+        0.321569,
+        0.258824,
+        0.160784
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_123",
+      "source_name": "M_100_2149",
+      "base_color": [
+        0.619608,
+        0.556863,
+        0.533333
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_100_2149.jpg"
+    },
+    {
+      "id": "MAT_124",
+      "source_name": "M_160",
+      "base_color": [
+        0.164706,
+        0.211765,
+        0.160784
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_160.jpg"
+    },
+    {
+      "id": "MAT_125",
+      "source_name": "M_19_slab_marble_black_Sienna_texture_seamless1",
+      "base_color": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_19_slab_marble_black_Sienna_texture_seamless1.jpg"
+    },
+    {
+      "id": "MAT_126",
+      "source_name": "M_2",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_127",
+      "source_name": "M_5108_MR060060",
+      "base_color": [
+        0.788235,
+        0.788235,
+        0.788235
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_5108_MR060060.jpg"
+    },
+    {
+      "id": "MAT_128",
+      "source_name": "M_5118_V_060060",
+      "base_color": [
+        0.8,
+        0.8,
+        0.788235
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_5118_V_060060.jpg"
+    },
+    {
+      "id": "MAT_129",
+      "source_name": "M_60_carrara_white_slab_marble_veined_texture_seamless",
+      "base_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_60_carrara_white_slab_marble_veined_texture_seamless.jpg"
+    },
+    {
+      "id": "MAT_130",
+      "source_name": "M_6201W_F553_MRN_WAL_Material_1",
+      "base_color": [
+        0.639216,
+        0.639216,
+        0.615686
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_6201W_F553_MRN_WAL_Material_1.jpg"
+    },
+    {
+      "id": "MAT_131",
+      "source_name": "M_7",
+      "base_color": [
+        0.839216,
+        0.839216,
+        0.839216
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_132",
+      "source_name": "M_71_dark__fine_wood_texture_seamless",
+      "base_color": [
+        0.407843,
+        0.317647,
+        0.254902
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/M_71_dark__fine_wood_texture_seamless.jpg"
+    },
+    {
+      "id": "MAT_133",
+      "source_name": "m_t_b_p_iad",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_134",
+      "source_name": "macchiatto",
+      "base_color": [
+        0.498039,
+        0.388235,
+        0.266667
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/macchiatto.jpg"
+    },
+    {
+      "id": "MAT_135",
+      "source_name": "Marmer",
+      "base_color": [
+        0.882353,
+        0.882353,
+        0.882353
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Marmer.jpg"
+    },
+    {
+      "id": "MAT_136",
+      "source_name": "Material",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_137",
+      "source_name": "Material_22",
+      "base_color": [
+        0.321569,
+        0.152941,
+        0.0
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_138",
+      "source_name": "Material_24",
+      "base_color": [
+        0.658824,
+        0.623529,
+        0.572549
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_139",
+      "source_name": "Material_44",
+      "base_color": [
+        0.533333,
+        0.533333,
+        0.52549
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_44.jpg"
+    },
+    {
+      "id": "MAT_140",
+      "source_name": "Material_45",
+      "base_color": [
+        0.509804,
+        0.521569,
+        0.52549
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_45.jpg"
+    },
+    {
+      "id": "MAT_141",
+      "source_name": "Material_46",
+      "base_color": [
+        0.14902,
+        0.14902,
+        0.141176
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_46.jpg"
+    },
+    {
+      "id": "MAT_142",
+      "source_name": "Material_47",
+      "base_color": [
+        0.14902,
+        0.160784,
+        0.12549
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_47.jpg"
+    },
+    {
+      "id": "MAT_143",
+      "source_name": "Material_48",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.113725
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_48.jpg"
+    },
+    {
+      "id": "MAT_144",
+      "source_name": "Material_49",
+      "base_color": [
+        0.529412,
+        0.52549,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_49.jpg"
+    },
+    {
+      "id": "MAT_145",
+      "source_name": "Material_50",
+      "base_color": [
+        0.501961,
+        0.470588,
+        0.431373
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_50.jpg"
+    },
+    {
+      "id": "MAT_146",
+      "source_name": "Material_51",
+      "base_color": [
+        0.521569,
+        0.521569,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_51.jpg"
+    },
+    {
+      "id": "MAT_147",
+      "source_name": "Material_52",
+      "base_color": [
+        0.329412,
+        0.32549,
+        0.317647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_52.jpg"
+    },
+    {
+      "id": "MAT_148",
+      "source_name": "Material_53",
+      "base_color": [
+        0.152941,
+        0.156863,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_53.jpg"
+    },
+    {
+      "id": "MAT_149",
+      "source_name": "Material_54",
+      "base_color": [
+        0.52549,
+        0.501961,
+        0.482353
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_54.jpg"
+    },
+    {
+      "id": "MAT_150",
+      "source_name": "Material_55",
+      "base_color": [
+        0.486275,
+        0.482353,
+        0.478431
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material_55.jpg"
+    },
+    {
+      "id": "MAT_151",
+      "source_name": "Material__0_0_1",
+      "base_color": [
+        0.392157,
+        0.392157,
+        0.4
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Material__0_0_1.jpg"
+    },
+    {
+      "id": "MAT_152",
+      "source_name": "Material__1_0_2",
+      "base_color": [
+        0.247059,
+        0.247059,
+        0.247059
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_153",
+      "source_name": "Metal_Aluminum_Anodized",
+      "base_color": [
+        0.784314,
+        0.819608,
+        0.854902
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Metal_Aluminum_Anodized.jpg"
+    },
+    {
+      "id": "MAT_154",
+      "source_name": "Metal_Seamed",
+      "base_color": [
+        0.462745,
+        0.466667,
+        0.45098
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Metal_Seamed.jpg"
+    },
+    {
+      "id": "MAT_155",
+      "source_name": "Metal_Silver",
+      "base_color": [
+        0.917647,
+        0.913725,
+        0.933333
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Metal_Silver.jpg"
+    },
+    {
+      "id": "MAT_156",
+      "source_name": "mirror",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_157",
+      "source_name": "mmjhfdghd176",
+      "base_color": [
+        0.647059,
+        0.643137,
+        0.623529
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/mmjhfdghd176.jpg"
+    },
+    {
+      "id": "MAT_158",
+      "source_name": "mmjhfdghd187",
+      "base_color": [
+        0.529412,
+        0.501961,
+        0.466667
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/mmjhfdghd187.jpg"
+    },
+    {
+      "id": "MAT_159",
+      "source_name": "mmjhfdghd188",
+      "base_color": [
+        0.788235,
+        0.784314,
+        0.768627
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/mmjhfdghd188.jpg"
+    },
+    {
+      "id": "MAT_160",
+      "source_name": "mmjhfdghd189",
+      "base_color": [
+        0.501961,
+        0.447059,
+        0.396078
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/mmjhfdghd189.jpg"
+    },
+    {
+      "id": "MAT_161",
+      "source_name": "Plaster_1",
+      "base_color": [
+        0.807843,
+        0.807843,
+        0.807843
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Plaster_1.png"
+    },
+    {
+      "id": "MAT_162",
+      "source_name": "Podnoz",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.776471
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Podnoz.jpg"
+    },
+    {
+      "id": "MAT_163",
+      "source_name": "PodnozChrom",
+      "base_color": [
+        0.886275,
+        0.886275,
+        0.886275
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/PodnozChrom.jpg"
+    },
+    {
+      "id": "MAT_164",
+      "source_name": "Polished_Concrete_New",
+      "base_color": [
+        0.784314,
+        0.784314,
+        0.796078
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_165",
+      "source_name": "potahcr",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/potahcr.jpg"
+    },
+    {
+      "id": "MAT_166",
+      "source_name": "PotahPodrucky",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/PotahPodrucky.jpg"
+    },
+    {
+      "id": "MAT_167",
+      "source_name": "STAINLESS_KILAT",
+      "base_color": [
+        0.109804,
+        0.109804,
+        0.109804
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_168",
+      "source_name": "Standalone_1175X1290",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290.jpg"
+    },
+    {
+      "id": "MAT_169",
+      "source_name": "Standalone_1175X1290_1_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_1_.jpg"
+    },
+    {
+      "id": "MAT_170",
+      "source_name": "Standalone_1175X1290_2_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_2_.jpg"
+    },
+    {
+      "id": "MAT_171",
+      "source_name": "Standalone_1175X1290_3_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_3_.jpg"
+    },
+    {
+      "id": "MAT_172",
+      "source_name": "Standalone_1175X1290_4_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_4_.jpg"
+    },
+    {
+      "id": "MAT_173",
+      "source_name": "Standalone_1175X1290_5_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_5_.jpg"
+    },
+    {
+      "id": "MAT_174",
+      "source_name": "Standalone_1175X1290_6_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_6_.jpg"
+    },
+    {
+      "id": "MAT_175",
+      "source_name": "Standalone_1175X1290_7_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Standalone_1175X1290_7_.jpg"
+    },
+    {
+      "id": "MAT_176",
+      "source_name": "Steel",
+      "base_color": [
+        0.584314,
+        0.584314,
+        0.6
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_177",
+      "source_name": "Sudbrock_469_cashmere",
+      "base_color": [
+        0.478431,
+        0.466667,
+        0.435294
+      ],
+      "opacity": 1.0
+    },
+    {
+      "id": "MAT_178",
+      "source_name": "sudbrock_FARBE_419",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/sudbrock_FARBE_419.png"
+    },
+    {
+      "id": "MAT_179",
+      "source_name": "sudbrock_RUECKWANDFARBE_419",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/sudbrock_RUECKWANDFARBE_419.png"
+    },
+    {
+      "id": "MAT_180",
+      "source_name": "sudbrock_RW_BLIND",
+      "base_color": [
+        0.65098,
+        0.560784,
+        0.45098
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/sudbrock_RW_BLIND.png"
+    },
+    {
+      "id": "MAT_181",
+      "source_name": "sudbrock_ZARGEFARBE_023",
+      "base_color": [
+        0.960784,
+        0.898039,
+        0.666667
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/sudbrock_ZARGEFARBE_023.png"
+    },
+    {
+      "id": "MAT_182",
+      "source_name": "Tiles_04",
+      "base_color": [
+        0.666667,
+        0.666667,
+        0.666667
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Tiles_04.png"
+    },
+    {
+      "id": "MAT_183",
+      "source_name": "Translucent_Glass_Blue",
+      "base_color": [
+        0.282353,
+        0.282353,
+        0.282353
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_184",
+      "source_name": "Translucent_Glass_Dark_Green",
+      "base_color": [
+        0.705882,
+        0.705882,
+        0.678431
+      ],
+      "opacity": 0.313
+    },
+    {
+      "id": "MAT_185",
+      "source_name": "Translucent_Glass_Dark_Green1",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.756863
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_186",
+      "source_name": "Translucent_Glass_Safety",
+      "base_color": [
+        0.8,
+        0.921569,
+        0.956863
+      ],
+      "opacity": 0.5
+    },
+    {
+      "id": "MAT_187",
+      "source_name": "vray_11010",
+      "base_color": [
+        0.792157,
+        0.792157,
+        0.784314
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/vray_11010.jpg"
+    },
+    {
+      "id": "MAT_188",
+      "source_name": "vray_11011",
+      "base_color": [
+        0.054902,
+        0.039216,
+        0.035294
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/vray_11011.jpg"
+    },
+    {
+      "id": "MAT_189",
+      "source_name": "vray_11012_1",
+      "base_color": [
+        0.54902,
+        0.54902,
+        0.54902
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/vray_11012_1.jpg"
+    },
+    {
+      "id": "MAT_190",
+      "source_name": "vray_11012_5",
+      "base_color": [
+        0.227451,
+        0.368627,
+        0.105882
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/vray_11012_5.jpg"
+    },
+    {
+      "id": "MAT_191",
+      "source_name": "vray_11013",
+      "base_color": [
+        0.560784,
+        0.529412,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/vray_11013.jpg"
+    },
+    {
+      "id": "MAT_192",
+      "source_name": "vray_ChenZc_200606_DCZ22",
+      "base_color": [
+        0.498039,
+        0.486275,
+        0.47451
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/vray_ChenZc_200606_DCZ22.jpg"
+    },
+    {
+      "id": "MAT_193",
+      "source_name": "Water_Pool",
+      "base_color": [
+        0.25098,
+        0.584314,
+        0.654902
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Water_Pool.jpg"
+    },
+    {
+      "id": "MAT_194",
+      "source_name": "Watercolor_Leaves",
+      "base_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Watercolor_Leaves.jpg"
+    },
+    {
+      "id": "MAT_195",
+      "source_name": "Western_Red_Cedar_Stack__ZEC6QK_",
+      "base_color": [
+        0.521569,
+        0.384314,
+        0.278431
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Western_Red_Cedar_Stack__ZEC6QK_.jpg"
+    },
+    {
+      "id": "MAT_196",
+      "source_name": "Wood_04__Brick_Bond",
+      "base_color": [
+        0.368627,
+        0.317647,
+        0.254902
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/Wood_04__Brick_Bond.png"
+    },
+    {
+      "id": "MAT_197",
+      "source_name": "xiadele_18___DefaultdrxcsseeffJzs",
+      "base_color": [
+        0.435294,
+        0.435294,
+        0.435294
+      ],
+      "opacity": 1.0,
+      "texture": "output/obj/textures/xiadele_18___DefaultdrxcsseeffJzs.jpg"
+    },
+    {
+      "id": "MAT_198",
+      "source_name": "YS_Metal_Chrome1",
+      "base_color": [
+        0.509804,
+        0.509804,
+        0.509804
+      ],
+      "opacity": 1.0
+    }
+  ]
+}

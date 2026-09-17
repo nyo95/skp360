@@ -1,0 +1,63 @@
+{
+  "schema": "rad-ai360-phase0g-light-audit",
+  "version": 1,
+  "method": "deterministic material-name audit only; OBJ contains no renderer light metadata.",
+  "keywords": [
+    "light",
+    "lamp",
+    "downlight",
+    "spot",
+    "spotlight",
+    "pendant",
+    "led",
+    "track",
+    "ies"
+  ],
+  "candidates": [
+    {
+      "material_id": "MAT_116",
+      "source_name": "Light_metal",
+      "classification": "fixture_material_candidate",
+      "confidence": "low",
+      "evidence": [
+        "material name contains LIGHT"
+      ],
+      "reconstruct_light": false,
+      "reason_not_reconstructed": "OBJ/material evidence is insufficient to recover fixture transform or emitter intent without risking invented lights."
+    }
+  ],
+  "lights_reconstructed": [],
+  "rejected_or_uncertain_candidates": [
+    {
+      "material_id": "MAT_116",
+      "source_name": "Light_metal",
+      "classification": "fixture_material_candidate",
+      "confidence": "low",
+      "evidence": [
+        "material name contains LIGHT"
+      ],
+      "reconstruct_light": false,
+      "reason_not_reconstructed": "OBJ/material evidence is insufficient to recover fixture transform or emitter intent without risking invented lights."
+    }
+  ],
+  "defaults": {
+    "downlight": {
+      "type": "POINT",
+      "power": 60.0,
+      "color": [
+        1.0,
+        0.93,
+        0.84
+      ]
+    },
+    "generic_fixture": {
+      "type": "POINT",
+      "power": 35.0,
+      "color": [
+        1.0,
+        0.93,
+        0.84
+      ]
+    }
+  }
+}

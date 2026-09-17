@@ -1,0 +1,72 @@
+{
+  "_meta": {
+    "title": "Phase 0I — Test A: RGB Only img2img",
+    "description": "SD 1.5 img2img, no ControlNet. Baseline for geometry preservation comparison."
+  },
+  "1": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": { "ckpt_name": "v1-5-pruned-emaonly.safetensors" },
+    "_meta": { "title": "Load Checkpoint (SD 1.5)" }
+  },
+  "2": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "photorealistic architectural interior visualization, modern living room, preserve exact wall geometry, wall openings, ceiling structure, cabinetry, furniture placement, improve material realism, realistic lighting, sharp details, high quality render",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "Positive Prompt" }
+  },
+  "3": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "cartoon, illustration, painting, sketch, low quality, blurry, distorted geometry, missing walls, extra furniture, redesigned space, fish eye, panorama distortion",
+      "clip": ["1", 1]
+    },
+    "_meta": { "title": "Negative Prompt" }
+  },
+  "4": {
+    "class_type": "LoadImage",
+    "inputs": { "image": "phase0i_rgb.png" },
+    "_meta": { "title": "Load RGB Input" }
+  },
+  "5": {
+    "class_type": "VAEEncode",
+    "inputs": {
+      "pixels": ["4", 0],
+      "vae": ["1", 2]
+    },
+    "_meta": { "title": "Encode to Latent" }
+  },
+  "6": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": ["1", 0],
+      "positive": ["2", 0],
+      "negative": ["3", 0],
+      "latent_image": ["5", 0],
+      "seed": 42,
+      "steps": 20,
+      "cfg": 7.0,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "karras",
+      "denoise": 0.65
+    },
+    "_meta": { "title": "KSampler (img2img)" }
+  },
+  "7": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": ["6", 0],
+      "vae": ["1", 2]
+    },
+    "_meta": { "title": "Decode Latent" }
+  },
+  "8": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": ["7", 0],
+      "filename_prefix": "phase0i_A"
+    },
+    "_meta": { "title": "Save Output" }
+  }
+}

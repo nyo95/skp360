@@ -1,0 +1,717 @@
+{
+  "status": "PASS",
+  "source": {
+    "obj": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "json": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+    "scene_name": "AI360_1"
+  },
+  "transport": {
+    "format": "OBJ",
+    "frozen": true,
+    "note": "No DAE/FBX experiments performed in Phase 0C."
+  },
+  "render": {
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      1024,
+      1024
+    ],
+    "projection": "perspective",
+    "fov_degrees": 90.0
+  },
+  "depth": {
+    "raw_representation": "Blender Camera Data View Z Depth rendered through an emission override material and saved as 32-bit OpenEXR. RGB channels carry the same metric depth value.",
+    "units": "metres in Blender world/camera depth pass",
+    "near_clip_m": 0.01,
+    "far_clip_m": 74.351714,
+    "preview_normalization": "Shared linear mapping for all faces: near_clip -> white, far_clip -> black, clamped."
+  },
+  "normal": {
+    "raw_representation": "Blender Geometry node Normal rendered through an emission override material and saved as 32-bit RGB OpenEXR.",
+    "convention": "World/shading-space normal encoded as RGB = normal * 0.5 + 0.5, consistent across all six faces.",
+    "preview_normalization": "Preview PNG uses the same encoded [0, 1] RGB normal representation."
+  },
+  "camera_basis": {
+    "eye_m": [
+      9.464429,
+      10.229564,
+      2.185749
+    ],
+    "front_from_scene_forward": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "front_up_from_scene_up": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "front_right_derived": [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  },
+  "scene_bounds": {
+    "min_m": [
+      -52.085499,
+      -16.649099,
+      -0.051431
+    ],
+    "max_m": [
+      62.25,
+      20.041901,
+      9.79401
+    ],
+    "size_m": [
+      114.335495,
+      36.691002,
+      9.845442
+    ]
+  },
+  "import": {
+    "operator": "bpy.ops.wm.obj_import",
+    "options": {
+      "filepath": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+      "global_scale": 1.0,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "use_split_objects": true,
+      "use_split_groups": false,
+      "validate_meshes": true
+    },
+    "duration_seconds": 2.086
+  },
+  "faces": {
+    "front": {
+      "eye": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "right": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "fov_degrees": 90.0,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "near_clip_m": 0.01,
+      "far_clip_m": 74.351714,
+      "rgb_path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\front.png",
+      "depth_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\front.exr",
+      "depth_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\front_preview.png",
+      "normal_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\front.exr",
+      "normal_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\front_preview.png",
+      "render_duration_seconds": 5.244
+    },
+    "right": {
+      "eye": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "right": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "fov_degrees": 90.0,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "near_clip_m": 0.01,
+      "far_clip_m": 74.351714,
+      "rgb_path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\right.png",
+      "depth_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\right.exr",
+      "depth_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\right_preview.png",
+      "normal_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\right.exr",
+      "normal_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\right_preview.png",
+      "render_duration_seconds": 2.248
+    },
+    "back": {
+      "eye": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "right": [
+        0.0,
+        1.0,
+        -0.0
+      ],
+      "fov_degrees": 90.0,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "near_clip_m": 0.01,
+      "far_clip_m": 74.351714,
+      "rgb_path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\back.png",
+      "depth_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\back.exr",
+      "depth_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\back_preview.png",
+      "normal_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\back.exr",
+      "normal_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\back_preview.png",
+      "render_duration_seconds": 1.969
+    },
+    "left": {
+      "eye": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "fov_degrees": 90.0,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "near_clip_m": 0.01,
+      "far_clip_m": 74.351714,
+      "rgb_path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\left.png",
+      "depth_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\left.exr",
+      "depth_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\left_preview.png",
+      "normal_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\left.exr",
+      "normal_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\left_preview.png",
+      "render_duration_seconds": 2.309
+    },
+    "top": {
+      "eye": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "up": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "right": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "fov_degrees": 90.0,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "near_clip_m": 0.01,
+      "far_clip_m": 74.351714,
+      "rgb_path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\top.png",
+      "depth_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\top.exr",
+      "depth_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\top_preview.png",
+      "normal_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\top.exr",
+      "normal_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\top_preview.png",
+      "render_duration_seconds": 2.291
+    },
+    "bottom": {
+      "eye": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "fov_degrees": 90.0,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "near_clip_m": 0.01,
+      "far_clip_m": 74.351714,
+      "rgb_path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\bottom.png",
+      "depth_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\bottom.exr",
+      "depth_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\bottom_preview.png",
+      "normal_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\bottom.exr",
+      "normal_preview_path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\bottom_preview.png",
+      "render_duration_seconds": 2.058
+    }
+  },
+  "validation": {
+    "basis": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "all_eyes_identical",
+          "pass": true
+        },
+        {
+          "name": "front_forward_normalized",
+          "pass": true
+        },
+        {
+          "name": "front_up_normalized",
+          "pass": true
+        },
+        {
+          "name": "front_right_normalized",
+          "pass": true
+        },
+        {
+          "name": "front_orthogonal_basis",
+          "pass": true
+        },
+        {
+          "name": "front_square_resolution",
+          "pass": true
+        },
+        {
+          "name": "right_forward_normalized",
+          "pass": true
+        },
+        {
+          "name": "right_up_normalized",
+          "pass": true
+        },
+        {
+          "name": "right_right_normalized",
+          "pass": true
+        },
+        {
+          "name": "right_orthogonal_basis",
+          "pass": true
+        },
+        {
+          "name": "right_square_resolution",
+          "pass": true
+        },
+        {
+          "name": "back_forward_normalized",
+          "pass": true
+        },
+        {
+          "name": "back_up_normalized",
+          "pass": true
+        },
+        {
+          "name": "back_right_normalized",
+          "pass": true
+        },
+        {
+          "name": "back_orthogonal_basis",
+          "pass": true
+        },
+        {
+          "name": "back_square_resolution",
+          "pass": true
+        },
+        {
+          "name": "left_forward_normalized",
+          "pass": true
+        },
+        {
+          "name": "left_up_normalized",
+          "pass": true
+        },
+        {
+          "name": "left_right_normalized",
+          "pass": true
+        },
+        {
+          "name": "left_orthogonal_basis",
+          "pass": true
+        },
+        {
+          "name": "left_square_resolution",
+          "pass": true
+        },
+        {
+          "name": "top_forward_normalized",
+          "pass": true
+        },
+        {
+          "name": "top_up_normalized",
+          "pass": true
+        },
+        {
+          "name": "top_right_normalized",
+          "pass": true
+        },
+        {
+          "name": "top_orthogonal_basis",
+          "pass": true
+        },
+        {
+          "name": "top_square_resolution",
+          "pass": true
+        },
+        {
+          "name": "bottom_forward_normalized",
+          "pass": true
+        },
+        {
+          "name": "bottom_up_normalized",
+          "pass": true
+        },
+        {
+          "name": "bottom_right_normalized",
+          "pass": true
+        },
+        {
+          "name": "bottom_orthogonal_basis",
+          "pass": true
+        },
+        {
+          "name": "bottom_square_resolution",
+          "pass": true
+        },
+        {
+          "name": "front_back_180_degrees",
+          "pass": true
+        },
+        {
+          "name": "right_left_180_degrees",
+          "pass": true
+        },
+        {
+          "name": "top_bottom_180_degrees",
+          "pass": true
+        },
+        {
+          "name": "front_right_90_degrees",
+          "pass": true
+        },
+        {
+          "name": "right_back_90_degrees",
+          "pass": true
+        },
+        {
+          "name": "back_left_90_degrees",
+          "pass": true
+        },
+        {
+          "name": "left_front_90_degrees",
+          "pass": true
+        },
+        {
+          "name": "top_orthogonal_to_front",
+          "pass": true
+        },
+        {
+          "name": "bottom_orthogonal_to_front",
+          "pass": true
+        },
+        {
+          "name": "top_orthogonal_to_right",
+          "pass": true
+        },
+        {
+          "name": "bottom_orthogonal_to_right",
+          "pass": true
+        },
+        {
+          "name": "top_orthogonal_to_back",
+          "pass": true
+        },
+        {
+          "name": "bottom_orthogonal_to_back",
+          "pass": true
+        },
+        {
+          "name": "top_orthogonal_to_left",
+          "pass": true
+        },
+        {
+          "name": "bottom_orthogonal_to_left",
+          "pass": true
+        }
+      ]
+    },
+    "outputs": {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "front_rgb_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\front.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "front_depth_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\front_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "front_normal_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\front_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "front_depth_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\front.exr",
+          "pass": true
+        },
+        {
+          "name": "front_normal_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\front.exr",
+          "pass": true
+        },
+        {
+          "name": "right_rgb_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\right.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "right_depth_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\right_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "right_normal_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\right_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "right_depth_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\right.exr",
+          "pass": true
+        },
+        {
+          "name": "right_normal_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\right.exr",
+          "pass": true
+        },
+        {
+          "name": "back_rgb_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\back.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "back_depth_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\back_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "back_normal_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\back_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "back_depth_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\back.exr",
+          "pass": true
+        },
+        {
+          "name": "back_normal_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\back.exr",
+          "pass": true
+        },
+        {
+          "name": "left_rgb_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\left.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "left_depth_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\left_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "left_normal_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\left_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "left_depth_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\left.exr",
+          "pass": true
+        },
+        {
+          "name": "left_normal_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\left.exr",
+          "pass": true
+        },
+        {
+          "name": "top_rgb_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\top.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "top_depth_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\top_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "top_normal_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\top_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "top_depth_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\top.exr",
+          "pass": true
+        },
+        {
+          "name": "top_normal_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\top.exr",
+          "pass": true
+        },
+        {
+          "name": "bottom_rgb_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\rgb\\bottom.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "bottom_depth_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\bottom_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "bottom_normal_preview_path_dimensions",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\bottom_preview.png",
+          "dimensions": [
+            1024,
+            1024
+          ],
+          "pass": true
+        },
+        {
+          "name": "bottom_depth_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\depth\\bottom.exr",
+          "pass": true
+        },
+        {
+          "name": "bottom_normal_path_exists",
+          "path": "D:\\Projects\\skpto360\\output\\phase0c\\normal\\bottom.exr",
+          "pass": true
+        }
+      ]
+    }
+  },
+  "duration_seconds": 18.372
+}

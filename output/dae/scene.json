@@ -1,0 +1,51 @@
+{
+  "schema": "rad-ai360-scene",
+  "version": 1,
+  "units": "mm",
+  "source": {
+    "application": "SketchUp",
+    "sketchup_version": "21.1.332",
+    "model_name": "3D Eksterior Interior Grand Celeste",
+    "model_path": "D:\\Projects\\skpto360\\sketchup\\3D Eksterior Interior Grand Celeste.skp"
+  },
+  "coordinates": {
+    "space": "SketchUp",
+    "position_units": "mm",
+    "vector_units": "unitless",
+    "axes": {
+      "x": "SketchUp +X",
+      "y": "SketchUp +Y",
+      "z": "SketchUp +Z"
+    },
+    "note": "Positions are exported from SketchUp internal inches to millimetres. Direction and up vectors are not scaled."
+  },
+  "camera": {
+    "scene_name": "AI360_1",
+    "eye_mm": [
+      9464.429208,
+      10229.563323,
+      2185.749039
+    ],
+    "target_mm": [
+      14854.840843,
+      10229.563323,
+      2185.749039
+    ],
+    "direction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": "perspective",
+    "fov_degrees": 35.0
+  },
+  "files": {
+    "geometry": "scene.dae"
+  },
+  "exported_at": "2026-09-16T12:01:11Z"
+}

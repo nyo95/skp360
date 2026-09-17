@@ -1,0 +1,153 @@
+{
+  "schema": "rad-ai360-phase0g-glass-candidates",
+  "version": 1,
+  "glass_candidates": [
+    {
+      "material_id": "MAT_020",
+      "source_name": "_97",
+      "source_opacity": 0.0,
+      "source_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_029",
+      "source_name": "_Color_001_1",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.768627,
+        0.768627,
+        0.768627
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_046",
+      "source_name": "_Ivory_3",
+      "source_opacity": 0.48,
+      "source_color": [
+        1.0,
+        1.0,
+        0.937255
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_054",
+      "source_name": "_Translucent_Glass_Dark_Green_2",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.776471,
+        0.776471,
+        0.756863
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_055",
+      "source_name": "_Translucent_Glass_Dark_Green_3",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.243137,
+        0.356863,
+        0.019608
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_056",
+      "source_name": "_Translucent_Glass_Gray_1",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_183",
+      "source_name": "Translucent_Glass_Blue",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.282353,
+        0.282353,
+        0.282353
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_184",
+      "source_name": "Translucent_Glass_Dark_Green",
+      "source_opacity": 0.313,
+      "source_color": [
+        0.705882,
+        0.705882,
+        0.678431
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_185",
+      "source_name": "Translucent_Glass_Dark_Green1",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.776471,
+        0.776471,
+        0.756863
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "material_id": "MAT_186",
+      "source_name": "Translucent_Glass_Safety",
+      "source_opacity": 0.5,
+      "source_color": [
+        0.8,
+        0.921569,
+        0.956863
+      ],
+      "texture": null,
+      "reason_detected": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    }
+  ]
+}

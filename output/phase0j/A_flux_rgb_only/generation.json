@@ -1,0 +1,19 @@
+{
+  "test": "A_FLUX_RGB_ONLY",
+  "stage": 1,
+  "provider": "cloudflare",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "input_image": "D:\\Projects\\skpto360\\output\\phase0i\\input\\rgb.png",
+  "input_sha256": "0368a6b7cefc27fe0af28f981cfef34fee8f14c9f534f949a041bff56245c77f",
+  "reference_path": "D:\\Projects\\skpto360\\output\\phase0j\\A_flux_rgb_only\\input_ref.png",
+  "reference_sha256": "2f667a54beff18d6ab35bf47a173a6f231ca0d98d59ffe936f8b3d8fa6416f99",
+  "output": "D:\\Projects\\skpto360\\output\\phase0j\\A_flux_rgb_only\\output.png",
+  "output_sha256": "2b79e1296f4ffb7492d9a87c61974e9142e077f47a9dbfcb5e96fd6433c59dce",
+  "prompt": "Enhance this existing architectural interior rendering into a high-end photorealistic interior photograph. Preserve the exact architecture, room proportions, camera position, camera composition, wall geometry, openings, ceiling geometry, columns, cabinetry, furniture count, furniture placement and all major object silhouettes from the input image. Do not redesign, move, remove, resize or add architectural elements, furniture, doors, openings, cabinets, shelves or fixtures. Treat the input image as the approved design and geometry. Improve only: realistic material response, fabric microtexture, wood grain realism, stone surface realism, subtle reflections, physically believable daylight, soft indirect illumination, realistic contact shadows, exposure, photographic tonal range, fine surface detail, natural architectural photography appearance. Maintain the original material colors and design intent. Do not change the camera or perspective. The result must look like the same exact interior photographed after construction, not a redesigned interpretation.",
+  "negative_prompt_note": "redesign, changed architecture, moved furniture, added furniture, missing furniture, altered wall openings, changed doorway, changed ceiling, different cabinetry, different layout, different camera, different perspective, distorted geometry, extra objects, decorative additions, architectural hallucination",
+  "guidance": 3.5,
+  "resolution": "512x512",
+  "runtime_s": 7.57,
+  "cf_ray": null,
+  "cf_success": true
+}

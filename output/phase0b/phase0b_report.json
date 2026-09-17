@@ -1,0 +1,77 @@
+{
+  "status": "WARN",
+  "warnings": [
+    "Native Blender COLLADA importer is unavailable; fallback parser was used.",
+    "Skipped 1341 DAE instances without triangle mesh data."
+  ],
+  "source": {
+    "dae": "D:\\Projects\\skpto360\\output\\dae\\scene.dae",
+    "json": "D:\\Projects\\skpto360\\output\\dae\\scene.json",
+    "scene_name": "AI360_1"
+  },
+  "dae_asset": {
+    "unit_meter": 0.0254,
+    "unit_name": "inch",
+    "up_axis": "Z_UP"
+  },
+  "import_options": {
+    "filepath": "D:\\Projects\\skpto360\\output\\dae\\scene.dae",
+    "operator": "rad_fallback_dae_parser",
+    "unit_meter": 0.0254,
+    "geometries": 9230,
+    "library_nodes": 378,
+    "instances": 19876,
+    "created_objects": 18535,
+    "skipped_instances": 1341,
+    "native_import_error": "Calling operator \"bpy.ops.wm.collada_import\" error, could not be found"
+  },
+  "counts": {
+    "objects_total": 18536,
+    "mesh_objects": 18535,
+    "materials": 2,
+    "cameras": 3
+  },
+  "bounds": {
+    "min_m": [
+      -52.085468,
+      -16.649128,
+      -0.051431
+    ],
+    "max_m": [
+      62.249966,
+      20.063911,
+      9.794012
+    ],
+    "size_m": [
+      114.335434,
+      36.713039,
+      9.845443
+    ]
+  },
+  "camera": {
+    "name": "RAD_AI360_CAMERA",
+    "location_m": [
+      9.464429,
+      10.229564,
+      2.185749
+    ],
+    "forward": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "fov_degrees": 35.0
+  },
+  "outputs": {
+    "blend": "D:\\Projects\\skpto360\\output\\phase0b\\phase0b_imported.blend",
+    "preview": "D:\\Projects\\skpto360\\output\\phase0b\\preview_camera.png",
+    "overview": "D:\\Projects\\skpto360\\output\\phase0b\\preview_overview.png",
+    "preview_error": null
+  },
+  "duration_seconds": 25.891
+}

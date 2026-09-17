@@ -1,0 +1,723 @@
+{
+  "schema": "rad-ai360-phase0g-source-signal-validation",
+  "version": 1,
+  "status": "PASS",
+  "source": {
+    "obj": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "scene_json": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+    "phase0d_report": "D:\\Projects\\skpto360\\output\\phase0d\\phase0d_report.json",
+    "material_manifest": "D:\\Projects\\skpto360\\output\\phase0e\\input\\material_manifest.json",
+    "source_scene_hashes": {
+      "obj_sha256": "67ecd63c26c91e07805412462d320391cb34f5889d69ba37d5c89f36b804913b",
+      "scene_json_sha256": "4608db39556743de05976a0b76bb6eb75900ba6537721e935e21017a440f91db"
+    }
+  },
+  "camera": {
+    "scene_name": "AI360_1",
+    "eye_m": [
+      9.464429,
+      10.229564,
+      2.185749
+    ],
+    "forward": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "right": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "projection": "panoramic_equirectangular",
+    "resolution": [
+      2048,
+      1024
+    ],
+    "camera_type": "PANO",
+    "panorama_type": "EQUIRECTANGULAR"
+  },
+  "render": {
+    "engine": "CYCLES",
+    "samples": 32,
+    "denoise": true,
+    "color_management": {
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    }
+  },
+  "glass": {
+    "candidate_count": 10,
+    "glass_candidates_path": "D:\\Projects\\skpto360\\output\\phase0g\\glass_candidates.json",
+    "detected_materials": [
+      {
+        "material_id": "MAT_020",
+        "source_name": "_97",
+        "source_opacity": 0.0,
+        "source_color": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_029",
+        "source_name": "_Color_001_1",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.768627,
+          0.768627,
+          0.768627
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_046",
+        "source_name": "_Ivory_3",
+        "source_opacity": 0.48,
+        "source_color": [
+          1.0,
+          1.0,
+          0.937255
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_054",
+        "source_name": "_Translucent_Glass_Dark_Green_2",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.776471,
+          0.776471,
+          0.756863
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_055",
+        "source_name": "_Translucent_Glass_Dark_Green_3",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.243137,
+          0.356863,
+          0.019608
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_056",
+        "source_name": "_Translucent_Glass_Gray_1",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.501961,
+          0.501961,
+          0.501961
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_183",
+        "source_name": "Translucent_Glass_Blue",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.282353,
+          0.282353,
+          0.282353
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_184",
+        "source_name": "Translucent_Glass_Dark_Green",
+        "source_opacity": 0.313,
+        "source_color": [
+          0.705882,
+          0.705882,
+          0.678431
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_185",
+        "source_name": "Translucent_Glass_Dark_Green1",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.776471,
+          0.776471,
+          0.756863
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      },
+      {
+        "material_id": "MAT_186",
+        "source_name": "Translucent_Glass_Safety",
+        "source_opacity": 0.5,
+        "source_color": [
+          0.8,
+          0.921569,
+          0.956863
+        ],
+        "texture": null,
+        "reason_detected": [
+          "source material name indicates glass/translucency",
+          "source opacity < 1.0"
+        ]
+      }
+    ],
+    "shader_settings": {
+      "method": "generic_architectural_glazing_signal",
+      "alpha": 0.22,
+      "roughness": 0.08,
+      "metallic": 0.0,
+      "transmission_weight_if_available": 0.65,
+      "ior_if_available": 1.45,
+      "preserve_source_tint": true
+    },
+    "applied": [
+      {
+        "material_id": "MAT_020",
+        "source_name": "_97",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_029",
+        "source_name": "_Color_001_1",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_046",
+        "source_name": "_Ivory_3",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_054",
+        "source_name": "_Translucent_Glass_Dark_Green_2",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_055",
+        "source_name": "_Translucent_Glass_Dark_Green_3",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_056",
+        "source_name": "_Translucent_Glass_Gray_1",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_183",
+        "source_name": "Translucent_Glass_Blue",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_184",
+        "source_name": "Translucent_Glass_Dark_Green",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_185",
+        "source_name": "Translucent_Glass_Dark_Green1",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      },
+      {
+        "material_id": "MAT_186",
+        "source_name": "Translucent_Glass_Safety",
+        "applied": true,
+        "shader_settings": {
+          "method": "generic_architectural_glazing_signal",
+          "alpha": 0.22,
+          "roughness": 0.08,
+          "metallic": 0.0,
+          "transmission_weight_if_available": 0.65,
+          "ior_if_available": 1.45,
+          "preserve_source_tint": true
+        }
+      }
+    ],
+    "mask_path": "D:\\Projects\\skpto360\\output\\phase0g\\masks\\glass_mask.png"
+  },
+  "exterior_daylight": {
+    "status": "INDETERMINATE",
+    "method": "OBJ object/material metadata inspection and scene bounds",
+    "scene_bounds_m": {
+      "min_m": [
+        -52.085499,
+        -16.649099,
+        -0.051431
+      ],
+      "max_m": [
+        62.25,
+        20.041901,
+        9.79401
+      ],
+      "size_m": [
+        114.335495,
+        36.691002,
+        9.845442
+      ]
+    },
+    "finding": "No deterministic exterior object names or metadata were available. Neutral daylight world is used; no invented landscape/backdrop was added.",
+    "priority_applied": "neutral world/sky daylight"
+  },
+  "lighting": {
+    "audit_path": "D:\\Projects\\skpto360\\output\\phase0g\\light_audit.json",
+    "method": "deterministic material-name audit only; OBJ contains no renderer light metadata.",
+    "keywords": [
+      "light",
+      "lamp",
+      "downlight",
+      "spot",
+      "spotlight",
+      "pendant",
+      "led",
+      "track",
+      "ies"
+    ],
+    "candidates": [
+      {
+        "material_id": "MAT_116",
+        "source_name": "Light_metal",
+        "classification": "fixture_material_candidate",
+        "confidence": "low",
+        "evidence": [
+          "material name contains LIGHT"
+        ],
+        "reconstruct_light": false,
+        "reason_not_reconstructed": "OBJ/material evidence is insufficient to recover fixture transform or emitter intent without risking invented lights."
+      }
+    ],
+    "lights_reconstructed": [],
+    "rejected_or_uncertain_candidates": [
+      {
+        "material_id": "MAT_116",
+        "source_name": "Light_metal",
+        "classification": "fixture_material_candidate",
+        "confidence": "low",
+        "evidence": [
+          "material name contains LIGHT"
+        ],
+        "reconstruct_light": false,
+        "reason_not_reconstructed": "OBJ/material evidence is insufficient to recover fixture transform or emitter intent without risking invented lights."
+      }
+    ],
+    "defaults": {
+      "downlight": {
+        "type": "POINT",
+        "power": 60.0,
+        "color": [
+          1.0,
+          0.93,
+          0.84
+        ]
+      },
+      "generic_fixture": {
+        "type": "POINT",
+        "power": 35.0,
+        "color": [
+          1.0,
+          0.93,
+          0.84
+        ]
+      }
+    }
+  },
+  "outputs": {
+    "before_rgb": "D:\\Projects\\skpto360\\output\\phase0g\\comparison\\BEFORE.png",
+    "after_source_fix_rgb": "D:\\Projects\\skpto360\\output\\phase0g\\comparison\\AFTER_SOURCE_FIX.png",
+    "glass_mask": "D:\\Projects\\skpto360\\output\\phase0g\\masks\\glass_mask.png",
+    "manifest": {
+      "before_rgb": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0g\\comparison\\BEFORE.png",
+        "bytes": 2129035,
+        "sha256": "2c87ab39e85e23165d0f0d3730f3a05ef781c152d4213077e4e051d175f60d43"
+      },
+      "after_source_fix_rgb": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0g\\comparison\\AFTER_SOURCE_FIX.png",
+        "bytes": 2139677,
+        "sha256": "5adaf018f68fb715fc6780a267a8c127b5c7ce233abe5a0749915f8c771d477b"
+      },
+      "glass_mask": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0g\\masks\\glass_mask.png",
+        "bytes": 352003,
+        "sha256": "5c4349d49e607424d73e5d9a3045502a9642b48986cc5ef238b5c2bc75acc341"
+      }
+    }
+  },
+  "supporting_passes": {
+    "depth_regenerated": false,
+    "normal_regenerated": false,
+    "reason": "No mesh geometry or camera change; Phase 0D depth and geometry-derived normal remain source-of-truth.",
+    "phase0d_depth_sha256": "f1978a0ffb7609fb4f403988323336b43048ab8e3ba3fb1859f2358b73398301",
+    "phase0d_normal_sha256": "c908e3becd254b9ff51a5da895a374fd12c1f6bd1271b7a1d8c30a21b421454a"
+  },
+  "geometry_validation": {
+    "status": "PASS",
+    "before_bounds_m": {
+      "min_m": [
+        -52.085499,
+        -16.649099,
+        -0.051431
+      ],
+      "max_m": [
+        62.25,
+        20.041901,
+        9.79401
+      ],
+      "size_m": [
+        114.335495,
+        36.691002,
+        9.845442
+      ]
+    },
+    "after_bounds_m": {
+      "min_m": [
+        -52.085499,
+        -16.649099,
+        -0.051431
+      ],
+      "max_m": [
+        62.25,
+        20.041901,
+        9.79401
+      ],
+      "size_m": [
+        114.335495,
+        36.691002,
+        9.845442
+      ]
+    },
+    "note": "Phase 0G changes materials/world/lights only and does not edit mesh geometry."
+  },
+  "render_runtime": {
+    "import_seconds": 2.152,
+    "before_rgb_seconds": 51.659,
+    "glass_mask_seconds": 8.756,
+    "after_source_fix_seconds": 52.452,
+    "total_seconds": 117.21
+  },
+  "warnings": [
+    "No AI classification used.",
+    "No new exterior geometry, landscaping, or photographic backdrop was added.",
+    "No light was reconstructed because available OBJ evidence did not provide high-confidence emitter transforms."
+  ],
+  "ai_ab_test": {
+    "status": "COMPLETE",
+    "scope": "Two controlled Cloudflare FLUX.2 Klein RGB-only generations. No depth, normal, or glass mask sent.",
+    "identical_settings": {
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-4b",
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "guidance": 3.5,
+      "resolution": [
+        1920,
+        960
+      ]
+    },
+    "g_a_before": {
+      "experiment": "G-A_BEFORE_RGB_ONLY",
+      "status": "ok",
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-4b",
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "negative_prompt": null,
+      "input_image_hashes": {
+        "rgb_erp": "2c87ab39e85e23165d0f0d3730f3a05ef781c152d4213077e4e051d175f60d43",
+        "cloudflare_reference_511": "95a2955f5986a3d28cb445695ae9afcc3cf1485210ff83b1194cce338c1630eb"
+      },
+      "seed": null,
+      "strength_or_denoise": null,
+      "control_weights": null,
+      "resolution": [
+        1920,
+        960
+      ],
+      "request_parameters": {
+        "provider": "cloudflare",
+        "model": "@cf/black-forest-labs/flux-2-klein-4b",
+        "endpoint": "https://api.cloudflare.com/client/v4/accounts/<redacted-account-id>/ai/run/@cf/black-forest-labs/flux-2-klein-4b",
+        "credential_source": "rad_ai360_visualizer config.json",
+        "multipart_fields": {
+          "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+          "width": "1920",
+          "height": "960",
+          "guidance": "3.5"
+        },
+        "multipart_files": {
+          "input_image_0": {
+            "filename": "rgb_erp_cloudflare_reference_511.png",
+            "mime_type": "image/png",
+            "source": "Phase 0G RGB ERP only",
+            "sha256": "95a2955f5986a3d28cb445695ae9afcc3cf1485210ff83b1194cce338c1630eb"
+          }
+        },
+        "explicitly_not_sent": [
+          "depth_condition.png",
+          "normal_condition.png",
+          "glass_mask.png"
+        ]
+      },
+      "provider_request_id": "a3c080c9efb4e78b-CGK",
+      "runtime_seconds": 14.874,
+      "estimated_or_reported_cost": null,
+      "output": "D:\\Projects\\skpto360\\output\\phase0g\\ai_ab\\G-A_BEFORE_RGB_ONLY\\output.png",
+      "output_sha256": "d1669ccc66f009012102f27efcc4f3bcbe278d60dc0720f51313abf839895f9c",
+      "cloudflare_success": true,
+      "cloudflare_errors": [],
+      "cloudflare_messages": [],
+      "local_qc": {
+        "status": "PASS",
+        "output": {
+          "path": "D:\\Projects\\skpto360\\output\\phase0g\\ai_ab\\G-A_BEFORE_RGB_ONLY\\output.png",
+          "exists": true,
+          "valid_image": true,
+          "dimensions": [
+            1920,
+            960
+          ],
+          "ratio": 2.0,
+          "ratio_2_to_1": true,
+          "alpha_min": 1.0,
+          "alpha_max": 1.0,
+          "no_unexpected_alpha": true,
+          "blank_warning": false,
+          "has_visible_pixels": true,
+          "mean_rgb_seam_delta": 0.125813,
+          "max_rgb_seam_delta": 0.368627,
+          "top_pole_has_visible_pixels": true,
+          "bottom_pole_has_visible_pixels": true
+        },
+        "geometry_drift_warning": {
+          "status": "WARNING_SIGNAL_ONLY",
+          "method": "Canny edge density/difference after resizing output to source dimensions when needed.",
+          "source_edge_density": 0.016403,
+          "output_edge_density": 0.023447,
+          "edge_difference_density": 0.037544,
+          "note": "This is not semantic architecture understanding; use as a local drift warning only."
+        }
+      },
+      "total_seconds": 14.98
+    },
+    "g_b_after_source_fix": {
+      "experiment": "G-B_AFTER_SOURCE_FIX_RGB_ONLY",
+      "status": "ok",
+      "provider": "cloudflare",
+      "model": "@cf/black-forest-labs/flux-2-klein-4b",
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "negative_prompt": null,
+      "input_image_hashes": {
+        "rgb_erp": "5adaf018f68fb715fc6780a267a8c127b5c7ce233abe5a0749915f8c771d477b",
+        "cloudflare_reference_511": "448314e40f46d736bd72711a165e9abe4dfb438bd54eef5e3b585206916940ae"
+      },
+      "seed": null,
+      "strength_or_denoise": null,
+      "control_weights": null,
+      "resolution": [
+        1920,
+        960
+      ],
+      "request_parameters": {
+        "provider": "cloudflare",
+        "model": "@cf/black-forest-labs/flux-2-klein-4b",
+        "endpoint": "https://api.cloudflare.com/client/v4/accounts/<redacted-account-id>/ai/run/@cf/black-forest-labs/flux-2-klein-4b",
+        "credential_source": "rad_ai360_visualizer config.json",
+        "multipart_fields": {
+          "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+          "width": "1920",
+          "height": "960",
+          "guidance": "3.5"
+        },
+        "multipart_files": {
+          "input_image_0": {
+            "filename": "rgb_erp_cloudflare_reference_511.png",
+            "mime_type": "image/png",
+            "source": "Phase 0G RGB ERP only",
+            "sha256": "448314e40f46d736bd72711a165e9abe4dfb438bd54eef5e3b585206916940ae"
+          }
+        },
+        "explicitly_not_sent": [
+          "depth_condition.png",
+          "normal_condition.png",
+          "glass_mask.png"
+        ]
+      },
+      "provider_request_id": "a3c081278f0ec649-CGK",
+      "runtime_seconds": 12.399,
+      "estimated_or_reported_cost": null,
+      "output": "D:\\Projects\\skpto360\\output\\phase0g\\ai_ab\\G-B_AFTER_SOURCE_FIX_RGB_ONLY\\output.png",
+      "output_sha256": "51b146d8d6284a073a2c3a6540b32b9c936c3cd1d6a8b65494dd9c2f545708b5",
+      "cloudflare_success": true,
+      "cloudflare_errors": [],
+      "cloudflare_messages": [],
+      "local_qc": {
+        "status": "PASS",
+        "output": {
+          "path": "D:\\Projects\\skpto360\\output\\phase0g\\ai_ab\\G-B_AFTER_SOURCE_FIX_RGB_ONLY\\output.png",
+          "exists": true,
+          "valid_image": true,
+          "dimensions": [
+            1920,
+            960
+          ],
+          "ratio": 2.0,
+          "ratio_2_to_1": true,
+          "alpha_min": 1.0,
+          "alpha_max": 1.0,
+          "no_unexpected_alpha": true,
+          "blank_warning": false,
+          "has_visible_pixels": true,
+          "mean_rgb_seam_delta": 0.086016,
+          "max_rgb_seam_delta": 0.385621,
+          "top_pole_has_visible_pixels": true,
+          "bottom_pole_has_visible_pixels": true
+        },
+        "geometry_drift_warning": {
+          "status": "WARNING_SIGNAL_ONLY",
+          "method": "Canny edge density/difference after resizing output to source dimensions when needed.",
+          "source_edge_density": 0.016698,
+          "output_edge_density": 0.02528,
+          "edge_difference_density": 0.040018,
+          "note": "This is not semantic architecture understanding; use as a local drift warning only."
+        }
+      },
+      "total_seconds": 12.506
+    },
+    "human_review_focus": [
+      "windows still read as openings",
+      "glazing remains transparent / believable",
+      "exterior/daylight is preserved",
+      "AI does not close windows with opaque surfaces",
+      "window/door frames remain correct",
+      "ceiling light fixture count remains correct",
+      "fixture positions remain correct",
+      "artificial lighting looks plausible",
+      "major furniture remains unchanged",
+      "architecture remains unchanged",
+      "ERP remains valid",
+      "seam does not materially worsen"
+    ],
+    "duration_seconds": 27.639
+  },
+  "stop_condition": "Stopped after glass audit, light audit, glass mask, BEFORE/AFTER RGB, two controlled FLUX A/B outputs, and Phase 0G report."
+}

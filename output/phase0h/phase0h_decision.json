@@ -1,0 +1,72 @@
+{
+  "schema": "phase0h-depth-feasibility-decision",
+  "version": 1,
+  "date": "2026-09-17",
+  "status": "DECIDED_WITHOUT_INFERENCE_TEST",
+  "reason_for_skipping_inference": "RTX 2060 6 GB insufficient for SD1.5 + ControlNet simultaneously; model download network stall. Hardware constraint. Inference test skipped per project decision.",
+
+  "evidence_basis": {
+    "exr_stats": {
+      "source": "output/phase0c/depth/front.exr",
+      "channel": "V",
+      "resolution": "1024x1024",
+      "dtype": "float32",
+      "range_meters": [0.9961, 6.0625],
+      "mean_m": 2.863,
+      "std_m": 1.248,
+      "invalid_pixels": 0,
+      "nan_inf_pixels": 0,
+      "verdict": "CLEAN — full-precision metric depth, no masking needed"
+    },
+    "depth_maps_generated": {
+      "B_LINEAR_DEPTH":       "output/phase0h/depth_verify/B_LINEAR_DEPTH.png",
+      "C_INVERSE_DEPTH":      "output/phase0h/depth_verify/C_INVERSE_DEPTH.png",
+      "D_LOG_DEPTH":          "output/phase0h/depth_verify/D_LOG_DEPTH.png",
+      "E_PERCENTILE_CLAMPED": "output/phase0h/depth_verify/E_PERCENTILE_CLAMPED.png"
+    },
+    "visual_assessment": {
+      "sofa_foreground_1m":        "clearly white/bright — near signal correct",
+      "tv_unit_2_5m":              "distinct mid-grey — mid signal correct",
+      "back_wall_4_5m":            "dark grey — far signal correct",
+      "kitchen_doorway_far_left":  "near-black — deepest point correct",
+      "ceiling_above":             "mid-grey (close but overhead) — correct",
+      "floor_transition":          "smooth gradient — no aliasing",
+      "overall_contrast_range":    "0-255 full range, std 63-84 across mappings"
+    }
+  },
+
+  "decisions": {
+    "D1_depth_data_is_geometry_truth": {
+      "decision": "CONFIRMED",
+      "statement": "Blender/SketchUp EXR metric depth IS geometry truth. The prior 8-bit depth_condition.png failure was purely a conversion artefact (range 186-255 out of 256), not a data quality problem. The raw EXR is authoritative.",
+      "implication": "Do NOT replace Blender depth with MiDaS as canonical source. MiDaS is a compatibility experiment only (AI_ESTIMATED_DEPTH label stands)."
+    },
+    "D2_depth_conditioning_is_viable": {
+      "decision": "PROCEED",
+      "statement": "Depth conditioning is viable. All 4 deterministic mappings produce full-range, high-contrast depth images that carry the geometry signal ControlNet needs: sofa vs TV unit vs back wall vs doorway all clearly separated.",
+      "caveat": "Empirical ControlNet geometry-drift improvement not tested. Proceeding on data quality evidence. Validate on first cloud run against geometry criteria."
+    },
+    "D3_recommended_depth_mapping": {
+      "primary":   "E_PERCENTILE_CLAMPED (p5-p95 clamp, linear, near=white)",
+      "rationale": "Most robust to scene-to-scene variation. p5-p95 is the correct cross-view shared rule — avoids single outlier pixels dominating the scale. Used consistently across all 6 cubemap faces.",
+      "fallback":  "B_LINEAR_DEPTH (p0.5-p99.5) if E shows banding artefacts",
+      "convention": "near=white(255), far=black(0) — matches MiDaS/ControlNet training convention"
+    },
+    "D4_canonical_architecture": {
+      "depth_source":    "phase0c/depth/{face}.exr  (Blender render pass)",
+      "depth_mapping":   "E_PERCENTILE_CLAMPED  (shared params across all faces)",
+      "midas_role":      "compatibility_experiment_only — label AI_ESTIMATED_DEPTH, never geometry truth",
+      "next_model_test": "Validate depth conditioning on higher-quality generation model (not SD1.5) — Cloudflare FLUX img2img or equivalent when ControlNet Depth endpoint available"
+    }
+  },
+
+  "next_milestones": {
+    "immediate": "Proceed to constraint chain: glass/exterior mask → material regions → light positions",
+    "validation_deferred": "First cloud generation with E_PERCENTILE_CLAMPED depth — evaluate 6 geometry criteria at that point",
+    "do_not_do": [
+      "Do not add more constraints before validating depth on first real generation",
+      "Do not change canonical depth source to MiDaS",
+      "Do not continue attempting SD1.5 local inference on RTX 2060"
+    ]
+  }
+}

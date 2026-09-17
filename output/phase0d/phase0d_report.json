@@ -1,0 +1,256 @@
+{
+  "status": "PASS",
+  "source": {
+    "obj": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "json": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+    "scene_name": "AI360_1"
+  },
+  "mode": {
+    "name": "phase0d_equirectangular_native",
+    "primary_output": "native equirectangular panorama",
+    "cubemap_status": "debug/compatibility only"
+  },
+  "render": {
+    "requested_engine": "CYCLES",
+    "actual_engine": "CYCLES",
+    "projection": "panoramic_equirectangular",
+    "resolution": [
+      2048,
+      1024
+    ],
+    "ratio": "2:1",
+    "samples": 32,
+    "denoise": true,
+    "color_management": {
+      "view_transform": "Standard",
+      "look": "None",
+      "exposure": 0.0,
+      "gamma": 1.0
+    }
+  },
+  "camera_basis": {
+    "eye_m": [
+      9.464429,
+      10.229564,
+      2.185749
+    ],
+    "forward_from_scene": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up_from_scene": [
+      -0.0,
+      0.0,
+      1.0
+    ],
+    "right_derived": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "camera_type": "PANO",
+    "panorama_type": "EQUIRECTANGULAR"
+  },
+  "depth": {
+    "raw_representation": "Blender Camera Data View Z Depth rendered through an emission override material and saved as 32-bit OpenEXR.",
+    "units": "metres in Blender world/camera depth pass",
+    "near_clip_m": 0.01,
+    "far_clip_m": 74.351714,
+    "preview_normalization": "Shared linear mapping: near_clip -> white, far_clip -> black, clamped."
+  },
+  "normal": {
+    "raw_representation": "Blender Geometry node Normal rendered through an emission override material and saved as 32-bit RGB OpenEXR.",
+    "convention": "World/shading-space normal encoded as RGB = normal * 0.5 + 0.5.",
+    "preview_normalization": "Preview PNG uses the same encoded [0, 1] RGB normal representation."
+  },
+  "scene_bounds": {
+    "min_m": [
+      -52.085499,
+      -16.649099,
+      -0.051431
+    ],
+    "max_m": [
+      62.25,
+      20.041901,
+      9.79401
+    ],
+    "size_m": [
+      114.335495,
+      36.691002,
+      9.845442
+    ]
+  },
+  "import": {
+    "operator": "bpy.ops.wm.obj_import",
+    "options": {
+      "filepath": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+      "global_scale": 1.0,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "use_split_objects": true,
+      "use_split_groups": false,
+      "validate_meshes": true
+    },
+    "duration_seconds": 2.149
+  },
+  "outputs": {
+    "rgb": "D:\\Projects\\skpto360\\output\\phase0d\\rgb\\equirectangular.png",
+    "depth": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular.exr",
+    "depth_preview": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular_preview.png",
+    "normal": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular.exr",
+    "normal_preview": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular_preview.png",
+    "durations": {
+      "rgb_seconds": 50.608,
+      "depth_raw_seconds": 11.415,
+      "depth_preview_seconds": 11.348,
+      "normal_raw_seconds": 11.292,
+      "normal_preview_seconds": 11.632
+    }
+  },
+  "output_manifest": {
+    "rgb": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0d\\rgb\\equirectangular.png",
+      "bytes": 2129035,
+      "sha256": "f5e00a48663e0d9cd391320ebe068f72e1f81cfce12061cb319f2f5ae01faa1c"
+    },
+    "depth": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular.exr",
+      "bytes": 3266108,
+      "sha256": "f1978a0ffb7609fb4f403988323336b43048ab8e3ba3fb1859f2358b73398301"
+    },
+    "depth_preview": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular_preview.png",
+      "bytes": 463564,
+      "sha256": "1c1ffd33f0ba5e16414d335a9840ad6ed97abf2f0e3b804d453257038803be9e"
+    },
+    "normal": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular.exr",
+      "bytes": 16013700,
+      "sha256": "c908e3becd254b9ff51a5da895a374fd12c1f6bd1271b7a1d8c30a21b421454a"
+    },
+    "normal_preview": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular_preview.png",
+      "bytes": 1882891,
+      "sha256": "9bc46cdad44944aa350369208d0a21c3c841c000cca9fa802d674ca27ad7dc74"
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": [
+      {
+        "name": "rgb_ratio_2_to_1",
+        "pass": true,
+        "details": {
+          "dimensions": [
+            2048,
+            1024
+          ],
+          "ratio_2_to_1": true,
+          "alpha_min": 1.0,
+          "alpha_max": 1.0,
+          "has_visible_pixels": true,
+          "mean_lr_seam_rgb_delta": 0.006634,
+          "max_lr_seam_rgb_delta": 0.073203,
+          "top_pole_has_visible_pixels": true,
+          "bottom_pole_has_visible_pixels": true
+        }
+      },
+      {
+        "name": "rgb_no_unwanted_transparency",
+        "pass": true
+      },
+      {
+        "name": "rgb_has_visible_pixels",
+        "pass": true
+      },
+      {
+        "name": "rgb_expected_dimensions",
+        "pass": true
+      },
+      {
+        "name": "rgb_lr_seam_reasonable",
+        "pass": true,
+        "details": {
+          "dimensions": [
+            2048,
+            1024
+          ],
+          "ratio_2_to_1": true,
+          "alpha_min": 1.0,
+          "alpha_max": 1.0,
+          "has_visible_pixels": true,
+          "mean_lr_seam_rgb_delta": 0.006634,
+          "max_lr_seam_rgb_delta": 0.073203,
+          "top_pole_has_visible_pixels": true,
+          "bottom_pole_has_visible_pixels": true
+        }
+      },
+      {
+        "name": "rgb_poles_nonempty",
+        "pass": true,
+        "details": {
+          "dimensions": [
+            2048,
+            1024
+          ],
+          "ratio_2_to_1": true,
+          "alpha_min": 1.0,
+          "alpha_max": 1.0,
+          "has_visible_pixels": true,
+          "mean_lr_seam_rgb_delta": 0.006634,
+          "max_lr_seam_rgb_delta": 0.073203,
+          "top_pole_has_visible_pixels": true,
+          "bottom_pole_has_visible_pixels": true
+        }
+      },
+      {
+        "name": "depth_exr_exists",
+        "path": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular.exr",
+        "pass": true
+      },
+      {
+        "name": "normal_exr_exists",
+        "path": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular.exr",
+        "pass": true
+      },
+      {
+        "name": "depth_preview_expected_dimensions",
+        "path": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular_preview.png",
+        "dimensions": [
+          2048,
+          1024
+        ],
+        "pass": true
+      },
+      {
+        "name": "normal_preview_expected_dimensions",
+        "path": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular_preview.png",
+        "dimensions": [
+          2048,
+          1024
+        ],
+        "pass": true
+      },
+      {
+        "name": "output_manifest_sha256_present",
+        "pass": true
+      }
+    ],
+    "rgb_validation": {
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "ratio_2_to_1": true,
+      "alpha_min": 1.0,
+      "alpha_max": 1.0,
+      "has_visible_pixels": true,
+      "mean_lr_seam_rgb_delta": 0.006634,
+      "max_lr_seam_rgb_delta": 0.073203,
+      "top_pole_has_visible_pixels": true,
+      "bottom_pole_has_visible_pixels": true
+    }
+  },
+  "duration_seconds": 100.171
+}

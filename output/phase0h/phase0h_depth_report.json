@@ -1,0 +1,29 @@
+{
+  "schema": "phase0h-depth-preprocess",
+  "depth_in": "D:\\Projects\\skpto360\\output\\phase0e\\input\\depth_condition.png",
+  "stats_raw": {
+    "min": 186,
+    "max": 255,
+    "mean": 244.1,
+    "std": 17.96,
+    "unique_values": 70,
+    "p1": 188,
+    "p5": 188,
+    "p50": 255,
+    "p95": 255,
+    "p99": 255
+  },
+  "stats_normalized": {
+    "min": 0,
+    "max": 255,
+    "mean": 213.29,
+    "std": 68.44,
+    "unique_values": 68
+  },
+  "outputs": {
+    "normalized": "D:\\Projects\\skpto360\\output\\phase0h\\depth_normalized.png",
+    "clahe": "D:\\Projects\\skpto360\\output\\phase0h\\depth_clahe.png",
+    "preview": "D:\\Projects\\skpto360\\output\\phase0h\\depth_comparison_preview.png"
+  },
+  "recommendation": "Use depth_clahe.png for ControlNet \u2014 it has the most local contrast. Confirm in preview that near objects (floor/ceiling/arches) are clearly distinguished from far objects (doorway backgrounds, walls at distance)."
+}

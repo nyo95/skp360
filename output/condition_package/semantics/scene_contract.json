@@ -1,0 +1,368 @@
+{
+  "schema": "rad-ai360-controlled-scene-contract",
+  "version": 1,
+  "source_boundary": "Deterministic source truth only; no LLM/vision semantic interpretation.",
+  "camera": {
+    "scene_name": "AI360_1",
+    "eye_mm": [
+      9464.429208,
+      10229.563323,
+      2185.749039
+    ],
+    "target_mm": [
+      14854.840843,
+      10229.563323,
+      2185.749039
+    ],
+    "direction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": "perspective",
+    "fov_degrees": 35.0,
+    "basis_m": {
+      "eye_m": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward_from_scene": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up_from_scene": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "right_derived": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "camera_type": "PANO",
+      "panorama_type": "EQUIRECTANGULAR"
+    }
+  },
+  "projection": {
+    "type": "equirectangular",
+    "width": 2048,
+    "height": 1024,
+    "source": "Blender panoramic equirectangular"
+  },
+  "regions": {
+    "interior": {
+      "status": "IMPLICIT_SOURCE_RGB_NON_GLAZING",
+      "mask": null
+    },
+    "glazing": {
+      "status": "AVAILABLE",
+      "mask": "masks/glass.png",
+      "candidates": [
+        {
+          "material_id": "MAT_020",
+          "source_name": "_97",
+          "source_opacity": 0.0,
+          "source_color": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_029",
+          "source_name": "_Color_001_1",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.768627,
+            0.768627,
+            0.768627
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_046",
+          "source_name": "_Ivory_3",
+          "source_opacity": 0.48,
+          "source_color": [
+            1.0,
+            1.0,
+            0.937255
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_054",
+          "source_name": "_Translucent_Glass_Dark_Green_2",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.776471,
+            0.776471,
+            0.756863
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_055",
+          "source_name": "_Translucent_Glass_Dark_Green_3",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.243137,
+            0.356863,
+            0.019608
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_056",
+          "source_name": "_Translucent_Glass_Gray_1",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.501961,
+            0.501961,
+            0.501961
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_183",
+          "source_name": "Translucent_Glass_Blue",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.282353,
+            0.282353,
+            0.282353
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_184",
+          "source_name": "Translucent_Glass_Dark_Green",
+          "source_opacity": 0.313,
+          "source_color": [
+            0.705882,
+            0.705882,
+            0.678431
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_185",
+          "source_name": "Translucent_Glass_Dark_Green1",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.776471,
+            0.776471,
+            0.756863
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        },
+        {
+          "material_id": "MAT_186",
+          "source_name": "Translucent_Glass_Safety",
+          "source_opacity": 0.5,
+          "source_color": [
+            0.8,
+            0.921569,
+            0.956863
+          ],
+          "texture": null,
+          "reason_detected": [
+            "source material name indicates glass/translucency",
+            "source opacity < 1.0"
+          ]
+        }
+      ]
+    },
+    "known_exterior": {
+      "status": "PASS",
+      "mask": "masks/exterior_context.png",
+      "context": "context/exterior_context.png",
+      "regions": [
+        {
+          "id": "glass_001",
+          "material_id": "MAT_020",
+          "source_name": "_97",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_002",
+          "material_id": "MAT_029",
+          "source_name": "_Color_001_1",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_003",
+          "material_id": "MAT_046",
+          "source_name": "_Ivory_3",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_004",
+          "material_id": "MAT_054",
+          "source_name": "_Translucent_Glass_Dark_Green_2",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "SCENE_GEOMETRY",
+          "has_geometry_behind": true,
+          "confidence": 0.7792,
+          "visible_glass_pixels": 10764,
+          "context_pixels": 4823,
+          "context_ratio": 0.448068
+        },
+        {
+          "id": "glass_005",
+          "material_id": "MAT_055",
+          "source_name": "_Translucent_Glass_Dark_Green_3",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_006",
+          "material_id": "MAT_056",
+          "source_name": "_Translucent_Glass_Gray_1",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "SCENE_GEOMETRY",
+          "has_geometry_behind": true,
+          "confidence": 0.99,
+          "visible_glass_pixels": 40427,
+          "context_pixels": 40427,
+          "context_ratio": 1.0
+        },
+        {
+          "id": "glass_007",
+          "material_id": "MAT_183",
+          "source_name": "Translucent_Glass_Blue",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_008",
+          "material_id": "MAT_184",
+          "source_name": "Translucent_Glass_Dark_Green",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_009",
+          "material_id": "MAT_185",
+          "source_name": "Translucent_Glass_Dark_Green1",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        },
+        {
+          "id": "glass_010",
+          "material_id": "MAT_186",
+          "source_name": "Translucent_Glass_Safety",
+          "classification": "exterior_window_or_glazing_candidate",
+          "context_source": "UNKNOWN",
+          "has_geometry_behind": null,
+          "confidence": 0.5,
+          "visible_glass_pixels": 0,
+          "context_pixels": 0,
+          "context_ratio": null
+        }
+      ]
+    },
+    "unknown": {
+      "status": "AVAILABLE_BY_EXCLUSION",
+      "definition": "Glazing candidates with context_source UNKNOWN or unconstrained regions not backed by deterministic context mask."
+    }
+  },
+  "constraints": {
+    "geometry": true,
+    "depth": true,
+    "normal": true,
+    "materials": true,
+    "glazing": true,
+    "exterior_context": true,
+    "lights": "partial"
+  },
+  "source_hashes": {
+    "obj": "67ecd63c26c91e07805412462d320391cb34f5889d69ba37d5c89f36b804913b",
+    "scene_json": "4608db39556743de05976a0b76bb6eb75900ba6537721e935e21017a440f91db",
+    "rgb_erp": "5adaf018f68fb715fc6780a267a8c127b5c7ce233abe5a0749915f8c771d477b",
+    "depth_exr": "f1978a0ffb7609fb4f403988323336b43048ab8e3ba3fb1859f2358b73398301",
+    "normal_exr": "c908e3becd254b9ff51a5da895a374fd12c1f6bd1271b7a1d8c30a21b421454a",
+    "glass_mask": "5c4349d49e607424d73e5d9a3045502a9642b48986cc5ef238b5c2bc75acc341",
+    "exterior_context_mask": "223a8d72d6374f78de8f484be282125928453cd29d36d7bcd433df279836be7d"
+  }
+}

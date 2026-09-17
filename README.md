@@ -11,7 +11,9 @@ Status saat ini: Controlled Generation Harness v0 selesai di atas Phase 0H. OBJ 
 - Blender headless menghasilkan RGB/depth/normal deterministik.
 - AI boleh meningkatkan realisme, tetapi tidak boleh menjadi design generator.
 - Depth, normal, dan glass mask tidak dikirim sebagai conditioning palsu ke provider yang tidak mendukung structural control.
-- Extension SketchUp terpisah `RAD AI360 Visualizer` dianggap eksperimen/referensi saja, bukan jalur utama proyek ini.
+- Exporter SketchUp yang dipelihara di `sketchup/` menghasilkan OBJ, `scene.json`,
+  dan `scene_entities.json`. Visualizer lama tetap menjadi referensi untuk worker
+  AI dan cubemap, bukan jalur utama proyek ini.
 
 ## Struktur penting
 
@@ -128,6 +130,12 @@ output/obj/scene.json
 ```
 
 `scene.json` must contain the authoritative SketchUp camera. The current validated scene is `AI360_1`.
+
+The maintained SketchUp exporter also writes `scene_entities.json`. Run
+`Extensions > RAD AI360 Exporter > Export AI360 Scene` and select `output/obj`
+as the destination when refreshing the source transport. This metadata is
+consumed by Phase 0K to project confirmed fixture candidates into ERP/cubemap
+coordinates without inventing light positions.
 
 ## Cloudflare FLUX.2 Klein
 

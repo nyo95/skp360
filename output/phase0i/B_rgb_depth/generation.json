@@ -1,0 +1,22 @@
+{
+  "test": "B_RGB_DEPTH",
+  "model": "v1-5-pruned-emaonly.safetensors",
+  "prompt_positive": "photorealistic architectural interior visualization, modern living room, preserve exact wall geometry, wall openings, ceiling structure, cabinetry, furniture placement, improve material realism, realistic lighting, sharp details, high quality render",
+  "prompt_negative": "cartoon, illustration, painting, sketch, low quality, blurry, distorted geometry, missing walls, extra furniture, redesigned space",
+  "seed": 42,
+  "steps": 20,
+  "cfg": 7.0,
+  "sampler": "euler_ancestral",
+  "scheduler": "karras",
+  "denoise": 0.65,
+  "resolution": "512x512",
+  "rgb_source": "output/phase0c/rgb/front.png (resized 512x512)",
+  "controlnet_model": "control_v11f1p_sd15_depth.safetensors",
+  "controlnet_strength": 0.8,
+  "controlnet_start": 0.0,
+  "controlnet_end": 1.0,
+  "depth_source": "output/phase0c/depth/front.exr (E_PERCENTILE_CLAMPED \u2192 512x512 PNG)",
+  "depth_mapping": "E_PERCENTILE_CLAMPED p5-p95 near=white \u2014 Phase 0H D3 decision",
+  "runtime_s": 12.0,
+  "output": "D:\\Projects\\skpto360\\output\\phase0i\\B_rgb_depth\\output.png"
+}

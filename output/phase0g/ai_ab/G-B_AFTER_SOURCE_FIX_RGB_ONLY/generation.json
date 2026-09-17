@@ -1,0 +1,84 @@
+{
+  "experiment": "G-B_AFTER_SOURCE_FIX_RGB_ONLY",
+  "status": "ok",
+  "provider": "cloudflare",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+  "negative_prompt": null,
+  "input_image_hashes": {
+    "rgb_erp": "5adaf018f68fb715fc6780a267a8c127b5c7ce233abe5a0749915f8c771d477b",
+    "cloudflare_reference_511": "448314e40f46d736bd72711a165e9abe4dfb438bd54eef5e3b585206916940ae"
+  },
+  "seed": null,
+  "strength_or_denoise": null,
+  "control_weights": null,
+  "resolution": [
+    1920,
+    960
+  ],
+  "request_parameters": {
+    "provider": "cloudflare",
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "endpoint": "https://api.cloudflare.com/client/v4/accounts/<redacted-account-id>/ai/run/@cf/black-forest-labs/flux-2-klein-4b",
+    "credential_source": "rad_ai360_visualizer config.json",
+    "multipart_fields": {
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "width": "1920",
+      "height": "960",
+      "guidance": "3.5"
+    },
+    "multipart_files": {
+      "input_image_0": {
+        "filename": "rgb_erp_cloudflare_reference_511.png",
+        "mime_type": "image/png",
+        "source": "Phase 0G RGB ERP only",
+        "sha256": "448314e40f46d736bd72711a165e9abe4dfb438bd54eef5e3b585206916940ae"
+      }
+    },
+    "explicitly_not_sent": [
+      "depth_condition.png",
+      "normal_condition.png",
+      "glass_mask.png"
+    ]
+  },
+  "provider_request_id": "a3c081278f0ec649-CGK",
+  "runtime_seconds": 12.399,
+  "estimated_or_reported_cost": null,
+  "output": "D:\\Projects\\skpto360\\output\\phase0g\\ai_ab\\G-B_AFTER_SOURCE_FIX_RGB_ONLY\\output.png",
+  "output_sha256": "51b146d8d6284a073a2c3a6540b32b9c936c3cd1d6a8b65494dd9c2f545708b5",
+  "cloudflare_success": true,
+  "cloudflare_errors": [],
+  "cloudflare_messages": [],
+  "local_qc": {
+    "status": "PASS",
+    "output": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0g\\ai_ab\\G-B_AFTER_SOURCE_FIX_RGB_ONLY\\output.png",
+      "exists": true,
+      "valid_image": true,
+      "dimensions": [
+        1920,
+        960
+      ],
+      "ratio": 2.0,
+      "ratio_2_to_1": true,
+      "alpha_min": 1.0,
+      "alpha_max": 1.0,
+      "no_unexpected_alpha": true,
+      "blank_warning": false,
+      "has_visible_pixels": true,
+      "mean_rgb_seam_delta": 0.086016,
+      "max_rgb_seam_delta": 0.385621,
+      "top_pole_has_visible_pixels": true,
+      "bottom_pole_has_visible_pixels": true
+    },
+    "geometry_drift_warning": {
+      "status": "WARNING_SIGNAL_ONLY",
+      "method": "Canny edge density/difference after resizing output to source dimensions when needed.",
+      "source_edge_density": 0.016698,
+      "output_edge_density": 0.02528,
+      "edge_difference_density": 0.040018,
+      "note": "This is not semantic architecture understanding; use as a local drift warning only."
+    }
+  },
+  "total_seconds": 12.506
+}

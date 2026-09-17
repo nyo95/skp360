@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "warnings": [],
+  "errors": [],
+  "source": {
+    "obj": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "json": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+    "scene_name": "AI360_1"
+  },
+  "coordinate_conversion": {
+    "name": "sketchup_z_up_m_to_blender_z_up_m_identity",
+    "note": "Identity conversion. The SketchUp exporter writes OBJ in metres with Z-up and swap_yz=false. Blender OBJ import is configured with forward_axis=Y and up_axis=Z, so scene.json camera values are converted from mm to m and placed in the same world space."
+  },
+  "import": {
+    "operator": "bpy.ops.wm.obj_import",
+    "filepath": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "options": {
+      "filepath": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+      "global_scale": 1.0,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "use_split_objects": true,
+      "use_split_groups": false,
+      "validate_meshes": true
+    },
+    "duration_seconds": 2.052
+  },
+  "counts": {
+    "objects_total": 2,
+    "mesh_objects": 1,
+    "vertices": 1444235,
+    "triangles": 2843341,
+    "materials": 198,
+    "images": 113,
+    "cameras": 3
+  },
+  "bounds": {
+    "min_m": [
+      -52.085499,
+      -16.649099,
+      -0.051431
+    ],
+    "max_m": [
+      62.25,
+      20.041901,
+      9.79401
+    ],
+    "size_m": [
+      114.335499,
+      36.691,
+      9.845441
+    ],
+    "center_m": [
+      5.082251,
+      1.696401,
+      4.871289
+    ]
+  },
+  "camera": {
+    "name": "RAD_AI360_CAMERA",
+    "source_scene": "AI360_1",
+    "source_eye_mm": [
+      9464.429208,
+      10229.563323,
+      2185.749039
+    ],
+    "location_m": [
+      9.464429,
+      10.229564,
+      2.185749
+    ],
+    "forward": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "fov_degrees": 35.0,
+    "relation_to_scene": {
+      "inside_bounds": true,
+      "distance_to_scene_center_m": 9.96145,
+      "forward_dot_to_center": -0.439914
+    }
+  },
+  "outputs": {
+    "blend": "D:\\Projects\\skpto360\\output\\phase0b_obj\\phase0b_obj_imported.blend",
+    "preview": "D:\\Projects\\skpto360\\output\\phase0b_obj\\preview_camera.png",
+    "overview": "D:\\Projects\\skpto360\\output\\phase0b_obj\\preview_overview.png",
+    "preview_error": null
+  },
+  "duration_seconds": 6.409,
+  "dae_proof_comparison": {
+    "dae_status": "WARN",
+    "dae_mesh_objects": 18535,
+    "obj_mesh_objects": 1,
+    "dae_materials": 2,
+    "obj_materials": 198,
+    "dae_bounds_size_m": [
+      114.335434,
+      36.713039,
+      9.845443
+    ],
+    "obj_bounds_size_m": [
+      114.335499,
+      36.691,
+      9.845441
+    ],
+    "bounds_size_delta_m": [
+      6.5e-05,
+      -0.022039,
+      -2e-06
+    ]
+  },
+  "fbx_proof_comparison": {
+    "fbx_status": "FAIL",
+    "fbx_mesh_objects": 0,
+    "obj_mesh_objects": 1,
+    "fbx_materials": 0,
+    "obj_materials": 198,
+    "fbx_bounds_size_m": null,
+    "obj_bounds_size_m": [
+      114.335499,
+      36.691,
+      9.845441
+    ]
+  }
+}

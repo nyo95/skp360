@@ -1,0 +1,3016 @@
+{
+  "schema": "rad-ai360-controlled-material-visibility",
+  "version": 1,
+  "status": "PASS",
+  "source": {
+    "obj": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+    "scene_json": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+    "material_manifest": "D:\\Projects\\skpto360\\output\\phase0e\\input\\material_manifest.json"
+  },
+  "render": {
+    "engine": "CYCLES",
+    "projection": "panoramic_equirectangular",
+    "resolution": [
+      2048,
+      1024
+    ],
+    "samples": 16
+  },
+  "outputs": {
+    "material_id": "D:\\Projects\\skpto360\\output\\condition_work\\material_id.png",
+    "color_map": {
+      "_": {
+        "material_id": "MAT_001",
+        "rgb_8bit": [
+          55,
+          121,
+          177
+        ]
+      },
+      "_0137_Black_1": {
+        "material_id": "MAT_002",
+        "rgb_8bit": [
+          110,
+          243,
+          98
+        ]
+      },
+      "_10": {
+        "material_id": "MAT_003",
+        "rgb_8bit": [
+          166,
+          109,
+          19
+        ]
+      },
+      "_14": {
+        "material_id": "MAT_004",
+        "rgb_8bit": [
+          221,
+          230,
+          196
+        ]
+      },
+      "_159": {
+        "material_id": "MAT_005",
+        "rgb_8bit": [
+          21,
+          96,
+          117
+        ]
+      },
+      "_16": {
+        "material_id": "MAT_006",
+        "rgb_8bit": [
+          76,
+          218,
+          38
+        ]
+      },
+      "_18": {
+        "material_id": "MAT_007",
+        "rgb_8bit": [
+          132,
+          83,
+          215
+        ]
+      },
+      "_2": {
+        "material_id": "MAT_008",
+        "rgb_8bit": [
+          187,
+          205,
+          136
+        ]
+      },
+      "_268": {
+        "material_id": "MAT_009",
+        "rgb_8bit": [
+          243,
+          71,
+          57
+        ]
+      },
+      "_3": {
+        "material_id": "MAT_010",
+        "rgb_8bit": [
+          42,
+          192,
+          234
+        ]
+      },
+      "_4": {
+        "material_id": "MAT_011",
+        "rgb_8bit": [
+          98,
+          58,
+          155
+        ]
+      },
+      "_42": {
+        "material_id": "MAT_012",
+        "rgb_8bit": [
+          153,
+          180,
+          76
+        ]
+      },
+      "_46": {
+        "material_id": "MAT_013",
+        "rgb_8bit": [
+          209,
+          45,
+          253
+        ]
+      },
+      "_5": {
+        "material_id": "MAT_014",
+        "rgb_8bit": [
+          8,
+          167,
+          174
+        ]
+      },
+      "_6": {
+        "material_id": "MAT_015",
+        "rgb_8bit": [
+          64,
+          33,
+          95
+        ]
+      },
+      "_7": {
+        "material_id": "MAT_016",
+        "rgb_8bit": [
+          119,
+          155,
+          16
+        ]
+      },
+      "_8": {
+        "material_id": "MAT_017",
+        "rgb_8bit": [
+          175,
+          20,
+          193
+        ]
+      },
+      "_87": {
+        "material_id": "MAT_018",
+        "rgb_8bit": [
+          230,
+          142,
+          114
+        ]
+      },
+      "_9": {
+        "material_id": "MAT_019",
+        "rgb_8bit": [
+          30,
+          8,
+          35
+        ]
+      },
+      "_97": {
+        "material_id": "MAT_020",
+        "rgb_8bit": [
+          85,
+          129,
+          212
+        ]
+      },
+      "__": {
+        "material_id": "MAT_021",
+        "rgb_8bit": [
+          140,
+          251,
+          133
+        ]
+      },
+      "___": {
+        "material_id": "MAT_022",
+        "rgb_8bit": [
+          196,
+          117,
+          54
+        ]
+      },
+      "_____": {
+        "material_id": "MAT_023",
+        "rgb_8bit": [
+          251,
+          238,
+          231
+        ]
+      },
+      "______": {
+        "material_id": "MAT_024",
+        "rgb_8bit": [
+          51,
+          104,
+          152
+        ]
+      },
+      "_auto_1": {
+        "material_id": "MAT_025",
+        "rgb_8bit": [
+          106,
+          226,
+          73
+        ]
+      },
+      "_auto_7": {
+        "material_id": "MAT_026",
+        "rgb_8bit": [
+          162,
+          91,
+          250
+        ]
+      },
+      "_auto_9": {
+        "material_id": "MAT_027",
+        "rgb_8bit": [
+          217,
+          213,
+          171
+        ]
+      },
+      "_Charcoal_2": {
+        "material_id": "MAT_028",
+        "rgb_8bit": [
+          17,
+          79,
+          92
+        ]
+      },
+      "_Color_001_1": {
+        "material_id": "MAT_029",
+        "rgb_8bit": [
+          72,
+          201,
+          13
+        ]
+      },
+      "_Color_009_1": {
+        "material_id": "MAT_030",
+        "rgb_8bit": [
+          128,
+          66,
+          190
+        ]
+      },
+      "_Color_A08_1": {
+        "material_id": "MAT_031",
+        "rgb_8bit": [
+          183,
+          188,
+          111
+        ]
+      },
+      "_Color_H03_1": {
+        "material_id": "MAT_032",
+        "rgb_8bit": [
+          239,
+          54,
+          32
+        ]
+      },
+      "_Color_I07_1": {
+        "material_id": "MAT_033",
+        "rgb_8bit": [
+          38,
+          175,
+          209
+        ]
+      },
+      "_Color_M01_1": {
+        "material_id": "MAT_034",
+        "rgb_8bit": [
+          94,
+          41,
+          130
+        ]
+      },
+      "_Color_M03_1": {
+        "material_id": "MAT_035",
+        "rgb_8bit": [
+          149,
+          163,
+          51
+        ]
+      },
+      "_Color_M04_1": {
+        "material_id": "MAT_036",
+        "rgb_8bit": [
+          205,
+          28,
+          228
+        ]
+      },
+      "_Color_M08_1": {
+        "material_id": "MAT_037",
+        "rgb_8bit": [
+          4,
+          150,
+          149
+        ]
+      },
+      "_Color_M08_2": {
+        "material_id": "MAT_038",
+        "rgb_8bit": [
+          60,
+          16,
+          70
+        ]
+      },
+      "_Color_M08_3": {
+        "material_id": "MAT_039",
+        "rgb_8bit": [
+          115,
+          137,
+          247
+        ]
+      },
+      "_Color_M08_4": {
+        "material_id": "MAT_040",
+        "rgb_8bit": [
+          171,
+          3,
+          168
+        ]
+      },
+      "_Color_M08_6": {
+        "material_id": "MAT_041",
+        "rgb_8bit": [
+          226,
+          125,
+          89
+        ]
+      },
+      "_Color_M09_1": {
+        "material_id": "MAT_042",
+        "rgb_8bit": [
+          25,
+          247,
+          10
+        ]
+      },
+      "_Color_M09_4": {
+        "material_id": "MAT_043",
+        "rgb_8bit": [
+          81,
+          112,
+          187
+        ]
+      },
+      "_DimGray_2": {
+        "material_id": "MAT_044",
+        "rgb_8bit": [
+          136,
+          234,
+          108
+        ]
+      },
+      "_Fencing_Lattice_Natural_1": {
+        "material_id": "MAT_045",
+        "rgb_8bit": [
+          192,
+          100,
+          29
+        ]
+      },
+      "_Ivory_3": {
+        "material_id": "MAT_046",
+        "rgb_8bit": [
+          247,
+          221,
+          206
+        ]
+      },
+      "_Metal_Corrogated_Shiny_1": {
+        "material_id": "MAT_047",
+        "rgb_8bit": [
+          47,
+          87,
+          127
+        ]
+      },
+      "_Metal_Corrogated_Shiny_2": {
+        "material_id": "MAT_048",
+        "rgb_8bit": [
+          102,
+          209,
+          48
+        ]
+      },
+      "_Metal_Corrogated_Shiny_3": {
+        "material_id": "MAT_049",
+        "rgb_8bit": [
+          158,
+          74,
+          225
+        ]
+      },
+      "_Metal_Corrogated_Shiny_4": {
+        "material_id": "MAT_050",
+        "rgb_8bit": [
+          213,
+          196,
+          146
+        ]
+      },
+      "_Metal_Corrogated_Shiny_5": {
+        "material_id": "MAT_051",
+        "rgb_8bit": [
+          13,
+          62,
+          67
+        ]
+      },
+      "_Metal_Corrogated_Shiny_6": {
+        "material_id": "MAT_052",
+        "rgb_8bit": [
+          68,
+          183,
+          244
+        ]
+      },
+      "_Slate_2": {
+        "material_id": "MAT_053",
+        "rgb_8bit": [
+          124,
+          49,
+          165
+        ]
+      },
+      "_Translucent_Glass_Dark_Green_2": {
+        "material_id": "MAT_054",
+        "rgb_8bit": [
+          179,
+          171,
+          86
+        ]
+      },
+      "_Translucent_Glass_Dark_Green_3": {
+        "material_id": "MAT_055",
+        "rgb_8bit": [
+          235,
+          37,
+          7
+        ]
+      },
+      "_Translucent_Glass_Gray_1": {
+        "material_id": "MAT_056",
+        "rgb_8bit": [
+          34,
+          158,
+          184
+        ]
+      },
+      "_Wood__Floor_2": {
+        "material_id": "MAT_057",
+        "rgb_8bit": [
+          90,
+          24,
+          105
+        ]
+      },
+      "_Wood_Floor_2": {
+        "material_id": "MAT_058",
+        "rgb_8bit": [
+          145,
+          146,
+          26
+        ]
+      },
+      "_Wood_Veneer_01_2": {
+        "material_id": "MAT_059",
+        "rgb_8bit": [
+          201,
+          11,
+          203
+        ]
+      },
+      "Abu_Muda": {
+        "material_id": "MAT_060",
+        "rgb_8bit": [
+          1,
+          133,
+          124
+        ]
+      },
+      "Aluminum": {
+        "material_id": "MAT_061",
+        "rgb_8bit": [
+          55,
+          255,
+          45
+        ]
+      },
+      "Asphalt_New": {
+        "material_id": "MAT_062",
+        "rgb_8bit": [
+          111,
+          120,
+          222
+        ]
+      },
+      "benteng": {
+        "material_id": "MAT_063",
+        "rgb_8bit": [
+          166,
+          242,
+          143
+        ]
+      },
+      "billiani_doll1": {
+        "material_id": "MAT_064",
+        "rgb_8bit": [
+          222,
+          108,
+          64
+        ]
+      },
+      "billiani_doll3": {
+        "material_id": "MAT_065",
+        "rgb_8bit": [
+          21,
+          229,
+          241
+        ]
+      },
+      "billiani_doll_55": {
+        "material_id": "MAT_066",
+        "rgb_8bit": [
+          77,
+          95,
+          162
+        ]
+      },
+      "black": {
+        "material_id": "MAT_067",
+        "rgb_8bit": [
+          132,
+          217,
+          83
+        ]
+      },
+      "Blacktop_Old_01": {
+        "material_id": "MAT_068",
+        "rgb_8bit": [
+          188,
+          83,
+          4
+        ]
+      },
+      "bnxxng0c8d850c1": {
+        "material_id": "MAT_069",
+        "rgb_8bit": [
+          243,
+          204,
+          181
+        ]
+      },
+      "Calacatta_Marble__IA408Q_": {
+        "material_id": "MAT_070",
+        "rgb_8bit": [
+          43,
+          70,
+          102
+        ]
+      },
+      "Cama1": {
+        "material_id": "MAT_071",
+        "rgb_8bit": [
+          98,
+          192,
+          23
+        ]
+      },
+      "Carpet_Plush_Forest": {
+        "material_id": "MAT_072",
+        "rgb_8bit": [
+          154,
+          57,
+          200
+        ]
+      },
+      "carport": {
+        "material_id": "MAT_073",
+        "rgb_8bit": [
+          209,
+          179,
+          121
+        ]
+      },
+      "Carrera_Marble": {
+        "material_id": "MAT_074",
+        "rgb_8bit": [
+          9,
+          45,
+          42
+        ]
+      },
+      "CELING_LUAR": {
+        "material_id": "MAT_075",
+        "rgb_8bit": [
+          64,
+          166,
+          219
+        ]
+      },
+      "Ceramic_White": {
+        "material_id": "MAT_076",
+        "rgb_8bit": [
+          120,
+          32,
+          140
+        ]
+      },
+      "Chrome": {
+        "material_id": "MAT_077",
+        "rgb_8bit": [
+          175,
+          154,
+          61
+        ]
+      },
+      "chrome_Glaze": {
+        "material_id": "MAT_078",
+        "rgb_8bit": [
+          231,
+          19,
+          238
+        ]
+      },
+      "Chrome_Polished": {
+        "material_id": "MAT_079",
+        "rgb_8bit": [
+          30,
+          141,
+          159
+        ]
+      },
+      "cluster_60x120_taupe_06_abeff": {
+        "material_id": "MAT_080",
+        "rgb_8bit": [
+          86,
+          7,
+          80
+        ]
+      },
+      "Color_001": {
+        "material_id": "MAT_081",
+        "rgb_8bit": [
+          141,
+          129,
+          1
+        ]
+      },
+      "Color_007": {
+        "material_id": "MAT_082",
+        "rgb_8bit": [
+          196,
+          250,
+          178
+        ]
+      },
+      "Color_008": {
+        "material_id": "MAT_083",
+        "rgb_8bit": [
+          252,
+          116,
+          99
+        ]
+      },
+      "Color_A02": {
+        "material_id": "MAT_084",
+        "rgb_8bit": [
+          51,
+          238,
+          20
+        ]
+      },
+      "Color_A04": {
+        "material_id": "MAT_085",
+        "rgb_8bit": [
+          107,
+          103,
+          197
+        ]
+      },
+      "Color_C02": {
+        "material_id": "MAT_086",
+        "rgb_8bit": [
+          162,
+          225,
+          118
+        ]
+      },
+      "Color_C03": {
+        "material_id": "MAT_087",
+        "rgb_8bit": [
+          218,
+          91,
+          39
+        ]
+      },
+      "Color_C07": {
+        "material_id": "MAT_088",
+        "rgb_8bit": [
+          17,
+          212,
+          216
+        ]
+      },
+      "Color_C08": {
+        "material_id": "MAT_089",
+        "rgb_8bit": [
+          73,
+          78,
+          137
+        ]
+      },
+      "Color_C25": {
+        "material_id": "MAT_090",
+        "rgb_8bit": [
+          128,
+          200,
+          58
+        ]
+      },
+      "Color_G03": {
+        "material_id": "MAT_091",
+        "rgb_8bit": [
+          184,
+          65,
+          235
+        ]
+      },
+      "Color_H03": {
+        "material_id": "MAT_092",
+        "rgb_8bit": [
+          239,
+          187,
+          156
+        ]
+      },
+      "Color_M00": {
+        "material_id": "MAT_093",
+        "rgb_8bit": [
+          39,
+          53,
+          77
+        ]
+      },
+      "Color_M02": {
+        "material_id": "MAT_094",
+        "rgb_8bit": [
+          94,
+          174,
+          254
+        ]
+      },
+      "Color_M04": {
+        "material_id": "MAT_095",
+        "rgb_8bit": [
+          150,
+          40,
+          175
+        ]
+      },
+      "Color_M05": {
+        "material_id": "MAT_096",
+        "rgb_8bit": [
+          205,
+          162,
+          96
+        ]
+      },
+      "Color_M06": {
+        "material_id": "MAT_097",
+        "rgb_8bit": [
+          5,
+          28,
+          17
+        ]
+      },
+      "Color_M07": {
+        "material_id": "MAT_098",
+        "rgb_8bit": [
+          60,
+          149,
+          194
+        ]
+      },
+      "Color_M07__Besi_": {
+        "material_id": "MAT_099",
+        "rgb_8bit": [
+          116,
+          15,
+          115
+        ]
+      },
+      "dark_wood1": {
+        "material_id": "MAT_100",
+        "rgb_8bit": [
+          171,
+          137,
+          36
+        ]
+      },
+      "Demountable_Ceiling_Tile_Stack__ENV3SF_": {
+        "material_id": "MAT_101",
+        "rgb_8bit": [
+          227,
+          2,
+          213
+        ]
+      },
+      "Demountable_Ceiling_Tile_Stack__ENV3SF_1": {
+        "material_id": "MAT_102",
+        "rgb_8bit": [
+          26,
+          124,
+          134
+        ]
+      },
+      "Dots Stroke": {
+        "material_id": "MAT_103",
+        "rgb_8bit": [
+          81,
+          246,
+          55
+        ]
+      },
+      "FrontColor": {
+        "material_id": "MAT_104",
+        "rgb_8bit": [
+          137,
+          111,
+          232
+        ]
+      },
+      "Gdblack": {
+        "material_id": "MAT_105",
+        "rgb_8bit": [
+          192,
+          233,
+          153
+        ]
+      },
+      "genteng": {
+        "material_id": "MAT_106",
+        "rgb_8bit": [
+          248,
+          99,
+          74
+        ]
+      },
+      "Granite_Stack__USPW7I_": {
+        "material_id": "MAT_107",
+        "rgb_8bit": [
+          47,
+          220,
+          251
+        ]
+      },
+      "Grass_04": {
+        "material_id": "MAT_108",
+        "rgb_8bit": [
+          103,
+          86,
+          172
+        ]
+      },
+      "Groundcover_Rock_Crushed_2_inch": {
+        "material_id": "MAT_109",
+        "rgb_8bit": [
+          158,
+          208,
+          93
+        ]
+      },
+      "Hood": {
+        "material_id": "MAT_110",
+        "rgb_8bit": [
+          214,
+          74,
+          14
+        ]
+      },
+      "Kolecka": {
+        "material_id": "MAT_111",
+        "rgb_8bit": [
+          13,
+          195,
+          191
+        ]
+      },
+      "KUSEN": {
+        "material_id": "MAT_112",
+        "rgb_8bit": [
+          69,
+          61,
+          112
+        ]
+      },
+      "KUSEN1": {
+        "material_id": "MAT_113",
+        "rgb_8bit": [
+          124,
+          183,
+          33
+        ]
+      },
+      "kusen_coklat": {
+        "material_id": "MAT_114",
+        "rgb_8bit": [
+          180,
+          48,
+          210
+        ]
+      },
+      "Len_ol": {
+        "material_id": "MAT_115",
+        "rgb_8bit": [
+          235,
+          170,
+          131
+        ]
+      },
+      "Light_metal": {
+        "material_id": "MAT_116",
+        "rgb_8bit": [
+          35,
+          36,
+          52
+        ]
+      },
+      "Limestone__R3U0R2_": {
+        "material_id": "MAT_117",
+        "rgb_8bit": [
+          90,
+          157,
+          229
+        ]
+      },
+      "lisplang2": {
+        "material_id": "MAT_118",
+        "rgb_8bit": [
+          146,
+          23,
+          150
+        ]
+      },
+      "lukisan": {
+        "material_id": "MAT_119",
+        "rgb_8bit": [
+          201,
+          145,
+          71
+        ]
+      },
+      "M_0136_Charcoal": {
+        "material_id": "MAT_120",
+        "rgb_8bit": [
+          1,
+          10,
+          248
+        ]
+      },
+      "M_0137_Black": {
+        "material_id": "MAT_121",
+        "rgb_8bit": [
+          56,
+          132,
+          169
+        ]
+      },
+      "M_03030002": {
+        "material_id": "MAT_122",
+        "rgb_8bit": [
+          111,
+          254,
+          90
+        ]
+      },
+      "M_100_2149": {
+        "material_id": "MAT_123",
+        "rgb_8bit": [
+          167,
+          120,
+          11
+        ]
+      },
+      "M_160": {
+        "material_id": "MAT_124",
+        "rgb_8bit": [
+          222,
+          241,
+          188
+        ]
+      },
+      "M_19_slab_marble_black_Sienna_texture_seamless1": {
+        "material_id": "MAT_125",
+        "rgb_8bit": [
+          22,
+          107,
+          109
+        ]
+      },
+      "M_2": {
+        "material_id": "MAT_126",
+        "rgb_8bit": [
+          77,
+          229,
+          30
+        ]
+      },
+      "M_5108_MR060060": {
+        "material_id": "MAT_127",
+        "rgb_8bit": [
+          133,
+          94,
+          207
+        ]
+      },
+      "M_5118_V_060060": {
+        "material_id": "MAT_128",
+        "rgb_8bit": [
+          188,
+          216,
+          128
+        ]
+      },
+      "M_60_carrara_white_slab_marble_veined_texture_seamless": {
+        "material_id": "MAT_129",
+        "rgb_8bit": [
+          244,
+          82,
+          49
+        ]
+      },
+      "M_6201W_F553_MRN_WAL_Material_1": {
+        "material_id": "MAT_130",
+        "rgb_8bit": [
+          43,
+          203,
+          226
+        ]
+      },
+      "M_7": {
+        "material_id": "MAT_131",
+        "rgb_8bit": [
+          99,
+          69,
+          147
+        ]
+      },
+      "M_71_dark__fine_wood_texture_seamless": {
+        "material_id": "MAT_132",
+        "rgb_8bit": [
+          154,
+          191,
+          68
+        ]
+      },
+      "m_t_b_p_iad": {
+        "material_id": "MAT_133",
+        "rgb_8bit": [
+          210,
+          56,
+          245
+        ]
+      },
+      "macchiatto": {
+        "material_id": "MAT_134",
+        "rgb_8bit": [
+          9,
+          178,
+          166
+        ]
+      },
+      "Marmer": {
+        "material_id": "MAT_135",
+        "rgb_8bit": [
+          65,
+          44,
+          87
+        ]
+      },
+      "Material": {
+        "material_id": "MAT_136",
+        "rgb_8bit": [
+          120,
+          166,
+          8
+        ]
+      },
+      "Material_22": {
+        "material_id": "MAT_137",
+        "rgb_8bit": [
+          176,
+          31,
+          185
+        ]
+      },
+      "Material_24": {
+        "material_id": "MAT_138",
+        "rgb_8bit": [
+          231,
+          153,
+          106
+        ]
+      },
+      "Material_44": {
+        "material_id": "MAT_139",
+        "rgb_8bit": [
+          31,
+          19,
+          27
+        ]
+      },
+      "Material_45": {
+        "material_id": "MAT_140",
+        "rgb_8bit": [
+          86,
+          140,
+          204
+        ]
+      },
+      "Material_46": {
+        "material_id": "MAT_141",
+        "rgb_8bit": [
+          142,
+          6,
+          125
+        ]
+      },
+      "Material_47": {
+        "material_id": "MAT_142",
+        "rgb_8bit": [
+          197,
+          128,
+          46
+        ]
+      },
+      "Material_48": {
+        "material_id": "MAT_143",
+        "rgb_8bit": [
+          252,
+          249,
+          223
+        ]
+      },
+      "Material_49": {
+        "material_id": "MAT_144",
+        "rgb_8bit": [
+          52,
+          115,
+          144
+        ]
+      },
+      "Material_50": {
+        "material_id": "MAT_145",
+        "rgb_8bit": [
+          107,
+          237,
+          65
+        ]
+      },
+      "Material_51": {
+        "material_id": "MAT_146",
+        "rgb_8bit": [
+          163,
+          102,
+          242
+        ]
+      },
+      "Material_52": {
+        "material_id": "MAT_147",
+        "rgb_8bit": [
+          218,
+          224,
+          163
+        ]
+      },
+      "Material_53": {
+        "material_id": "MAT_148",
+        "rgb_8bit": [
+          18,
+          90,
+          84
+        ]
+      },
+      "Material_54": {
+        "material_id": "MAT_149",
+        "rgb_8bit": [
+          73,
+          212,
+          5
+        ]
+      },
+      "Material_55": {
+        "material_id": "MAT_150",
+        "rgb_8bit": [
+          129,
+          77,
+          182
+        ]
+      },
+      "Material__0_0_1": {
+        "material_id": "MAT_151",
+        "rgb_8bit": [
+          184,
+          199,
+          103
+        ]
+      },
+      "Material__1_0_2": {
+        "material_id": "MAT_152",
+        "rgb_8bit": [
+          240,
+          65,
+          24
+        ]
+      },
+      "Metal_Aluminum_Anodized": {
+        "material_id": "MAT_153",
+        "rgb_8bit": [
+          39,
+          186,
+          201
+        ]
+      },
+      "Metal_Seamed": {
+        "material_id": "MAT_154",
+        "rgb_8bit": [
+          95,
+          52,
+          122
+        ]
+      },
+      "Metal_Silver": {
+        "material_id": "MAT_155",
+        "rgb_8bit": [
+          150,
+          174,
+          43
+        ]
+      },
+      "mirror": {
+        "material_id": "MAT_156",
+        "rgb_8bit": [
+          206,
+          39,
+          220
+        ]
+      },
+      "mmjhfdghd176": {
+        "material_id": "MAT_157",
+        "rgb_8bit": [
+          5,
+          161,
+          141
+        ]
+      },
+      "mmjhfdghd187": {
+        "material_id": "MAT_158",
+        "rgb_8bit": [
+          61,
+          27,
+          62
+        ]
+      },
+      "mmjhfdghd188": {
+        "material_id": "MAT_159",
+        "rgb_8bit": [
+          116,
+          148,
+          239
+        ]
+      },
+      "mmjhfdghd189": {
+        "material_id": "MAT_160",
+        "rgb_8bit": [
+          172,
+          14,
+          160
+        ]
+      },
+      "Plaster_1": {
+        "material_id": "MAT_161",
+        "rgb_8bit": [
+          227,
+          136,
+          81
+        ]
+      },
+      "Podnoz": {
+        "material_id": "MAT_162",
+        "rgb_8bit": [
+          27,
+          2,
+          2
+        ]
+      },
+      "PodnozChrom": {
+        "material_id": "MAT_163",
+        "rgb_8bit": [
+          82,
+          123,
+          179
+        ]
+      },
+      "Polished_Concrete_New": {
+        "material_id": "MAT_164",
+        "rgb_8bit": [
+          137,
+          245,
+          100
+        ]
+      },
+      "potahcr": {
+        "material_id": "MAT_165",
+        "rgb_8bit": [
+          193,
+          111,
+          21
+        ]
+      },
+      "PotahPodrucky": {
+        "material_id": "MAT_166",
+        "rgb_8bit": [
+          248,
+          232,
+          198
+        ]
+      },
+      "STAINLESS_KILAT": {
+        "material_id": "MAT_167",
+        "rgb_8bit": [
+          48,
+          98,
+          119
+        ]
+      },
+      "Standalone_1175X1290": {
+        "material_id": "MAT_168",
+        "rgb_8bit": [
+          103,
+          220,
+          40
+        ]
+      },
+      "Standalone_1175X1290_1_": {
+        "material_id": "MAT_169",
+        "rgb_8bit": [
+          159,
+          85,
+          217
+        ]
+      },
+      "Standalone_1175X1290_2_": {
+        "material_id": "MAT_170",
+        "rgb_8bit": [
+          214,
+          207,
+          138
+        ]
+      },
+      "Standalone_1175X1290_3_": {
+        "material_id": "MAT_171",
+        "rgb_8bit": [
+          14,
+          73,
+          59
+        ]
+      },
+      "Standalone_1175X1290_4_": {
+        "material_id": "MAT_172",
+        "rgb_8bit": [
+          69,
+          194,
+          236
+        ]
+      },
+      "Standalone_1175X1290_5_": {
+        "material_id": "MAT_173",
+        "rgb_8bit": [
+          125,
+          60,
+          157
+        ]
+      },
+      "Standalone_1175X1290_6_": {
+        "material_id": "MAT_174",
+        "rgb_8bit": [
+          180,
+          182,
+          78
+        ]
+      },
+      "Standalone_1175X1290_7_": {
+        "material_id": "MAT_175",
+        "rgb_8bit": [
+          236,
+          47,
+          255
+        ]
+      },
+      "Steel": {
+        "material_id": "MAT_176",
+        "rgb_8bit": [
+          35,
+          169,
+          176
+        ]
+      },
+      "Sudbrock_469_cashmere": {
+        "material_id": "MAT_177",
+        "rgb_8bit": [
+          91,
+          35,
+          97
+        ]
+      },
+      "sudbrock_FARBE_419": {
+        "material_id": "MAT_178",
+        "rgb_8bit": [
+          146,
+          157,
+          18
+        ]
+      },
+      "sudbrock_RUECKWANDFARBE_419": {
+        "material_id": "MAT_179",
+        "rgb_8bit": [
+          202,
+          22,
+          195
+        ]
+      },
+      "sudbrock_RW_BLIND": {
+        "material_id": "MAT_180",
+        "rgb_8bit": [
+          1,
+          144,
+          116
+        ]
+      },
+      "sudbrock_ZARGEFARBE_023": {
+        "material_id": "MAT_181",
+        "rgb_8bit": [
+          57,
+          10,
+          37
+        ]
+      },
+      "Tiles_04": {
+        "material_id": "MAT_182",
+        "rgb_8bit": [
+          112,
+          131,
+          214
+        ]
+      },
+      "Translucent_Glass_Blue": {
+        "material_id": "MAT_183",
+        "rgb_8bit": [
+          167,
+          253,
+          135
+        ]
+      },
+      "Translucent_Glass_Dark_Green": {
+        "material_id": "MAT_184",
+        "rgb_8bit": [
+          223,
+          119,
+          56
+        ]
+      },
+      "Translucent_Glass_Dark_Green1": {
+        "material_id": "MAT_185",
+        "rgb_8bit": [
+          22,
+          240,
+          233
+        ]
+      },
+      "Translucent_Glass_Safety": {
+        "material_id": "MAT_186",
+        "rgb_8bit": [
+          78,
+          106,
+          154
+        ]
+      },
+      "vray_11010": {
+        "material_id": "MAT_187",
+        "rgb_8bit": [
+          133,
+          228,
+          75
+        ]
+      },
+      "vray_11011": {
+        "material_id": "MAT_188",
+        "rgb_8bit": [
+          189,
+          93,
+          252
+        ]
+      },
+      "vray_11012_1": {
+        "material_id": "MAT_189",
+        "rgb_8bit": [
+          244,
+          215,
+          173
+        ]
+      },
+      "vray_11012_5": {
+        "material_id": "MAT_190",
+        "rgb_8bit": [
+          44,
+          81,
+          94
+        ]
+      },
+      "vray_11013": {
+        "material_id": "MAT_191",
+        "rgb_8bit": [
+          99,
+          203,
+          15
+        ]
+      },
+      "vray_ChenZc_200606_DCZ22": {
+        "material_id": "MAT_192",
+        "rgb_8bit": [
+          155,
+          68,
+          192
+        ]
+      },
+      "Water_Pool": {
+        "material_id": "MAT_193",
+        "rgb_8bit": [
+          210,
+          190,
+          113
+        ]
+      },
+      "Watercolor_Leaves": {
+        "material_id": "MAT_194",
+        "rgb_8bit": [
+          10,
+          56,
+          34
+        ]
+      },
+      "Western_Red_Cedar_Stack__ZEC6QK_": {
+        "material_id": "MAT_195",
+        "rgb_8bit": [
+          65,
+          177,
+          211
+        ]
+      },
+      "Wood_04__Brick_Bond": {
+        "material_id": "MAT_196",
+        "rgb_8bit": [
+          121,
+          43,
+          132
+        ]
+      },
+      "xiadele_18___DefaultdrxcsseeffJzs": {
+        "material_id": "MAT_197",
+        "rgb_8bit": [
+          176,
+          165,
+          53
+        ]
+      },
+      "YS_Metal_Chrome1": {
+        "material_id": "MAT_198",
+        "rgb_8bit": [
+          232,
+          30,
+          230
+        ]
+      }
+    },
+    "coverage": {
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "total_pixels": 2097152,
+      "materials": [
+        {
+          "id": "MAT_001",
+          "source_name": "_",
+          "visible": true,
+          "visible_pixels": 506,
+          "visible_pixel_coverage": 0.00024128
+        },
+        {
+          "id": "MAT_002",
+          "source_name": "_0137_Black_1",
+          "visible": true,
+          "visible_pixels": 180000,
+          "visible_pixel_coverage": 0.08583069
+        },
+        {
+          "id": "MAT_003",
+          "source_name": "_10",
+          "visible": true,
+          "visible_pixels": 451,
+          "visible_pixel_coverage": 0.00021505
+        },
+        {
+          "id": "MAT_004",
+          "source_name": "_14",
+          "visible": true,
+          "visible_pixels": 10,
+          "visible_pixel_coverage": 4.77e-06
+        },
+        {
+          "id": "MAT_005",
+          "source_name": "_159",
+          "visible": true,
+          "visible_pixels": 246,
+          "visible_pixel_coverage": 0.0001173
+        },
+        {
+          "id": "MAT_006",
+          "source_name": "_16",
+          "visible": true,
+          "visible_pixels": 636,
+          "visible_pixel_coverage": 0.00030327
+        },
+        {
+          "id": "MAT_007",
+          "source_name": "_18",
+          "visible": true,
+          "visible_pixels": 160076,
+          "visible_pixel_coverage": 0.07633018
+        },
+        {
+          "id": "MAT_008",
+          "source_name": "_2",
+          "visible": true,
+          "visible_pixels": 7398,
+          "visible_pixel_coverage": 0.00352764
+        },
+        {
+          "id": "MAT_009",
+          "source_name": "_268",
+          "visible": true,
+          "visible_pixels": 1263,
+          "visible_pixel_coverage": 0.00060225
+        },
+        {
+          "id": "MAT_010",
+          "source_name": "_3",
+          "visible": true,
+          "visible_pixels": 651,
+          "visible_pixel_coverage": 0.00031042
+        },
+        {
+          "id": "MAT_011",
+          "source_name": "_4",
+          "visible": true,
+          "visible_pixels": 15509,
+          "visible_pixel_coverage": 0.00739527
+        },
+        {
+          "id": "MAT_012",
+          "source_name": "_42",
+          "visible": true,
+          "visible_pixels": 50397,
+          "visible_pixel_coverage": 0.02403116
+        },
+        {
+          "id": "MAT_013",
+          "source_name": "_46",
+          "visible": true,
+          "visible_pixels": 36569,
+          "visible_pixel_coverage": 0.01743746
+        },
+        {
+          "id": "MAT_014",
+          "source_name": "_5",
+          "visible": true,
+          "visible_pixels": 710,
+          "visible_pixel_coverage": 0.00033855
+        },
+        {
+          "id": "MAT_015",
+          "source_name": "_6",
+          "visible": true,
+          "visible_pixels": 614,
+          "visible_pixel_coverage": 0.00029278
+        },
+        {
+          "id": "MAT_016",
+          "source_name": "_7",
+          "visible": true,
+          "visible_pixels": 777,
+          "visible_pixel_coverage": 0.0003705
+        },
+        {
+          "id": "MAT_017",
+          "source_name": "_8",
+          "visible": true,
+          "visible_pixels": 2739,
+          "visible_pixel_coverage": 0.00130606
+        },
+        {
+          "id": "MAT_018",
+          "source_name": "_87",
+          "visible": true,
+          "visible_pixels": 92,
+          "visible_pixel_coverage": 4.387e-05
+        },
+        {
+          "id": "MAT_019",
+          "source_name": "_9",
+          "visible": true,
+          "visible_pixels": 200950,
+          "visible_pixel_coverage": 0.09582043
+        },
+        {
+          "id": "MAT_020",
+          "source_name": "_97",
+          "visible": true,
+          "visible_pixels": 1950,
+          "visible_pixel_coverage": 0.00092983
+        },
+        {
+          "id": "MAT_021",
+          "source_name": "__",
+          "visible": true,
+          "visible_pixels": 9635,
+          "visible_pixel_coverage": 0.00459433
+        },
+        {
+          "id": "MAT_022",
+          "source_name": "___",
+          "visible": true,
+          "visible_pixels": 2169,
+          "visible_pixel_coverage": 0.00103426
+        },
+        {
+          "id": "MAT_023",
+          "source_name": "_____",
+          "visible": true,
+          "visible_pixels": 7,
+          "visible_pixel_coverage": 3.34e-06
+        },
+        {
+          "id": "MAT_024",
+          "source_name": "______",
+          "visible": true,
+          "visible_pixels": 321,
+          "visible_pixel_coverage": 0.00015306
+        },
+        {
+          "id": "MAT_025",
+          "source_name": "_auto_1",
+          "visible": true,
+          "visible_pixels": 16834,
+          "visible_pixel_coverage": 0.00802708
+        },
+        {
+          "id": "MAT_026",
+          "source_name": "_auto_7",
+          "visible": true,
+          "visible_pixels": 768,
+          "visible_pixel_coverage": 0.00036621
+        },
+        {
+          "id": "MAT_027",
+          "source_name": "_auto_9",
+          "visible": true,
+          "visible_pixels": 4,
+          "visible_pixel_coverage": 1.91e-06
+        },
+        {
+          "id": "MAT_028",
+          "source_name": "_Charcoal_2",
+          "visible": true,
+          "visible_pixels": 90,
+          "visible_pixel_coverage": 4.292e-05
+        },
+        {
+          "id": "MAT_029",
+          "source_name": "_Color_001_1",
+          "visible": true,
+          "visible_pixels": 1476,
+          "visible_pixel_coverage": 0.00070381
+        },
+        {
+          "id": "MAT_030",
+          "source_name": "_Color_009_1",
+          "visible": true,
+          "visible_pixels": 641,
+          "visible_pixel_coverage": 0.00030565
+        },
+        {
+          "id": "MAT_031",
+          "source_name": "_Color_A08_1",
+          "visible": true,
+          "visible_pixels": 14,
+          "visible_pixel_coverage": 6.68e-06
+        },
+        {
+          "id": "MAT_032",
+          "source_name": "_Color_H03_1",
+          "visible": true,
+          "visible_pixels": 522,
+          "visible_pixel_coverage": 0.00024891
+        },
+        {
+          "id": "MAT_033",
+          "source_name": "_Color_I07_1",
+          "visible": true,
+          "visible_pixels": 640,
+          "visible_pixel_coverage": 0.00030518
+        },
+        {
+          "id": "MAT_034",
+          "source_name": "_Color_M01_1",
+          "visible": true,
+          "visible_pixels": 1353,
+          "visible_pixel_coverage": 0.00064516
+        },
+        {
+          "id": "MAT_035",
+          "source_name": "_Color_M03_1",
+          "visible": true,
+          "visible_pixels": 14980,
+          "visible_pixel_coverage": 0.00714302
+        },
+        {
+          "id": "MAT_036",
+          "source_name": "_Color_M04_1",
+          "visible": true,
+          "visible_pixels": 614,
+          "visible_pixel_coverage": 0.00029278
+        },
+        {
+          "id": "MAT_037",
+          "source_name": "_Color_M08_1",
+          "visible": true,
+          "visible_pixels": 181,
+          "visible_pixel_coverage": 8.631e-05
+        },
+        {
+          "id": "MAT_038",
+          "source_name": "_Color_M08_2",
+          "visible": true,
+          "visible_pixels": 104,
+          "visible_pixel_coverage": 4.959e-05
+        },
+        {
+          "id": "MAT_039",
+          "source_name": "_Color_M08_3",
+          "visible": true,
+          "visible_pixels": 566,
+          "visible_pixel_coverage": 0.00026989
+        },
+        {
+          "id": "MAT_040",
+          "source_name": "_Color_M08_4",
+          "visible": true,
+          "visible_pixels": 502,
+          "visible_pixel_coverage": 0.00023937
+        },
+        {
+          "id": "MAT_041",
+          "source_name": "_Color_M08_6",
+          "visible": true,
+          "visible_pixels": 614,
+          "visible_pixel_coverage": 0.00029278
+        },
+        {
+          "id": "MAT_042",
+          "source_name": "_Color_M09_1",
+          "visible": true,
+          "visible_pixels": 165,
+          "visible_pixel_coverage": 7.868e-05
+        },
+        {
+          "id": "MAT_043",
+          "source_name": "_Color_M09_4",
+          "visible": true,
+          "visible_pixels": 992,
+          "visible_pixel_coverage": 0.00047302
+        },
+        {
+          "id": "MAT_044",
+          "source_name": "_DimGray_2",
+          "visible": true,
+          "visible_pixels": 345,
+          "visible_pixel_coverage": 0.00016451
+        },
+        {
+          "id": "MAT_045",
+          "source_name": "_Fencing_Lattice_Natural_1",
+          "visible": true,
+          "visible_pixels": 501,
+          "visible_pixel_coverage": 0.0002389
+        },
+        {
+          "id": "MAT_046",
+          "source_name": "_Ivory_3",
+          "visible": true,
+          "visible_pixels": 2,
+          "visible_pixel_coverage": 9.5e-07
+        },
+        {
+          "id": "MAT_047",
+          "source_name": "_Metal_Corrogated_Shiny_1",
+          "visible": true,
+          "visible_pixels": 209,
+          "visible_pixel_coverage": 9.966e-05
+        },
+        {
+          "id": "MAT_048",
+          "source_name": "_Metal_Corrogated_Shiny_2",
+          "visible": true,
+          "visible_pixels": 909,
+          "visible_pixel_coverage": 0.00043344
+        },
+        {
+          "id": "MAT_049",
+          "source_name": "_Metal_Corrogated_Shiny_3",
+          "visible": true,
+          "visible_pixels": 91,
+          "visible_pixel_coverage": 4.339e-05
+        },
+        {
+          "id": "MAT_050",
+          "source_name": "_Metal_Corrogated_Shiny_4",
+          "visible": true,
+          "visible_pixels": 7,
+          "visible_pixel_coverage": 3.34e-06
+        },
+        {
+          "id": "MAT_051",
+          "source_name": "_Metal_Corrogated_Shiny_5",
+          "visible": true,
+          "visible_pixels": 4060,
+          "visible_pixel_coverage": 0.00193596
+        },
+        {
+          "id": "MAT_052",
+          "source_name": "_Metal_Corrogated_Shiny_6",
+          "visible": true,
+          "visible_pixels": 1171,
+          "visible_pixel_coverage": 0.00055838
+        },
+        {
+          "id": "MAT_053",
+          "source_name": "_Slate_2",
+          "visible": true,
+          "visible_pixels": 4157,
+          "visible_pixel_coverage": 0.00198221
+        },
+        {
+          "id": "MAT_054",
+          "source_name": "_Translucent_Glass_Dark_Green_2",
+          "visible": true,
+          "visible_pixels": 13,
+          "visible_pixel_coverage": 6.2e-06
+        },
+        {
+          "id": "MAT_055",
+          "source_name": "_Translucent_Glass_Dark_Green_3",
+          "visible": true,
+          "visible_pixels": 78,
+          "visible_pixel_coverage": 3.719e-05
+        },
+        {
+          "id": "MAT_056",
+          "source_name": "_Translucent_Glass_Gray_1",
+          "visible": true,
+          "visible_pixels": 420,
+          "visible_pixel_coverage": 0.00020027
+        },
+        {
+          "id": "MAT_057",
+          "source_name": "_Wood__Floor_2",
+          "visible": true,
+          "visible_pixels": 290,
+          "visible_pixel_coverage": 0.00013828
+        },
+        {
+          "id": "MAT_058",
+          "source_name": "_Wood_Floor_2",
+          "visible": true,
+          "visible_pixels": 1010,
+          "visible_pixel_coverage": 0.00048161
+        },
+        {
+          "id": "MAT_059",
+          "source_name": "_Wood_Veneer_01_2",
+          "visible": true,
+          "visible_pixels": 846,
+          "visible_pixel_coverage": 0.0004034
+        },
+        {
+          "id": "MAT_060",
+          "source_name": "Abu_Muda",
+          "visible": true,
+          "visible_pixels": 555,
+          "visible_pixel_coverage": 0.00026464
+        },
+        {
+          "id": "MAT_061",
+          "source_name": "Aluminum",
+          "visible": true,
+          "visible_pixels": 3365,
+          "visible_pixel_coverage": 0.00160456
+        },
+        {
+          "id": "MAT_062",
+          "source_name": "Asphalt_New",
+          "visible": true,
+          "visible_pixels": 56,
+          "visible_pixel_coverage": 2.67e-05
+        },
+        {
+          "id": "MAT_063",
+          "source_name": "benteng",
+          "visible": true,
+          "visible_pixels": 9,
+          "visible_pixel_coverage": 4.29e-06
+        },
+        {
+          "id": "MAT_064",
+          "source_name": "billiani_doll1",
+          "visible": true,
+          "visible_pixels": 298,
+          "visible_pixel_coverage": 0.0001421
+        },
+        {
+          "id": "MAT_065",
+          "source_name": "billiani_doll3",
+          "visible": true,
+          "visible_pixels": 1126,
+          "visible_pixel_coverage": 0.00053692
+        },
+        {
+          "id": "MAT_066",
+          "source_name": "billiani_doll_55",
+          "visible": true,
+          "visible_pixels": 11536,
+          "visible_pixel_coverage": 0.00550079
+        },
+        {
+          "id": "MAT_067",
+          "source_name": "black",
+          "visible": true,
+          "visible_pixels": 253,
+          "visible_pixel_coverage": 0.00012064
+        },
+        {
+          "id": "MAT_068",
+          "source_name": "Blacktop_Old_01",
+          "visible": true,
+          "visible_pixels": 445,
+          "visible_pixel_coverage": 0.00021219
+        },
+        {
+          "id": "MAT_069",
+          "source_name": "bnxxng0c8d850c1",
+          "visible": true,
+          "visible_pixels": 8,
+          "visible_pixel_coverage": 3.81e-06
+        },
+        {
+          "id": "MAT_070",
+          "source_name": "Calacatta_Marble__IA408Q_",
+          "visible": true,
+          "visible_pixels": 96,
+          "visible_pixel_coverage": 4.578e-05
+        },
+        {
+          "id": "MAT_071",
+          "source_name": "Cama1",
+          "visible": true,
+          "visible_pixels": 2182,
+          "visible_pixel_coverage": 0.00104046
+        },
+        {
+          "id": "MAT_072",
+          "source_name": "Carpet_Plush_Forest",
+          "visible": true,
+          "visible_pixels": 1763,
+          "visible_pixel_coverage": 0.00084066
+        },
+        {
+          "id": "MAT_073",
+          "source_name": "carport",
+          "visible": false,
+          "visible_pixels": 0,
+          "visible_pixel_coverage": 0.0
+        },
+        {
+          "id": "MAT_074",
+          "source_name": "Carrera_Marble",
+          "visible": true,
+          "visible_pixels": 135,
+          "visible_pixel_coverage": 6.437e-05
+        },
+        {
+          "id": "MAT_075",
+          "source_name": "CELING_LUAR",
+          "visible": true,
+          "visible_pixels": 1477,
+          "visible_pixel_coverage": 0.00070429
+        },
+        {
+          "id": "MAT_076",
+          "source_name": "Ceramic_White",
+          "visible": true,
+          "visible_pixels": 522,
+          "visible_pixel_coverage": 0.00024891
+        },
+        {
+          "id": "MAT_077",
+          "source_name": "Chrome",
+          "visible": true,
+          "visible_pixels": 8467,
+          "visible_pixel_coverage": 0.00403738
+        },
+        {
+          "id": "MAT_078",
+          "source_name": "chrome_Glaze",
+          "visible": true,
+          "visible_pixels": 433,
+          "visible_pixel_coverage": 0.00020647
+        },
+        {
+          "id": "MAT_079",
+          "source_name": "Chrome_Polished",
+          "visible": true,
+          "visible_pixels": 514,
+          "visible_pixel_coverage": 0.00024509
+        },
+        {
+          "id": "MAT_080",
+          "source_name": "cluster_60x120_taupe_06_abeff",
+          "visible": true,
+          "visible_pixels": 123,
+          "visible_pixel_coverage": 5.865e-05
+        },
+        {
+          "id": "MAT_081",
+          "source_name": "Color_001",
+          "visible": true,
+          "visible_pixels": 21263,
+          "visible_pixel_coverage": 0.01013899
+        },
+        {
+          "id": "MAT_082",
+          "source_name": "Color_007",
+          "visible": true,
+          "visible_pixels": 7,
+          "visible_pixel_coverage": 3.34e-06
+        },
+        {
+          "id": "MAT_083",
+          "source_name": "Color_008",
+          "visible": true,
+          "visible_pixels": 140,
+          "visible_pixel_coverage": 6.676e-05
+        },
+        {
+          "id": "MAT_084",
+          "source_name": "Color_A02",
+          "visible": true,
+          "visible_pixels": 969,
+          "visible_pixel_coverage": 0.00046206
+        },
+        {
+          "id": "MAT_085",
+          "source_name": "Color_A04",
+          "visible": true,
+          "visible_pixels": 7597,
+          "visible_pixel_coverage": 0.00362253
+        },
+        {
+          "id": "MAT_086",
+          "source_name": "Color_C02",
+          "visible": true,
+          "visible_pixels": 1,
+          "visible_pixel_coverage": 4.8e-07
+        },
+        {
+          "id": "MAT_087",
+          "source_name": "Color_C03",
+          "visible": true,
+          "visible_pixels": 375,
+          "visible_pixel_coverage": 0.00017881
+        },
+        {
+          "id": "MAT_088",
+          "source_name": "Color_C07",
+          "visible": true,
+          "visible_pixels": 2629,
+          "visible_pixel_coverage": 0.0012536
+        },
+        {
+          "id": "MAT_089",
+          "source_name": "Color_C08",
+          "visible": true,
+          "visible_pixels": 5956,
+          "visible_pixel_coverage": 0.00284004
+        },
+        {
+          "id": "MAT_090",
+          "source_name": "Color_C25",
+          "visible": true,
+          "visible_pixels": 389,
+          "visible_pixel_coverage": 0.00018549
+        },
+        {
+          "id": "MAT_091",
+          "source_name": "Color_G03",
+          "visible": true,
+          "visible_pixels": 253,
+          "visible_pixel_coverage": 0.00012064
+        },
+        {
+          "id": "MAT_092",
+          "source_name": "Color_H03",
+          "visible": true,
+          "visible_pixels": 3,
+          "visible_pixel_coverage": 1.43e-06
+        },
+        {
+          "id": "MAT_093",
+          "source_name": "Color_M00",
+          "visible": true,
+          "visible_pixels": 92,
+          "visible_pixel_coverage": 4.387e-05
+        },
+        {
+          "id": "MAT_094",
+          "source_name": "Color_M02",
+          "visible": true,
+          "visible_pixels": 73506,
+          "visible_pixel_coverage": 0.03505039
+        },
+        {
+          "id": "MAT_095",
+          "source_name": "Color_M04",
+          "visible": true,
+          "visible_pixels": 1771,
+          "visible_pixel_coverage": 0.00084448
+        },
+        {
+          "id": "MAT_096",
+          "source_name": "Color_M05",
+          "visible": true,
+          "visible_pixels": 48,
+          "visible_pixel_coverage": 2.289e-05
+        },
+        {
+          "id": "MAT_097",
+          "source_name": "Color_M06",
+          "visible": true,
+          "visible_pixels": 1546,
+          "visible_pixel_coverage": 0.00073719
+        },
+        {
+          "id": "MAT_098",
+          "source_name": "Color_M07",
+          "visible": true,
+          "visible_pixels": 1381,
+          "visible_pixel_coverage": 0.00065851
+        },
+        {
+          "id": "MAT_099",
+          "source_name": "Color_M07__Besi_",
+          "visible": true,
+          "visible_pixels": 943,
+          "visible_pixel_coverage": 0.00044966
+        },
+        {
+          "id": "MAT_100",
+          "source_name": "dark_wood1",
+          "visible": true,
+          "visible_pixels": 594,
+          "visible_pixel_coverage": 0.00028324
+        },
+        {
+          "id": "MAT_101",
+          "source_name": "Demountable_Ceiling_Tile_Stack__ENV3SF_",
+          "visible": true,
+          "visible_pixels": 2875,
+          "visible_pixel_coverage": 0.00137091
+        },
+        {
+          "id": "MAT_102",
+          "source_name": "Demountable_Ceiling_Tile_Stack__ENV3SF_1",
+          "visible": true,
+          "visible_pixels": 228,
+          "visible_pixel_coverage": 0.00010872
+        },
+        {
+          "id": "MAT_103",
+          "source_name": "Dots Stroke",
+          "visible": true,
+          "visible_pixels": 331,
+          "visible_pixel_coverage": 0.00015783
+        },
+        {
+          "id": "MAT_104",
+          "source_name": "FrontColor",
+          "visible": true,
+          "visible_pixels": 38,
+          "visible_pixel_coverage": 1.812e-05
+        },
+        {
+          "id": "MAT_105",
+          "source_name": "Gdblack",
+          "visible": true,
+          "visible_pixels": 10,
+          "visible_pixel_coverage": 4.77e-06
+        },
+        {
+          "id": "MAT_106",
+          "source_name": "genteng",
+          "visible": true,
+          "visible_pixels": 86355,
+          "visible_pixel_coverage": 0.04117727
+        },
+        {
+          "id": "MAT_107",
+          "source_name": "Granite_Stack__USPW7I_",
+          "visible": true,
+          "visible_pixels": 294,
+          "visible_pixel_coverage": 0.00014019
+        },
+        {
+          "id": "MAT_108",
+          "source_name": "Grass_04",
+          "visible": true,
+          "visible_pixels": 219,
+          "visible_pixel_coverage": 0.00010443
+        },
+        {
+          "id": "MAT_109",
+          "source_name": "Groundcover_Rock_Crushed_2_inch",
+          "visible": true,
+          "visible_pixels": 1,
+          "visible_pixel_coverage": 4.8e-07
+        },
+        {
+          "id": "MAT_110",
+          "source_name": "Hood",
+          "visible": true,
+          "visible_pixels": 217,
+          "visible_pixel_coverage": 0.00010347
+        },
+        {
+          "id": "MAT_111",
+          "source_name": "Kolecka",
+          "visible": true,
+          "visible_pixels": 141,
+          "visible_pixel_coverage": 6.723e-05
+        },
+        {
+          "id": "MAT_112",
+          "source_name": "KUSEN",
+          "visible": true,
+          "visible_pixels": 104,
+          "visible_pixel_coverage": 4.959e-05
+        },
+        {
+          "id": "MAT_113",
+          "source_name": "KUSEN1",
+          "visible": true,
+          "visible_pixels": 398,
+          "visible_pixel_coverage": 0.00018978
+        },
+        {
+          "id": "MAT_114",
+          "source_name": "kusen_coklat",
+          "visible": true,
+          "visible_pixels": 828,
+          "visible_pixel_coverage": 0.00039482
+        },
+        {
+          "id": "MAT_115",
+          "source_name": "Len_ol",
+          "visible": true,
+          "visible_pixels": 8,
+          "visible_pixel_coverage": 3.81e-06
+        },
+        {
+          "id": "MAT_116",
+          "source_name": "Light_metal",
+          "visible": true,
+          "visible_pixels": 4146,
+          "visible_pixel_coverage": 0.00197697
+        },
+        {
+          "id": "MAT_117",
+          "source_name": "Limestone__R3U0R2_",
+          "visible": true,
+          "visible_pixels": 143,
+          "visible_pixel_coverage": 6.819e-05
+        },
+        {
+          "id": "MAT_118",
+          "source_name": "lisplang2",
+          "visible": true,
+          "visible_pixels": 394,
+          "visible_pixel_coverage": 0.00018787
+        },
+        {
+          "id": "MAT_119",
+          "source_name": "lukisan",
+          "visible": true,
+          "visible_pixels": 578,
+          "visible_pixel_coverage": 0.00027561
+        },
+        {
+          "id": "MAT_120",
+          "source_name": "M_0136_Charcoal",
+          "visible": true,
+          "visible_pixels": 2539,
+          "visible_pixel_coverage": 0.00121069
+        },
+        {
+          "id": "MAT_121",
+          "source_name": "M_0137_Black",
+          "visible": true,
+          "visible_pixels": 2946,
+          "visible_pixel_coverage": 0.00140476
+        },
+        {
+          "id": "MAT_122",
+          "source_name": "M_03030002",
+          "visible": true,
+          "visible_pixels": 1786,
+          "visible_pixel_coverage": 0.00085163
+        },
+        {
+          "id": "MAT_123",
+          "source_name": "M_100_2149",
+          "visible": true,
+          "visible_pixels": 1446,
+          "visible_pixel_coverage": 0.00068951
+        },
+        {
+          "id": "MAT_124",
+          "source_name": "M_160",
+          "visible": true,
+          "visible_pixels": 5,
+          "visible_pixel_coverage": 2.38e-06
+        },
+        {
+          "id": "MAT_125",
+          "source_name": "M_19_slab_marble_black_Sienna_texture_seamless1",
+          "visible": true,
+          "visible_pixels": 8415,
+          "visible_pixel_coverage": 0.00401258
+        },
+        {
+          "id": "MAT_126",
+          "source_name": "M_2",
+          "visible": true,
+          "visible_pixels": 654,
+          "visible_pixel_coverage": 0.00031185
+        },
+        {
+          "id": "MAT_127",
+          "source_name": "M_5108_MR060060",
+          "visible": true,
+          "visible_pixels": 51,
+          "visible_pixel_coverage": 2.432e-05
+        },
+        {
+          "id": "MAT_128",
+          "source_name": "M_5118_V_060060",
+          "visible": true,
+          "visible_pixels": 5,
+          "visible_pixel_coverage": 2.38e-06
+        },
+        {
+          "id": "MAT_129",
+          "source_name": "M_60_carrara_white_slab_marble_veined_texture_seamless",
+          "visible": true,
+          "visible_pixels": 679,
+          "visible_pixel_coverage": 0.00032377
+        },
+        {
+          "id": "MAT_130",
+          "source_name": "M_6201W_F553_MRN_WAL_Material_1",
+          "visible": true,
+          "visible_pixels": 545,
+          "visible_pixel_coverage": 0.00025988
+        },
+        {
+          "id": "MAT_131",
+          "source_name": "M_7",
+          "visible": true,
+          "visible_pixels": 7469,
+          "visible_pixel_coverage": 0.0035615
+        },
+        {
+          "id": "MAT_132",
+          "source_name": "M_71_dark__fine_wood_texture_seamless",
+          "visible": true,
+          "visible_pixels": 55527,
+          "visible_pixel_coverage": 0.02647734
+        },
+        {
+          "id": "MAT_133",
+          "source_name": "m_t_b_p_iad",
+          "visible": true,
+          "visible_pixels": 7113,
+          "visible_pixel_coverage": 0.00339174
+        },
+        {
+          "id": "MAT_134",
+          "source_name": "macchiatto",
+          "visible": true,
+          "visible_pixels": 4063,
+          "visible_pixel_coverage": 0.00193739
+        },
+        {
+          "id": "MAT_135",
+          "source_name": "Marmer",
+          "visible": true,
+          "visible_pixels": 242,
+          "visible_pixel_coverage": 0.00011539
+        },
+        {
+          "id": "MAT_136",
+          "source_name": "Material",
+          "visible": true,
+          "visible_pixels": 218,
+          "visible_pixel_coverage": 0.00010395
+        },
+        {
+          "id": "MAT_137",
+          "source_name": "Material_22",
+          "visible": true,
+          "visible_pixels": 806,
+          "visible_pixel_coverage": 0.00038433
+        },
+        {
+          "id": "MAT_138",
+          "source_name": "Material_24",
+          "visible": true,
+          "visible_pixels": 12253,
+          "visible_pixel_coverage": 0.00584269
+        },
+        {
+          "id": "MAT_139",
+          "source_name": "Material_44",
+          "visible": true,
+          "visible_pixels": 47426,
+          "visible_pixel_coverage": 0.02261448
+        },
+        {
+          "id": "MAT_140",
+          "source_name": "Material_45",
+          "visible": true,
+          "visible_pixels": 1221,
+          "visible_pixel_coverage": 0.00058222
+        },
+        {
+          "id": "MAT_141",
+          "source_name": "Material_46",
+          "visible": true,
+          "visible_pixels": 639,
+          "visible_pixel_coverage": 0.0003047
+        },
+        {
+          "id": "MAT_142",
+          "source_name": "Material_47",
+          "visible": true,
+          "visible_pixels": 1238,
+          "visible_pixel_coverage": 0.00059032
+        },
+        {
+          "id": "MAT_143",
+          "source_name": "Material_48",
+          "visible": true,
+          "visible_pixels": 9487,
+          "visible_pixel_coverage": 0.00452375
+        },
+        {
+          "id": "MAT_144",
+          "source_name": "Material_49",
+          "visible": true,
+          "visible_pixels": 1003,
+          "visible_pixel_coverage": 0.00047827
+        },
+        {
+          "id": "MAT_145",
+          "source_name": "Material_50",
+          "visible": true,
+          "visible_pixels": 3936,
+          "visible_pixel_coverage": 0.00187683
+        },
+        {
+          "id": "MAT_146",
+          "source_name": "Material_51",
+          "visible": true,
+          "visible_pixels": 41,
+          "visible_pixel_coverage": 1.955e-05
+        },
+        {
+          "id": "MAT_147",
+          "source_name": "Material_52",
+          "visible": true,
+          "visible_pixels": 2,
+          "visible_pixel_coverage": 9.5e-07
+        },
+        {
+          "id": "MAT_148",
+          "source_name": "Material_53",
+          "visible": true,
+          "visible_pixels": 75,
+          "visible_pixel_coverage": 3.576e-05
+        },
+        {
+          "id": "MAT_149",
+          "source_name": "Material_54",
+          "visible": true,
+          "visible_pixels": 1482,
+          "visible_pixel_coverage": 0.00070667
+        },
+        {
+          "id": "MAT_150",
+          "source_name": "Material_55",
+          "visible": true,
+          "visible_pixels": 157,
+          "visible_pixel_coverage": 7.486e-05
+        },
+        {
+          "id": "MAT_151",
+          "source_name": "Material__0_0_1",
+          "visible": true,
+          "visible_pixels": 383,
+          "visible_pixel_coverage": 0.00018263
+        },
+        {
+          "id": "MAT_152",
+          "source_name": "Material__1_0_2",
+          "visible": true,
+          "visible_pixels": 174748,
+          "visible_pixel_coverage": 0.08332634
+        },
+        {
+          "id": "MAT_153",
+          "source_name": "Metal_Aluminum_Anodized",
+          "visible": true,
+          "visible_pixels": 756,
+          "visible_pixel_coverage": 0.00036049
+        },
+        {
+          "id": "MAT_154",
+          "source_name": "Metal_Seamed",
+          "visible": true,
+          "visible_pixels": 4956,
+          "visible_pixel_coverage": 0.0023632
+        },
+        {
+          "id": "MAT_155",
+          "source_name": "Metal_Silver",
+          "visible": true,
+          "visible_pixels": 2201,
+          "visible_pixel_coverage": 0.00104952
+        },
+        {
+          "id": "MAT_156",
+          "source_name": "mirror",
+          "visible": true,
+          "visible_pixels": 803,
+          "visible_pixel_coverage": 0.0003829
+        },
+        {
+          "id": "MAT_157",
+          "source_name": "mmjhfdghd176",
+          "visible": true,
+          "visible_pixels": 244,
+          "visible_pixel_coverage": 0.00011635
+        },
+        {
+          "id": "MAT_158",
+          "source_name": "mmjhfdghd187",
+          "visible": true,
+          "visible_pixels": 312,
+          "visible_pixel_coverage": 0.00014877
+        },
+        {
+          "id": "MAT_159",
+          "source_name": "mmjhfdghd188",
+          "visible": true,
+          "visible_pixels": 12,
+          "visible_pixel_coverage": 5.72e-06
+        },
+        {
+          "id": "MAT_160",
+          "source_name": "mmjhfdghd189",
+          "visible": true,
+          "visible_pixels": 1031,
+          "visible_pixel_coverage": 0.00049162
+        },
+        {
+          "id": "MAT_161",
+          "source_name": "Plaster_1",
+          "visible": true,
+          "visible_pixels": 103,
+          "visible_pixel_coverage": 4.911e-05
+        },
+        {
+          "id": "MAT_162",
+          "source_name": "Podnoz",
+          "visible": true,
+          "visible_pixels": 183,
+          "visible_pixel_coverage": 8.726e-05
+        },
+        {
+          "id": "MAT_163",
+          "source_name": "PodnozChrom",
+          "visible": true,
+          "visible_pixels": 482,
+          "visible_pixel_coverage": 0.00022984
+        },
+        {
+          "id": "MAT_164",
+          "source_name": "Polished_Concrete_New",
+          "visible": true,
+          "visible_pixels": 149,
+          "visible_pixel_coverage": 7.105e-05
+        },
+        {
+          "id": "MAT_165",
+          "source_name": "potahcr",
+          "visible": true,
+          "visible_pixels": 406,
+          "visible_pixel_coverage": 0.0001936
+        },
+        {
+          "id": "MAT_166",
+          "source_name": "PotahPodrucky",
+          "visible": true,
+          "visible_pixels": 112,
+          "visible_pixel_coverage": 5.341e-05
+        },
+        {
+          "id": "MAT_167",
+          "source_name": "STAINLESS_KILAT",
+          "visible": true,
+          "visible_pixels": 177,
+          "visible_pixel_coverage": 8.44e-05
+        },
+        {
+          "id": "MAT_168",
+          "source_name": "Standalone_1175X1290",
+          "visible": true,
+          "visible_pixels": 370783,
+          "visible_pixel_coverage": 0.17680311
+        },
+        {
+          "id": "MAT_169",
+          "source_name": "Standalone_1175X1290_1_",
+          "visible": true,
+          "visible_pixels": 448,
+          "visible_pixel_coverage": 0.00021362
+        },
+        {
+          "id": "MAT_170",
+          "source_name": "Standalone_1175X1290_2_",
+          "visible": true,
+          "visible_pixels": 16,
+          "visible_pixel_coverage": 7.63e-06
+        },
+        {
+          "id": "MAT_171",
+          "source_name": "Standalone_1175X1290_3_",
+          "visible": true,
+          "visible_pixels": 226,
+          "visible_pixel_coverage": 0.00010777
+        },
+        {
+          "id": "MAT_172",
+          "source_name": "Standalone_1175X1290_4_",
+          "visible": true,
+          "visible_pixels": 571,
+          "visible_pixel_coverage": 0.00027227
+        },
+        {
+          "id": "MAT_173",
+          "source_name": "Standalone_1175X1290_5_",
+          "visible": true,
+          "visible_pixels": 2463,
+          "visible_pixel_coverage": 0.00117445
+        },
+        {
+          "id": "MAT_174",
+          "source_name": "Standalone_1175X1290_6_",
+          "visible": true,
+          "visible_pixels": 52,
+          "visible_pixel_coverage": 2.48e-05
+        },
+        {
+          "id": "MAT_175",
+          "source_name": "Standalone_1175X1290_7_",
+          "visible": true,
+          "visible_pixels": 114817,
+          "visible_pixel_coverage": 0.05474901
+        },
+        {
+          "id": "MAT_176",
+          "source_name": "Steel",
+          "visible": true,
+          "visible_pixels": 23083,
+          "visible_pixel_coverage": 0.01100683
+        },
+        {
+          "id": "MAT_177",
+          "source_name": "Sudbrock_469_cashmere",
+          "visible": true,
+          "visible_pixels": 624,
+          "visible_pixel_coverage": 0.00029755
+        },
+        {
+          "id": "MAT_178",
+          "source_name": "sudbrock_FARBE_419",
+          "visible": true,
+          "visible_pixels": 11678,
+          "visible_pixel_coverage": 0.0055685
+        },
+        {
+          "id": "MAT_179",
+          "source_name": "sudbrock_RUECKWANDFARBE_419",
+          "visible": true,
+          "visible_pixels": 2319,
+          "visible_pixel_coverage": 0.00110579
+        },
+        {
+          "id": "MAT_180",
+          "source_name": "sudbrock_RW_BLIND",
+          "visible": true,
+          "visible_pixels": 1697,
+          "visible_pixel_coverage": 0.00080919
+        },
+        {
+          "id": "MAT_181",
+          "source_name": "sudbrock_ZARGEFARBE_023",
+          "visible": true,
+          "visible_pixels": 118,
+          "visible_pixel_coverage": 5.627e-05
+        },
+        {
+          "id": "MAT_182",
+          "source_name": "Tiles_04",
+          "visible": true,
+          "visible_pixels": 120,
+          "visible_pixel_coverage": 5.722e-05
+        },
+        {
+          "id": "MAT_183",
+          "source_name": "Translucent_Glass_Blue",
+          "visible": false,
+          "visible_pixels": 0,
+          "visible_pixel_coverage": 0.0
+        },
+        {
+          "id": "MAT_184",
+          "source_name": "Translucent_Glass_Dark_Green",
+          "visible": true,
+          "visible_pixels": 21130,
+          "visible_pixel_coverage": 0.01007557
+        },
+        {
+          "id": "MAT_185",
+          "source_name": "Translucent_Glass_Dark_Green1",
+          "visible": true,
+          "visible_pixels": 605,
+          "visible_pixel_coverage": 0.00028849
+        },
+        {
+          "id": "MAT_186",
+          "source_name": "Translucent_Glass_Safety",
+          "visible": true,
+          "visible_pixels": 3145,
+          "visible_pixel_coverage": 0.00149965
+        },
+        {
+          "id": "MAT_187",
+          "source_name": "vray_11010",
+          "visible": true,
+          "visible_pixels": 1890,
+          "visible_pixel_coverage": 0.00090122
+        },
+        {
+          "id": "MAT_188",
+          "source_name": "vray_11011",
+          "visible": true,
+          "visible_pixels": 238,
+          "visible_pixel_coverage": 0.00011349
+        },
+        {
+          "id": "MAT_189",
+          "source_name": "vray_11012_1",
+          "visible": true,
+          "visible_pixels": 4,
+          "visible_pixel_coverage": 1.91e-06
+        },
+        {
+          "id": "MAT_190",
+          "source_name": "vray_11012_5",
+          "visible": true,
+          "visible_pixels": 115,
+          "visible_pixel_coverage": 5.484e-05
+        },
+        {
+          "id": "MAT_191",
+          "source_name": "vray_11013",
+          "visible": true,
+          "visible_pixels": 3118,
+          "visible_pixel_coverage": 0.00148678
+        },
+        {
+          "id": "MAT_192",
+          "source_name": "vray_ChenZc_200606_DCZ22",
+          "visible": true,
+          "visible_pixels": 178792,
+          "visible_pixel_coverage": 0.08525467
+        },
+        {
+          "id": "MAT_193",
+          "source_name": "Water_Pool",
+          "visible": false,
+          "visible_pixels": 0,
+          "visible_pixel_coverage": 0.0
+        },
+        {
+          "id": "MAT_194",
+          "source_name": "Watercolor_Leaves",
+          "visible": true,
+          "visible_pixels": 390,
+          "visible_pixel_coverage": 0.00018597
+        },
+        {
+          "id": "MAT_195",
+          "source_name": "Western_Red_Cedar_Stack__ZEC6QK_",
+          "visible": true,
+          "visible_pixels": 723,
+          "visible_pixel_coverage": 0.00034475
+        },
+        {
+          "id": "MAT_196",
+          "source_name": "Wood_04__Brick_Bond",
+          "visible": true,
+          "visible_pixels": 313,
+          "visible_pixel_coverage": 0.00014925
+        },
+        {
+          "id": "MAT_197",
+          "source_name": "xiadele_18___DefaultdrxcsseeffJzs",
+          "visible": true,
+          "visible_pixels": 617,
+          "visible_pixel_coverage": 0.00029421
+        },
+        {
+          "id": "MAT_198",
+          "source_name": "YS_Metal_Chrome1",
+          "visible": true,
+          "visible_pixels": 17551,
+          "visible_pixel_coverage": 0.00836897
+        }
+      ]
+    }
+  },
+  "import": {
+    "operator": "bpy.ops.wm.obj_import",
+    "options": {
+      "filepath": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+      "global_scale": 1.0,
+      "forward_axis": "Y",
+      "up_axis": "Z",
+      "use_split_objects": true,
+      "use_split_groups": false,
+      "validate_meshes": true
+    },
+    "duration_seconds": 2.122
+  }
+}

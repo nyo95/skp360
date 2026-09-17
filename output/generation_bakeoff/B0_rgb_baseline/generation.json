@@ -1,0 +1,61 @@
+{
+  "schema": "rad-ai360-controlled-generation-job",
+  "version": 1,
+  "label": "B0_rgb_baseline",
+  "status": "ok",
+  "provider": "cloudflare",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "pipeline": "FAST_BASELINE",
+  "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+  "negative_prompt": null,
+  "condition_package": null,
+  "available_controls": [
+    "rgb"
+  ],
+  "actually_consumed": [
+    "rgb",
+    "prompt"
+  ],
+  "not_consumed_by_provider": [],
+  "input_image_hashes": {
+    "rgb_erp": "5adaf018f68fb715fc6780a267a8c127b5c7ce233abe5a0749915f8c771d477b",
+    "cloudflare_reference_511": "448314e40f46d736bd72711a165e9abe4dfb438bd54eef5e3b585206916940ae"
+  },
+  "seed": null,
+  "strength_or_denoise": null,
+  "control_weights": null,
+  "resolution": [
+    1920,
+    960
+  ],
+  "request_parameters": {
+    "provider": "cloudflare",
+    "model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "endpoint": "https://api.cloudflare.com/client/v4/accounts/<redacted-account-id>/ai/run/@cf/black-forest-labs/flux-2-klein-4b",
+    "credential_source": "rad_ai360_visualizer config.json",
+    "multipart_fields": {
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "width": "1920",
+      "height": "960",
+      "guidance": "3.5"
+    },
+    "multipart_files": {
+      "input_image_0": {
+        "filename": "rgb_erp_cloudflare_reference_511.png",
+        "mime_type": "image/png",
+        "source": "RGB ERP ordinary image reference",
+        "sha256": "448314e40f46d736bd72711a165e9abe4dfb438bd54eef5e3b585206916940ae"
+      }
+    },
+    "provider_control_limit": "Current project Cloudflare FLUX.2 Klein path supports ordinary image reference upload; no verified depth/normal/mask structural control."
+  },
+  "provider_request_id": "a3c143ccf93aa2a7-CGK",
+  "runtime_seconds": 15.045,
+  "estimated_or_reported_cost": null,
+  "output": "D:\\Projects\\skpto360\\output\\generation_bakeoff\\B0_rgb_baseline\\output.png",
+  "output_sha256": "8bf420452b8bd129055fcc3dc369c0156021505bddde11d405b909599c54d756",
+  "cloudflare_success": true,
+  "cloudflare_errors": [],
+  "cloudflare_messages": [],
+  "total_seconds": 15.07
+}

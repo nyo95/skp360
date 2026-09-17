@@ -1,0 +1,64 @@
+{
+  "status": "FAIL",
+  "warnings": [],
+  "errors": [
+    "Error: ASCII FBX files are not supported 'D:\\\\Projects\\\\skpto360\\\\output\\\\fbx\\\\scene.fbx'\n"
+  ],
+  "source": {
+    "fbx": "D:\\Projects\\skpto360\\output\\fbx\\scene.fbx",
+    "json": "D:\\Projects\\skpto360\\output\\fbx\\scene.json",
+    "scene_name": "AI360_1"
+  },
+  "coordinate_conversion": {
+    "name": "sketchup_z_up_m_to_blender_z_up_m_identity",
+    "note": "Identity conversion. The SketchUp exporter writes FBX in metres with Z-up and swap_yz=false; Blender's FBX importer places the imported architecture in Blender Z-up world space. Camera values from scene.json are converted from mm to m and placed in the same world space."
+  },
+  "import": {
+    "operator": "bpy.ops.import_scene.fbx",
+    "filepath": "D:\\Projects\\skpto360\\output\\fbx\\scene.fbx",
+    "duration_seconds": 0.056
+  },
+  "counts": {
+    "objects_total": 0,
+    "mesh_objects": 0,
+    "vertices": 0,
+    "triangles": 0,
+    "materials": 0,
+    "images": 0,
+    "cameras": 0
+  },
+  "bounds": null,
+  "camera": {
+    "source_scene": "AI360_1",
+    "source_eye_mm": [
+      9464.429208,
+      10229.563323,
+      2185.749039
+    ],
+    "expected_location_m_before_axis_conversion": [
+      9.464429,
+      10.229563,
+      2.185749
+    ]
+  },
+  "outputs": {
+    "blend": null,
+    "preview": null,
+    "overview": null,
+    "preview_error": "Preview skipped because FBX import failed."
+  },
+  "duration_seconds": 0.056,
+  "dae_proof_comparison": {
+    "dae_status": "WARN",
+    "dae_mesh_objects": 18535,
+    "fbx_mesh_objects": 0,
+    "dae_materials": 2,
+    "fbx_materials": 0,
+    "dae_bounds_size_m": [
+      114.335434,
+      36.713039,
+      9.845443
+    ],
+    "fbx_bounds_size_m": null
+  }
+}

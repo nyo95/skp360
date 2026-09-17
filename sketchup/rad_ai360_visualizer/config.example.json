@@ -1,0 +1,6 @@
+{
+  "cloudflare": {
+    "account_id": "paste-your-cloudflare-account-id-here",
+    "api_token": "paste-a-workers-ai-write-api-token-here"
+  }
+}

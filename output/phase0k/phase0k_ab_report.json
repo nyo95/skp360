@@ -1,0 +1,32 @@
+{
+  "phase": "0K",
+  "step": 9,
+  "title": "K-A vs K-B Narrow Light Contract Test",
+  "date": "2026-09-17",
+  "ka": {
+    "id": "K-A",
+    "source": "Phase 0J Test C (ControlNet\u2192FLUX, Phase 0J base prompt)",
+    "output": "output\\phase0k\\K-A\\output.png",
+    "new_generation": false
+  },
+  "kb": {
+    "id": "K-B",
+    "source": "Phase 0J Stage 1 (ControlNet output) \u2192 FLUX with lighting constraints",
+    "stage1_source": "output\\phase0j\\B_controlnet_depth\\output.png",
+    "output": "output\\phase0k\\K-B\\output.png",
+    "runtime_s": 11.3,
+    "prompt_length": 1034,
+    "lighting_constraint_applied": true,
+    "confirmed_fixtures": 0,
+    "constraint_type": "zero-fixture negative constraint",
+    "new_generation": true
+  },
+  "comparison": "output\\phase0k\\comparison\\side_by_side.png",
+  "evaluation_criteria": {
+    "geometry_preservation": "Does K-B maintain same geometry contract as K-A?",
+    "hallucinated_luminaires": "Does K-B suppress fixture invention vs K-A?",
+    "lighting_realism": "Is K-B lighting still physically plausible?",
+    "overall_quality": "Is K-B visually comparable to K-A?"
+  },
+  "constraint_source": "lights.json (phase0k_light_contract.py output)"
+}

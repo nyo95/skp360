@@ -1,0 +1,298 @@
+{
+  "schema": "rad-ai360-phase0e-ai-render-feasibility",
+  "version": 1,
+  "status": "PREPARED_NO_AI_BACKEND",
+  "project_root": "D:\\Projects\\skpto360",
+  "phase": "0E",
+  "goal": "Assess whether AI can improve realism while preserving authoritative SketchUp-derived geometry and camera.",
+  "source_of_truth": {
+    "geometry": "SketchUp OBJ imported by Blender; Phase 0D native equirectangular render is the visual source.",
+    "camera": "scene.json via Phase 0D report",
+    "phase0d_report": "D:\\Projects\\skpto360\\output\\phase0d\\phase0d_report.json",
+    "scene_name": "AI360_1",
+    "projection": "panoramic_equirectangular",
+    "resolution": [
+      2048,
+      1024
+    ],
+    "camera_basis": {
+      "eye_m": [
+        9.464429,
+        10.229564,
+        2.185749
+      ],
+      "forward_from_scene": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up_from_scene": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "right_derived": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "camera_type": "PANO",
+      "panorama_type": "EQUIRECTANGULAR"
+    }
+  },
+  "inputs": {
+    "files": {
+      "rgb_erp": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\rgb_erp.png",
+        "bytes": 2129035,
+        "sha256": "f5e00a48663e0d9cd391320ebe068f72e1f81cfce12061cb319f2f5ae01faa1c"
+      },
+      "depth_condition": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\depth_condition.png",
+        "bytes": 124543,
+        "sha256": "7d25f5ff7676c7038f480f0ef20bcc8b8dfd646d36ce111e70f7bb5b00a127e3"
+      },
+      "normal_condition": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\normal_condition.png",
+        "bytes": 801628,
+        "sha256": "ccca8de14e11c5421f508986897e67de449ef52206ffa0bbf9f82224b1a7f3a6"
+      },
+      "material_manifest": {
+        "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\material_manifest.json",
+        "bytes": 44263,
+        "sha256": "9bbf7ed840c7b17d5ad00b76e1d2c432fdea2d479284428568c6a3fe18817b8b"
+      }
+    },
+    "depth_condition": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\depth_condition.png",
+      "mapping": "linear inverse depth for image conditioning: near -> white, far -> black, clamped",
+      "near_m": 0.2,
+      "far_m": 20.0,
+      "source_exr": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular.exr",
+      "source_min_m": 0.0,
+      "source_max_m": 5.584867,
+      "source_mean_m": 0.9442,
+      "clipped_near_pixels": 1133691,
+      "clipped_far_pixels": 0,
+      "invalid_pixels": 0
+    },
+    "normal_condition": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\normal_condition.png",
+      "source_exr": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular.exr",
+      "normal_space": "Blender world/shading-space normal encoded from Phase 0D",
+      "channel_interpretation": "RGB = normal * 0.5 + 0.5",
+      "conversion": "32-bit EXR values clamped to [0, 1] and saved as 8-bit PNG reference/condition image."
+    },
+    "material_manifest": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\material_manifest.json",
+      "material_count": 198,
+      "rule": "Material ID is deterministic by sorted imported source material name for this source OBJ."
+    }
+  },
+  "experiments": {
+    "a_rgb_only": {
+      "experiment": "Experiment A \u2014 RGB-only ERP baseline",
+      "status": "NOT_RUN",
+      "reason": "No project-integrated AI image backend was found in D:\\Projects\\skpto360 during Phase 0E preparation. The experiment is defined and ready, but no output is fabricated.",
+      "provider": null,
+      "model": null,
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "negative_prompt": null,
+      "input_image_hashes": {
+        "rgb_erp": "f5e00a48663e0d9cd391320ebe068f72e1f81cfce12061cb319f2f5ae01faa1c"
+      },
+      "seed": null,
+      "strength_or_denoise": null,
+      "control_weights": null,
+      "resolution": null,
+      "runtime_seconds": null,
+      "provider_request_id": null,
+      "estimated_or_reported_cost": null
+    },
+    "b_depth": {
+      "experiment": "Experiment B \u2014 true depth conditioning",
+      "status": "UNSUPPORTED",
+      "reason": "No selected AI stack with genuine depth/control conditioning is available in the project. A generic second reference image is not counted as structural conditioning.",
+      "provider": null,
+      "model": null,
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "negative_prompt": null,
+      "input_image_hashes": {
+        "rgb_erp": "f5e00a48663e0d9cd391320ebe068f72e1f81cfce12061cb319f2f5ae01faa1c",
+        "depth_condition": "7d25f5ff7676c7038f480f0ef20bcc8b8dfd646d36ce111e70f7bb5b00a127e3"
+      },
+      "seed": null,
+      "strength_or_denoise": null,
+      "control_weights": null,
+      "resolution": null,
+      "runtime_seconds": null,
+      "provider_request_id": null,
+      "estimated_or_reported_cost": null
+    },
+    "c_depth_normal": {
+      "experiment": "Experiment C \u2014 true depth + normal conditioning",
+      "status": "UNSUPPORTED",
+      "reason": "No selected AI stack with genuine depth and normal structural conditioning is available in the project.",
+      "provider": null,
+      "model": null,
+      "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+      "negative_prompt": null,
+      "input_image_hashes": {
+        "rgb_erp": "f5e00a48663e0d9cd391320ebe068f72e1f81cfce12061cb319f2f5ae01faa1c",
+        "depth_condition": "7d25f5ff7676c7038f480f0ef20bcc8b8dfd646d36ce111e70f7bb5b00a127e3",
+        "normal_condition": "ccca8de14e11c5421f508986897e67de449ef52206ffa0bbf9f82224b1a7f3a6"
+      },
+      "seed": null,
+      "strength_or_denoise": null,
+      "control_weights": null,
+      "resolution": null,
+      "runtime_seconds": null,
+      "provider_request_id": null,
+      "estimated_or_reported_cost": null
+    },
+    "perspective_control": {
+      "status": "NOT_RUN",
+      "reason": "Direct ERP AI generation was not run, so the optional perspective fallback comparison is not triggered."
+    }
+  },
+  "local_qc": {
+    "input_rgb_erp": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\rgb_erp.png",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "ratio": 2.0,
+      "ratio_2_to_1": true,
+      "alpha_min": 1.0,
+      "alpha_max": 1.0,
+      "has_visible_pixels": true,
+      "blank_warning": false,
+      "mean_rgb_seam_delta": 0.006634,
+      "max_rgb_seam_delta": 0.073203,
+      "top_pole_has_visible_pixels": true,
+      "bottom_pole_has_visible_pixels": true
+    },
+    "depth_condition": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\depth_condition.png",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "ratio": 2.0,
+      "ratio_2_to_1": true,
+      "alpha_min": 1.0,
+      "alpha_max": 1.0,
+      "has_visible_pixels": true,
+      "blank_warning": false,
+      "mean_rgb_seam_delta": 0.000226,
+      "max_rgb_seam_delta": 0.023529,
+      "top_pole_has_visible_pixels": true,
+      "bottom_pole_has_visible_pixels": true
+    },
+    "normal_condition": {
+      "path": "D:\\Projects\\skpto360\\output\\phase0e\\input\\normal_condition.png",
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "ratio": 2.0,
+      "ratio_2_to_1": true,
+      "alpha_min": 1.0,
+      "alpha_max": 1.0,
+      "has_visible_pixels": true,
+      "blank_warning": false,
+      "mean_rgb_seam_delta": 0.014311,
+      "max_rgb_seam_delta": 0.078431,
+      "top_pole_has_visible_pixels": true,
+      "bottom_pole_has_visible_pixels": true
+    },
+    "geometry_drift_qc": {
+      "status": "READY",
+      "method": "Output validity, ERP ratio, seam metrics, and coarse edge-similarity warning against source image.",
+      "a_rgb_only": {
+        "status": "NOT_PROVIDED",
+        "reason": "No AI output path was provided for local deterministic QC."
+      },
+      "b_depth": {
+        "status": "NOT_PROVIDED",
+        "reason": "No AI output path was provided for local deterministic QC."
+      },
+      "c_depth_normal": {
+        "status": "NOT_PROVIDED",
+        "reason": "No AI output path was provided for local deterministic QC."
+      }
+    }
+  },
+  "pass_fail_logic": {
+    "phase0e_not_auto_pass": true,
+    "strong_candidate_requires": [
+      "realism improves significantly",
+      "major geometry remains faithful",
+      "camera remains faithful",
+      "output remains usable as panorama"
+    ],
+    "current_gate_result": "BLOCKED_FOR_AI_GENERATION_BACKEND"
+  },
+  "human_review_checklist": [
+    {
+      "label": "walls remain unchanged",
+      "checked": false
+    },
+    {
+      "label": "openings remain unchanged",
+      "checked": false
+    },
+    {
+      "label": "doors remain unchanged",
+      "checked": false
+    },
+    {
+      "label": "ceiling remains unchanged",
+      "checked": false
+    },
+    {
+      "label": "furniture count remains unchanged",
+      "checked": false
+    },
+    {
+      "label": "furniture positions remain unchanged",
+      "checked": false
+    },
+    {
+      "label": "cabinetry remains unchanged",
+      "checked": false
+    },
+    {
+      "label": "bathroom fixtures remain unchanged",
+      "checked": false
+    },
+    {
+      "label": "major colors/material intent remain unchanged",
+      "checked": false
+    },
+    {
+      "label": "camera composition remains unchanged",
+      "checked": false
+    },
+    {
+      "label": "pole regions remain usable",
+      "checked": false
+    },
+    {
+      "label": "0\u00b0/360\u00b0 seam remains usable",
+      "checked": false
+    },
+    {
+      "label": "realism materially improved",
+      "checked": false
+    }
+  ],
+  "notes": [
+    "No GPT/Astra/Claude/VLM/material semantic classifier was added.",
+    "No Cloudflare/FLUX/image-generation provider code was added to the project.",
+    "Phase 0D raw metric depth EXR and normal EXR were not overwritten.",
+    "Cubemap remains compatibility/debug only; Phase 0E input uses native ERP from Phase 0D."
+  ],
+  "duration_seconds": 7.557
+}

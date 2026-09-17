@@ -1,0 +1,206 @@
+{
+  "phase": "0I",
+  "title": "Local ComfyUI / ControlNet Feasibility Bake-off",
+  "date": "2026-09-17",
+  "hardware": {
+    "gpu": "NVIDIA RTX 2060",
+    "vram_gb": 6,
+    "comfyui_flags": "--lowvram --cpu-vae --port 8188",
+    "vram_free_at_start_bytes": 5350883328,
+    "vram_free_at_start_gb": 4.98
+  },
+  "models": {
+    "checkpoint": "v1-5-pruned-emaonly.safetensors",
+    "checkpoint_size_gb": 3.98,
+    "controlnet": "control_v11f1p_sd15_depth.safetensors",
+    "controlnet_size_gb": 1.27
+  },
+  "shared_parameters": {
+    "seed": 42,
+    "steps": 20,
+    "cfg": 7.0,
+    "sampler": "euler_ancestral",
+    "scheduler": "karras",
+    "denoise": 0.65,
+    "resolution": "512x512",
+    "rgb_source": "output/phase0c/rgb/front.png (Blender perspective cubemap front face, 1024x1024 → resized 512x512)"
+  },
+  "depth_input": {
+    "source": "output/phase0c/depth/front.exr",
+    "mapping_decision": "E_PERCENTILE_CLAMPED (Phase 0H D3)",
+    "mapping_params": "p5=0 (black), p95=255 (white), depth_std=84.0",
+    "output_file": "output/phase0i/input/depth.png",
+    "convention_in_png": "near=BLACK, far=WHITE (standard Z-distance mapping; small distance → 0, large distance → 255)",
+    "controlnet_expected_convention": "near=WHITE, far=BLACK (MiDaS inverse-depth convention used in control_v11f1p_sd15_depth training)",
+    "convention_mismatch": true,
+    "convention_mismatch_note": "The depth PNG has INVERTED depth relative to ControlNet's training convention. Near objects (sofa foreground) mapped to 0 (black); ControlNet expected them at 255 (white). This means Test B ran with depth conditioning that told the model 'sofa is far, back wall is near' — opposite of reality."
+  },
+  "test_A": {
+    "id": "A_RGB_ONLY",
+    "description": "SD 1.5 img2img with no ControlNet",
+    "runtime_s": 15.1,
+    "output": "output/phase0i/A_rgb_only/output.png",
+    "evaluation": {
+      "wall_geometry": {
+        "score": "FAIL",
+        "note": "Back wall topology not preserved. Input has column at right-center and TV unit wall; output shows plain textured grey wall spanning full width."
+      },
+      "openings": {
+        "score": "FAIL",
+        "note": "Left-side open archway to kitchen (visible in input) is absent. Model replaced that region with decorative plants."
+      },
+      "ceiling": {
+        "score": "PARTIAL",
+        "note": "Flat white ceiling preserved at similar height. Recessed spotlights not reproduced."
+      },
+      "cabinetry": {
+        "score": "FAIL",
+        "note": "Floating TV shelf unit absent. Output shows fireplace-style TV embedded in wall instead."
+      },
+      "furniture_position": {
+        "score": "FAIL",
+        "note": "Sectional sofa is present but relocated and reshaped. Layout shifted vs. input."
+      },
+      "furniture_count": {
+        "score": "PARTIAL",
+        "note": "Sofa, coffee table, and TV present. But right-side credenza/sideboard missing; added ottoman not in source."
+      },
+      "major_proportions": {
+        "score": "PARTIAL",
+        "note": "Room scale and camera height roughly similar. Width and depth of space broadly comparable."
+      },
+      "camera_composition": {
+        "score": "PARTIAL",
+        "note": "Perspective angle and field of view approximately match. Camera appears slightly more elevated in output."
+      },
+      "material_intent": {
+        "score": "FAIL",
+        "note": "Input: uniform light grey. Output: warm taupe/beige palette with concrete-textured walls. Significant colour departure."
+      },
+      "hallucinated_objects": {
+        "score": "FAIL",
+        "note": "Dry grass/pampas plant added. Fireplace not in source. Candle on coffee table not in source."
+      },
+      "missing_objects": {
+        "score": "FAIL",
+        "note": "Kitchen opening missing. Floating TV shelves missing. Framed artwork missing. Structural column absent."
+      }
+    },
+    "summary": "Test A produces a photorealistic, coherent interior but diverges significantly from the source. Denoise=0.65 allows the diffusion model to rebuild large portions of the image, losing structural geometry, openings, and material accuracy. No ControlNet conditioning means the model relies only on the (down-sampled, noisy) latent from the Blender render, which is insufficient to constrain layout at this denoising strength."
+  },
+  "test_B": {
+    "id": "B_RGB_DEPTH",
+    "description": "SD 1.5 img2img + ControlNet Depth (control_v11f1p_sd15_depth, strength=0.8)",
+    "controlnet_strength": 0.8,
+    "controlnet_start": 0.0,
+    "controlnet_end": 1.0,
+    "runtime_s": 12.0,
+    "output": "output/phase0i/B_rgb_depth/output.png",
+    "evaluation": {
+      "wall_geometry": {
+        "score": "FAIL",
+        "note": "Output zooms into back wall/TV unit area due to depth inversion — ControlNet interpreted far=white as near=white, pulling back wall forward. Flanking walls absent."
+      },
+      "openings": {
+        "score": "FAIL",
+        "note": "No door or opening to kitchen visible. Depth inversion amplified back wall and suppressed side openings."
+      },
+      "ceiling": {
+        "score": "PARTIAL",
+        "note": "Ceiling partially visible at top of frame with pendant-style lights not in source."
+      },
+      "cabinetry": {
+        "score": "PARTIAL",
+        "note": "TV unit with a horizontal wood shelf element is vaguely present (matches source concept) but the surrounding cabinet panels flanking it are not in source. Overall wall treatment is wrong."
+      },
+      "furniture_position": {
+        "score": "FAIL",
+        "note": "Sofa barely visible at bottom of frame. Furniture pushed to extreme foreground edge due to scale distortion."
+      },
+      "furniture_count": {
+        "score": "FAIL",
+        "note": "Only partial sofa visible. Coffee table, sideboard, plants all absent."
+      },
+      "major_proportions": {
+        "score": "FAIL",
+        "note": "Room appears extremely compressed — output shows tight close-up of back wall rather than room interior. Wrong scale entirely."
+      },
+      "camera_composition": {
+        "score": "FAIL",
+        "note": "Composition does not match source. Depth inversion caused model to treat back wall as near plane, collapsing room depth. Completely wrong framing."
+      },
+      "material_intent": {
+        "score": "PARTIAL",
+        "note": "Neutral white/light grey palette closer to source intent than Test A. Wood shelf element matches warm-wood accent in source."
+      },
+      "hallucinated_objects": {
+        "score": "PARTIAL",
+        "note": "Fewer hallucinated decorative objects than Test A. Added white cabinet panels and pendant lights not in source but fewer pure inventions."
+      },
+      "missing_objects": {
+        "score": "FAIL",
+        "note": "Room opening, sofa, coffee table, column, artwork, full back wall all missing or misrepresented."
+      }
+    },
+    "summary": "Test B produced a structurally distorted result. The primary cause is depth convention mismatch: our depth PNG encodes near=black (standard Z-distance), but control_v11f1p_sd15_depth was trained on MiDaS inverse-depth maps where near=white. The ControlNet therefore received inverted depth, commanding the model to treat the far back wall as the closest surface. This collapsed room depth and zoomed into the back wall. Test B does not constitute a valid evaluation of ControlNet Depth conditioning."
+  },
+  "comparative_scoring": {
+    "criteria": [
+      "wall_geometry",
+      "openings",
+      "ceiling",
+      "cabinetry",
+      "furniture_position",
+      "furniture_count",
+      "major_proportions",
+      "camera_composition",
+      "material_intent",
+      "hallucinated_objects",
+      "missing_objects"
+    ],
+    "scoring_key": {"PASS": 2, "PARTIAL": 1, "FAIL": 0},
+    "test_A_scores": [0, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0],
+    "test_B_scores": [0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0],
+    "test_A_total": 4,
+    "test_B_total": 4,
+    "test_A_max": 22,
+    "test_B_max": 22,
+    "test_A_pct": 18.2,
+    "test_B_pct": 18.2
+  },
+  "depth_verdict": "DEPTH_HURTS_QUALITY",
+  "depth_verdict_rationale": "Under current conditions, adding ControlNet Depth conditioning produced worse output than RGB-only on 7 of 11 criteria (proportions, camera composition, furniture position, furniture count, openings, missing objects, wall geometry). However this result is confounded by a depth convention inversion bug: the depth PNG was produced with near=black, but control_v11f1p_sd15_depth expects near=white (MiDaS convention). Test B is therefore NOT a valid bake-off result — it is a measurement of 'inverted depth conditioning'. The verdict DEPTH_HURTS_QUALITY applies to the current implementation, not to ControlNet Depth in principle.",
+  "vram_verdict": "VIABLE",
+  "vram_verdict_rationale": "RTX 2060 6GB successfully ran both tests with ComfyUI --lowvram --cpu-vae at 512x512. Phase 0H failure was a tooling issue (naive diffusers pipeline), not a hardware barrier. ComfyUI sequential offloading resolves the memory constraint. Test A: ~7.6 it/s. Test B: ~5.5 it/s. Both well within budget.",
+  "root_causes": [
+    {
+      "id": "RC1",
+      "title": "Depth convention inversion",
+      "description": "output/phase0i/input/depth.png encodes near=black (Z-distance: small distance → 0). control_v11f1p_sd15_depth is trained on MiDaS inverse-depth where near=white. Fix: invert the depth PNG (pixel = 255 - current_pixel) before passing to ControlNet."
+    },
+    {
+      "id": "RC2",
+      "title": "Denoise too high for structure preservation",
+      "description": "denoise=0.65 allows the model to rebuild 65% of the image from noise, losing source structure. Even Test A (no ControlNet) could not preserve wall topology, openings, or cabinetry at this strength. Lower denoise (0.3–0.45) or a stronger ControlNet signal is required for layout fidelity."
+    }
+  ],
+  "recommended_next_actions": [
+    "Fix depth inversion: apply pixel = 255 - current_pixel to depth.png before ControlNet use",
+    "Lower denoise to 0.40 for stronger input image constraint",
+    "Re-run bake-off with corrected depth to obtain a valid DEPTH_CLEARLY_HELPS / DEPTH_SLIGHTLY_HELPS / NO_MEANINGFUL_DIFFERENCE measurement",
+    "Do NOT proceed to Phase 0J until corrected bake-off is complete"
+  ],
+  "definition_of_done_status": {
+    "hardware_inspection": "DONE",
+    "comfyui_installed": "DONE",
+    "models_downloaded": "DONE",
+    "inputs_prepared": "DONE",
+    "test_A_completed": "DONE",
+    "test_B_completed": "DONE",
+    "workflow_jsons": "DONE",
+    "generation_jsons": "DONE",
+    "comparison_image": "DONE — output/phase0i/comparison/side_by_side.png",
+    "phase0i_report_json": "DONE",
+    "depth_verdict": "DONE — DEPTH_HURTS_QUALITY (depth inversion bug confounds result)"
+  }
+}

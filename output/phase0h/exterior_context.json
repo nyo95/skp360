@@ -1,0 +1,154 @@
+{
+  "schema": "rad-ai360-exterior-context",
+  "version": 1,
+  "camera": "AI360_1",
+  "method": {
+    "summary": "Detected glazing is made transparent only for the context pass; non-glass scene geometry visible through the same ERP pixels marks constrained context.",
+    "context_source_values": [
+      "SCENE_GEOMETRY",
+      "UNCONSTRAINED",
+      "UNKNOWN"
+    ],
+    "no_exterior_objects_created": true,
+    "no_reference_image_used": true
+  },
+  "regions": [
+    {
+      "id": "glass_001",
+      "material_id": "MAT_020",
+      "source_name": "_97",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_002",
+      "material_id": "MAT_029",
+      "source_name": "_Color_001_1",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_003",
+      "material_id": "MAT_046",
+      "source_name": "_Ivory_3",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_004",
+      "material_id": "MAT_054",
+      "source_name": "_Translucent_Glass_Dark_Green_2",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "SCENE_GEOMETRY",
+      "has_geometry_behind": true,
+      "confidence": 0.7792,
+      "visible_glass_pixels": 10764,
+      "context_pixels": 4823,
+      "context_ratio": 0.448068
+    },
+    {
+      "id": "glass_005",
+      "material_id": "MAT_055",
+      "source_name": "_Translucent_Glass_Dark_Green_3",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_006",
+      "material_id": "MAT_056",
+      "source_name": "_Translucent_Glass_Gray_1",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "SCENE_GEOMETRY",
+      "has_geometry_behind": true,
+      "confidence": 0.99,
+      "visible_glass_pixels": 40427,
+      "context_pixels": 40427,
+      "context_ratio": 1.0
+    },
+    {
+      "id": "glass_007",
+      "material_id": "MAT_183",
+      "source_name": "Translucent_Glass_Blue",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_008",
+      "material_id": "MAT_184",
+      "source_name": "Translucent_Glass_Dark_Green",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_009",
+      "material_id": "MAT_185",
+      "source_name": "Translucent_Glass_Dark_Green1",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    },
+    {
+      "id": "glass_010",
+      "material_id": "MAT_186",
+      "source_name": "Translucent_Glass_Safety",
+      "classification": "exterior_window_or_glazing_candidate",
+      "context_source": "UNKNOWN",
+      "has_geometry_behind": null,
+      "confidence": 0.5,
+      "visible_glass_pixels": 0,
+      "context_pixels": 0,
+      "context_ratio": null
+    }
+  ],
+  "summary": {
+    "status": "PASS",
+    "region_counts": {
+      "SCENE_GEOMETRY": 2,
+      "UNCONSTRAINED": 0,
+      "UNKNOWN": 8
+    },
+    "mask_stats": {
+      "dimensions": [
+        2048,
+        1024
+      ],
+      "glass_pixels": 79320,
+      "constrained_context_pixels": 73379,
+      "constrained_ratio_of_glass": 0.925101
+    }
+  }
+}

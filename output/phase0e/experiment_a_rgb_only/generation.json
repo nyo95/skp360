@@ -1,0 +1,19 @@
+{
+  "experiment": "Experiment A \u2014 RGB-only ERP baseline",
+  "status": "NOT_RUN",
+  "reason": "No project-integrated AI image backend was found in D:\\Projects\\skpto360 during Phase 0E preparation. The experiment is defined and ready, but no output is fabricated.",
+  "provider": null,
+  "model": null,
+  "prompt": "Transform this existing architectural interior render into a highly photorealistic interior visualization.\n\nPreserve the exact architecture, camera position, room proportions, wall openings, doors, ceiling geometry, furniture placement, fixture count, cabinetry proportions, and spatial layout from the source image.\n\nPreserve the existing material colors and visual material intent.\n\nImprove only realism: realistic material response, natural reflections, surface texture, soft indirect lighting, photographic exposure, subtle imperfections, and believable interior photography.\n\nDo not redesign the room. Do not move objects. Do not remove objects. Do not add furniture. Do not change wall geometry. Do not change openings. Do not modify camera composition.\n\nThe source image is a 360-degree equirectangular panorama. Preserve the 2:1 equirectangular panorama layout. The left and right image boundaries represent the same 360-degree seam.",
+  "negative_prompt": null,
+  "input_image_hashes": {
+    "rgb_erp": "f5e00a48663e0d9cd391320ebe068f72e1f81cfce12061cb319f2f5ae01faa1c"
+  },
+  "seed": null,
+  "strength_or_denoise": null,
+  "control_weights": null,
+  "resolution": null,
+  "runtime_seconds": null,
+  "provider_request_id": null,
+  "estimated_or_reported_cost": null
+}

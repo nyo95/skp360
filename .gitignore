@@ -1,0 +1,45 @@
+# Local ComfyUI installation — do not commit
+.local/
+
+# Python virtual environments
+**/comfyui_env/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Model weights and caches
+*.ckpt
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.gguf
+
+# HuggingFace cache
+hf_cache/
+
+# Large binary outputs (EXR depth/normal source files)
+output/**/*.exr
+
+# Large source/runtime artifacts; keep reproducible scripts and reports in Git
+output/**/*.blend
+output/**/*.blend1
+output/**/*.dae
+output/**/*.fbx
+output/**/*.obj
+output/**/*.tar.gz
+sketchup/*.skp
+sketchup/*.skb
+sketchup/output/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.swp
+
+# Rad AI Visualizer artifacts
+sketchup/rad_ai360_visualizer/build/
+sketchup/rad_ai360_visualizer/dist/
+*.exe
+*.pkg
+sketchup/rad_ai360_visualizer/config.json

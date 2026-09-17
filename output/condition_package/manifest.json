@@ -1,0 +1,111 @@
+{
+  "schema": "rad-ai360-controlled-condition-package",
+  "version": 1,
+  "pipeline": "CONTROLLED_CORE",
+  "created_at_unix": 1789576312,
+  "source_truth_boundary": {
+    "source_truth": [
+      "scene.json camera",
+      "OBJ geometry",
+      "Blender RGB/depth/normal",
+      "deterministic masks",
+      "material manifest"
+    ],
+    "semantic_interpretation": [
+      "none in v0"
+    ],
+    "ai_generation": [
+      "not part of condition package"
+    ]
+  },
+  "assets": {
+    "source": {
+      "rgb_erp": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\source\\rgb_erp.png",
+        "source": "D:\\Projects\\skpto360\\output\\phase0g\\comparison\\AFTER_SOURCE_FIX.png",
+        "bytes": 2139677,
+        "sha256": "5adaf018f68fb715fc6780a267a8c127b5c7ce233abe5a0749915f8c771d477b"
+      },
+      "depth_exr": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\source\\depth.exr",
+        "source": "D:\\Projects\\skpto360\\output\\phase0d\\depth\\equirectangular.exr",
+        "bytes": 3266108,
+        "sha256": "f1978a0ffb7609fb4f403988323336b43048ab8e3ba3fb1859f2358b73398301"
+      },
+      "depth_condition": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\source\\depth_condition.png",
+        "source": "D:\\Projects\\skpto360\\output\\phase0e\\input\\depth_condition.png",
+        "bytes": 124543,
+        "sha256": "7d25f5ff7676c7038f480f0ef20bcc8b8dfd646d36ce111e70f7bb5b00a127e3"
+      },
+      "normal_exr": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\source\\normal.exr",
+        "source": "D:\\Projects\\skpto360\\output\\phase0d\\normal\\equirectangular.exr",
+        "bytes": 16013700,
+        "sha256": "c908e3becd254b9ff51a5da895a374fd12c1f6bd1271b7a1d8c30a21b421454a"
+      },
+      "normal_condition": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\source\\normal_condition.png",
+        "source": "D:\\Projects\\skpto360\\output\\phase0e\\input\\normal_condition.png",
+        "bytes": 801628,
+        "sha256": "ccca8de14e11c5421f508986897e67de449ef52206ffa0bbf9f82224b1a7f3a6"
+      }
+    },
+    "masks": {
+      "glass": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\masks\\glass.png",
+        "source": "D:\\Projects\\skpto360\\output\\phase0g\\masks\\glass_mask.png",
+        "bytes": 352003,
+        "sha256": "5c4349d49e607424d73e5d9a3045502a9642b48986cc5ef238b5c2bc75acc341"
+      },
+      "exterior_context": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\masks\\exterior_context.png",
+        "source": "D:\\Projects\\skpto360\\output\\phase0h\\exterior_context\\mask.png",
+        "bytes": 45567,
+        "sha256": "223a8d72d6374f78de8f484be282125928453cd29d36d7bcd433df279836be7d"
+      },
+      "material_id": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\masks\\material_id.png",
+        "source": "D:\\Projects\\skpto360\\output\\condition_work\\material_id.png",
+        "bytes": 1852927,
+        "sha256": "8a00d9d77cb86d05c5dcd5be4d845abb474b9647dc5696ba83f7e759f5c15b18"
+      },
+      "geometry_edges": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\masks\\geometry_edges.png",
+        "source": "D:\\Projects\\skpto360\\output\\condition_package\\source\\rgb_erp.png",
+        "bytes": 42182,
+        "sha256": "5a6cb8b84aeb75b3ebf93f8e92a802970eb4a5843b11a0e815a7adeb6a735be0",
+        "method": "Canny edges from authoritative RGB ERP; QC/reference signal only."
+      },
+      "light_mask": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\masks\\light_mask.png",
+        "source": "D:\\Projects\\skpto360\\output\\condition_package\\masks\\light_mask.png",
+        "bytes": 3789,
+        "sha256": "08b47d116a3a548513ba5986f0f19c3d2f02281c0377d73584b47359175162a9",
+        "reason": "No reliable source-truth light fixture positions were available."
+      }
+    },
+    "context": {
+      "exterior_context": {
+        "path": "D:\\Projects\\skpto360\\output\\condition_package\\context\\exterior_context.png",
+        "source": "D:\\Projects\\skpto360\\output\\phase0h\\exterior_context\\panorama.png",
+        "bytes": 2140542,
+        "sha256": "50ee5bb0ce984447eb03c4922807de2f025964043a7bad7ec27e6275fd6a5498"
+      }
+    }
+  },
+  "semantics": {
+    "materials": "semantics/materials.json",
+    "lights": "semantics/lights.json",
+    "scene_contract": "semantics/scene_contract.json"
+  },
+  "qc": {
+    "source_metrics": "qc/source_metrics.json"
+  },
+  "historical_inputs": {
+    "phase0d": "D:\\Projects\\skpto360\\output\\phase0d\\phase0d_report.json",
+    "phase0e": "D:\\Projects\\skpto360\\output\\phase0e\\phase0e_report.json",
+    "phase0g": "D:\\Projects\\skpto360\\output\\phase0g\\phase0g_report.json",
+    "phase0h": "D:\\Projects\\skpto360\\output\\phase0h\\phase0h_report.json"
+  }
+}

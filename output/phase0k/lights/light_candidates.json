@@ -1,0 +1,31 @@
+{
+  "schema": "rad-ai360-phase0k-light-candidates",
+  "version": 1,
+  "date": "2026-09-17",
+  "source": "light_audit.json fallback (material names only \u2014 no world positions)",
+  "entity_metadata_available": false,
+  "candidates_total": 1,
+  "confirmed_count": 0,
+  "low_confidence_count": 0,
+  "unknown_count": 1,
+  "exporter_gap": true,
+  "exporter_gap_note": "scene_entities.json was not found. Run 'Export Entity Metadata...' from SketchUp to populate fixture world positions. Until then, confirmed_count=0 and light positions are UNKNOWN.",
+  "confirmed": [],
+  "low_confidence": [],
+  "unknown": [
+    {
+      "id": "fixture_fallback_0000",
+      "source_name": "Light_metal",
+      "entity_type": "material_only",
+      "world_position_mm": null,
+      "blender_position_m": null,
+      "confidence": 0.25,
+      "evidence": [
+        "material name contains LIGHT"
+      ],
+      "status": "UNKNOWN",
+      "erp_projection": null,
+      "cubemap_projection": null
+    }
+  ]
+}

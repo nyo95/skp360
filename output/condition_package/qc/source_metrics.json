@@ -1,0 +1,33 @@
+{
+  "schema": "rad-ai360-controlled-source-metrics",
+  "version": 1,
+  "projection": {
+    "dimensions": [
+      2048,
+      1024
+    ],
+    "ratio_2_to_1": true,
+    "alpha_min": 1.0,
+    "alpha_max": 1.0,
+    "has_visible_pixels": true,
+    "mean_lr_seam_rgb_delta": 0.006634,
+    "max_lr_seam_rgb_delta": 0.073203,
+    "top_pole_has_visible_pixels": true,
+    "bottom_pole_has_visible_pixels": true
+  },
+  "seam": {
+    "source_rgb_mean_lr_delta": 0.006634,
+    "source_rgb_max_lr_delta": 0.073203,
+    "exterior_context_mean_lr_delta": 0.006905
+  },
+  "masks": {
+    "glass": [
+      2048,
+      1024
+    ],
+    "exterior_context": [
+      2048,
+      1024
+    ]
+  }
+}
