@@ -11,8 +11,12 @@ import cv2
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 if str(ROOT / "scripts") not in sys.path:
     sys.path.insert(0, str(ROOT / "scripts"))
+
+from backend.pass_pipeline import pack_rgb
 
 import controlled_core_harness as harness
 import phase0f_cloudflare_flux_experiment_a as flux
@@ -101,19 +105,35 @@ def structure_metrics(source: np.ndarray, output: np.ndarray, structural_referen
 
 
 def material_region_metrics(source: np.ndarray, output: np.ndarray, material_id: np.ndarray) -> dict:
-    if output.shape[:2] != source.shape[:2]:
+    if material_id.shape[:2] != source.shape[:2]:
         material_id = cv2.resize(material_id, (source.shape[1], source.shape[0]), interpolation=cv2.INTER_NEAREST)
-    labels = material_id.reshape(-1, 3)
-    source_pixels = source.reshape(-1, 3).astype(np.float32)
-    output_pixels = output.reshape(-1, 3).astype(np.float32)
+    # Vectorised per-label aggregation. The previous implementation looped over every
+    # unique colour with a full-frame boolean mask, which does not terminate once the
+    # ID pass carries interpolated colours.
+    labels = pack_rgb(material_id[..., :3]).reshape(-1)
+    unique, inverse = np.unique(labels, return_inverse=True)
+    delta = np.abs(source.reshape(-1, 3).astype(np.float32) - output.reshape(-1, 3).astype(np.float32)).mean(axis=1)
+    pixel_counts = np.bincount(inverse, minlength=unique.size)
+    delta_sums = np.bincount(inverse, weights=delta, minlength=unique.size)
     records = []
-    for color in np.unique(labels, axis=0):
-        mask = np.all(labels == color, axis=1)
-        if np.count_nonzero(mask) < 100:
+    for index, packed in enumerate(unique.tolist()):
+        if pixel_counts[index] < 100:
             continue
-        delta = np.abs(source_pixels[mask] - output_pixels[mask]).mean()
-        records.append({"material_id_bgr": [int(v) for v in color], "pixels": int(np.count_nonzero(mask)), "mean_rgb_delta_0_255": float(delta)})
-    return {"status": "UNCALIBRATED", "regions": records, "interpretation": "material_visual_drift only; RGB drift is not proof of semantic material change."}
+        records.append(
+            {
+                "material_id_bgr": [int((packed >> 16) & 0xFF), int((packed >> 8) & 0xFF), int(packed & 0xFF)],
+                "pixels": int(pixel_counts[index]),
+                "mean_rgb_delta_0_255": float(delta_sums[index] / pixel_counts[index]),
+            }
+        )
+    records.sort(key=lambda item: item["pixels"], reverse=True)
+    return {
+        "status": "UNCALIBRATED",
+        "label_count": int(unique.size),
+        "regions": records,
+        "interpretation": "material_visual_drift only; RGB drift is not proof of semantic material change.",
+    }
+
 
 
 def qc_b3_to_b4(source_path: Path, output_path: Path) -> dict:
@@ -135,6 +155,7 @@ def qc_b3_to_b4(source_path: Path, output_path: Path) -> dict:
     orientation_pass = orientation["status"] == "PASS" and orientation["same_orientation_correlation"] >= orientation["horizontal_flip_correlation"] + 0.02
     seam_pass = output_seam["mean"] <= 0.15 and output_seam["max"] <= 0.75
     structure = structure_metrics(source, output_at_source, structural_reference.astype(np.uint8) * 255)
+    material_drift = material_region_metrics(source, output_at_source, material_id)
     hard_gate_failures = []
     if not dimensions_pass:
         hard_gate_failures.append("ERP output is not exactly 2:1")
@@ -142,7 +163,7 @@ def qc_b3_to_b4(source_path: Path, output_path: Path) -> dict:
         hard_gate_failures.append("orientation/mirroring gate failed")
     if not seam_pass:
         hard_gate_failures.append("seam delta exceeded hard gate")
-    uncalibrated_checks = [structure["status"], material_region_metrics(source, output_at_source, material_id)["status"]]
+    uncalibrated_checks = [structure["status"], material_drift["status"]]
     return {
         "status": "REJECT" if hard_gate_failures else ("UNCALIBRATED" if "UNCALIBRATED" in uncalibrated_checks else "PASS"),
         "hard_gate_failures": hard_gate_failures,
@@ -157,7 +178,7 @@ def qc_b3_to_b4(source_path: Path, output_path: Path) -> dict:
         "architectural_geometry_changes": structure,
         "object_displacement_addition_removal": {"status": "UNKNOWN", "reason": "No object detector or semantic correspondence model is used; visual edge drift is reported separately."},
         "opening_glazing_changes": {"status": "UNCALIBRATED", "mask": "condition_package glazing/exterior masks are available for downstream review; RGB-only Flux has no hard mask control."},
-        "material_visual_drift": material_region_metrics(source, output_at_source, material_id),
+        "material_visual_drift": material_drift,
         "erp_orientation_stitching_integrity": orientation,
         "photorealistic_improvement": {"status": "UNCALIBRATED", "reason": "No subjective quality score or human visual claim is encoded in this QC."},
         "pixel_change_summary": {

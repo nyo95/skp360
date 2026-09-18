@@ -19,7 +19,10 @@ if str(ROOT) not in sys.path:
 
 FACE_ORDER = ("front", "right", "back", "left", "top", "bottom")
 PASS_ORDER = ("albedo", "ao", "depth_raw", "normal", "material_id", "object_id")
+LABEL_PASSES = ("material_id", "object_id")
 NEAR_CLIP = 0.01
+AO_DISTANCE_M = 3.0
+AO_SAMPLES = 16
 
 
 def parse_args():
@@ -91,15 +94,34 @@ def configure_scene(resolution: int):
     scene.render.resolution_y = resolution
     scene.render.resolution_percentage = 100
     scene.render.film_transparent = False
+    # Dithering injects noise into 8-bit output, which destroys discrete ID passes.
+    scene.render.dither_intensity = 0.0
     scene.view_settings.view_transform = "Standard"
     scene.view_settings.look = "None"
     scene.view_settings.exposure = 0
     scene.view_settings.gamma = 1
     scene.world.color = (0.0, 0.0, 0.0)
+    # The Ambient Occlusion shader node needs EEVEE ray tracing to report real occlusion.
+    eevee = getattr(scene, "eevee", None)
+    ao_settings = {}
+    for attribute, value in (("use_raytracing", True), ("use_gtao", True)):
+        if eevee is not None and hasattr(eevee, attribute):
+            setattr(eevee, attribute, value)
+            ao_settings[attribute] = value
     for obj in list(scene.objects):
         if obj.type == "LIGHT":
             bpy.data.objects.remove(obj, do_unlink=True)
-    return selected
+    return selected, ao_settings
+
+
+def label_render_settings(enabled: bool):
+    """Toggle anti-aliasing off for discrete label passes and back on afterwards."""
+    scene = bpy.context.scene
+    scene.render.filter_size = 0.0 if enabled else 1.5
+    eevee = getattr(scene, "eevee", None)
+    if eevee is not None and hasattr(eevee, "taa_render_samples"):
+        eevee.taa_render_samples = 1 if enabled else 16
+
 
 
 def create_camera(eye: Vector, resolution: int):
@@ -172,10 +194,12 @@ def ao_material():
     links = material.node_tree.links
     emission = next(node for node in nodes if node.bl_idname == "ShaderNodeEmission")
     ao = nodes.new("ShaderNodeAmbientOcclusion")
-    if "Samples" in ao.inputs:
-        ao.inputs["Samples"].default_value = 16
+    # `samples` is a node property in current Blender, not an input socket.
+    if hasattr(ao, "samples"):
+        ao.samples = 16
+    ao.only_local = True
     if "Distance" in ao.inputs:
-        ao.inputs["Distance"].default_value = 3.0
+        ao.inputs["Distance"].default_value = AO_DISTANCE_M
     links.new(ao.outputs["Color"], emission.inputs["Color"])
     return material
 
@@ -273,7 +297,7 @@ def run(args):
     scene_data = json.loads(Path(args.json).read_text(encoding="utf-8"))
     clear_scene()
     import_report = import_obj(args.obj)
-    engine = configure_scene(args.resolution)
+    engine, ao_settings = configure_scene(args.resolution)
     basis = scene_basis(scene_data)
     camera = create_camera(basis["eye"], args.resolution)
     albedo = albedo_materials()
@@ -285,6 +309,17 @@ def run(args):
     objects = sorted((obj for obj in bpy.context.scene.objects if obj.type == "MESH"), key=lambda item: item.name)
     object_indices = {obj.name: index + 1 for index, obj in enumerate(objects)}
     timings = {"import_seconds": import_report["duration_seconds"], "faces": {}}
+
+    # One datablock per ID, reused across all six faces. Creating a material per slot
+    # per face leaks thousands of datablocks and slows every later render.
+    id_material_cache: dict = {}
+
+    def id_material(kind: str, index: int):
+        key = (kind, index)
+        if key not in id_material_cache:
+            color = material_color(index) if kind == "material" else object_color(index)
+            id_material_cache[key] = emission_material(f"RAD_{kind.upper()}_ID_{index}", color)
+        return id_material_cache[key]
 
     for face in FACE_ORDER:
         camera.matrix_world = camera_matrix(basis["eye"], basis[face]["forward"], basis[face]["up"])
@@ -307,13 +342,15 @@ def run(args):
         render(out / "cubemap" / "normal" / f"{face}.png", "PNG", "RGB", "8")
         restore_materials(stored)
 
-        stored = replace_materials(lambda obj, slot_index, source: emission_material(f"RAD_MAT_ID_{material_indices.get(source.name, 0)}", material_color(material_indices.get(source.name, 0))))
+        label_render_settings(True)
+        stored = replace_materials(lambda obj, slot_index, source: id_material("material", material_indices.get(source.name, 0) if source else 0))
         render(out / "cubemap" / "material_id" / f"{face}.png", "PNG", "RGB", "8")
         restore_materials(stored)
 
-        stored = replace_materials(lambda obj, slot_index, source: emission_material(f"RAD_OBJ_ID_{object_indices[obj.name]}", object_color(object_indices[obj.name])))
+        stored = replace_materials(lambda obj, slot_index, source: id_material("object", object_indices[obj.name]))
         render(out / "cubemap" / "object_id" / f"{face}.png", "PNG", "RGB", "8")
         restore_materials(stored)
+        label_render_settings(False)
         timings["faces"][face] = round(time.time() - face_start, 3)
 
     report = {
@@ -325,8 +362,23 @@ def run(args):
         "projection": {"face_order": FACE_ORDER, "contract_source": "backend/projection.py", "face_size": args.resolution},
         "camera_basis": {face: {key: [round(float(value), 6) for value in basis[face][key]] for key in ("forward", "up")} for face in FACE_ORDER},
         "depth": {"raw_representation": "world-position to camera-position Euclidean distance", "units": "metres", "conditioning": "backend.pass_pipeline.radial_depth_condition"},
-        "ao": {"representation": "lighting-independent Eevee Ambient Occlusion node factor", "encoding": "8-bit grayscale; white=open, dark=occluded", "distance_m": 3.0, "samples": 16},
+        "ao": {
+            "representation": "lighting-independent Eevee Ambient Occlusion node factor",
+            "encoding": "8-bit grayscale; white=open, dark=occluded",
+            "distance_m": AO_DISTANCE_M,
+            "samples": AO_SAMPLES,
+            "only_local": True,
+            "engine_settings": ao_settings,
+        },
         "normal": {"space": "world", "encoding": "RGB = normal * 0.5 + 0.5"},
+        "label_passes": {
+            "passes": LABEL_PASSES,
+            "anti_aliasing": "disabled during label renders (filter_size=0, taa_render_samples=1)",
+            "dither_intensity": 0.0,
+            "stitch_interpolation": "nearest",
+            "material_index_count": len(material_indices),
+            "object_index_count": len(object_indices),
+        },
         "ids": {"material_strategy": "stable sorted material-name IDs", "object_strategy": "stable sorted imported-object-name IDs", "object_identity_limit": "OBJ import only preserves identities exposed by imported object names/groups"},
         "materials": {"source_material_count": len(material_names), "albedo_fallback": "diffuse_color when no node-based Principled Base Color exists"},
         "timings": timings,
@@ -334,6 +386,11 @@ def run(args):
     }
     report_path = out / "pass_generation_report.json"
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    index_path = out / "id_index.json"
+    index_path.write_text(
+        json.dumps({"material_indices": material_indices, "object_indices": object_indices}, indent=2) + "\n",
+        encoding="utf-8",
+    )
     print(f"RAD_FAST_PASS_REPORT={report_path}")
 
 

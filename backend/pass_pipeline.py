@@ -8,7 +8,7 @@ from typing import Mapping
 import cv2
 import numpy as np
 
-from .projection import cubemap_to_erp
+from .projection import LABEL_PASSES, cubemap_to_erp
 
 
 FACE_ORDER = ("front", "right", "back", "left", "top", "bottom")
@@ -57,11 +57,56 @@ def radial_depth_condition(
 	return condition, stats
 
 
-def stitch_passes(cube: Mapping[str, np.ndarray], width: int) -> np.ndarray:
+def pack_rgb(image: np.ndarray) -> np.ndarray:
+	"""Pack an 8-bit 3-channel image into one uint32 label per pixel."""
+	rgb = np.asarray(image, dtype=np.uint32)
+	if rgb.ndim != 3 or rgb.shape[2] < 3:
+		raise ValueError("Label packing expects a 3-channel image.")
+	return (rgb[..., 0] << 16) | (rgb[..., 1] << 8) | rgb[..., 2]
+
+
+def snap_to_palette(image: np.ndarray, palette: np.ndarray) -> tuple[np.ndarray, dict]:
+	"""Force every pixel of a label pass onto its nearest legal palette entry.
+
+	Blender renders ID passes through a reconstruction filter, so even a single face
+	contains anti-aliased colours that are not real IDs. Snapping restores a discrete
+	label image whose unique colour count cannot exceed the palette size.
+	"""
+	source = np.asarray(image)
+	if source.ndim != 3 or source.shape[2] < 3:
+		raise ValueError("Label snapping expects a 3-channel image.")
+	legal = np.asarray(palette, dtype=np.int16).reshape(-1, 3)
+	if legal.size == 0:
+		raise ValueError("Label palette is empty.")
+	flat = source[..., :3].reshape(-1, 3).astype(np.int16)
+	before = int(np.unique(pack_rgb(source[..., :3])).size)
+	# Chunked nearest-palette search keeps peak memory bounded for 2K ERP inputs.
+	nearest = np.empty(flat.shape[0], dtype=np.int32)
+	chunk = 1 << 18
+	for start in range(0, flat.shape[0], chunk):
+		block = flat[start : start + chunk]
+		distance = np.abs(block[:, None, :] - legal[None, :, :]).sum(axis=2)
+		nearest[start : start + chunk] = np.argmin(distance, axis=1)
+	snapped = legal[nearest].astype(np.uint8).reshape(source.shape[0], source.shape[1], 3)
+	after = int(np.unique(pack_rgb(snapped)).size)
+	stats = {
+		"palette_size": int(legal.shape[0]),
+		"unique_colors_before": before,
+		"unique_colors_after": after,
+		"changed_pixel_percent": float(np.mean(np.any(snapped != source[..., :3], axis=2)) * 100.0),
+		"status": "PASS" if after <= legal.shape[0] else "FAIL",
+	}
+	if stats["status"] != "PASS":
+		raise ValueError(f"Label snapping did not produce a discrete label image: {stats}")
+	return snapped, stats
+
+
+def stitch_passes(cube: Mapping[str, np.ndarray], width: int, pass_name: str | None = None) -> np.ndarray:
 	missing = [face for face in FACE_ORDER if face not in cube]
 	if missing:
 		raise ValueError(f"Missing cubemap faces: {', '.join(missing)}")
-	return cubemap_to_erp({face: cube[face] for face in FACE_ORDER}, width)
+	interpolation = "nearest" if pass_name in LABEL_PASSES else "linear"
+	return cubemap_to_erp({face: cube[face] for face in FACE_ORDER}, width, interpolation=interpolation)
 
 
 def sha256_file(path: str | Path) -> str:

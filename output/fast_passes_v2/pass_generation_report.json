@@ -1,0 +1,150 @@
+{
+  "schema": "rad-ai360-fast-passes",
+  "status": "PASS",
+  "legacy_paths": {
+    "phase0c": "LEGACY / R&D",
+    "phase0d": "LEGACY / R&D"
+  },
+  "engine": "BLENDER_EEVEE",
+  "lighting": {
+    "lights_created": false,
+    "lighting_dependent": false
+  },
+  "projection": {
+    "face_order": [
+      "front",
+      "right",
+      "back",
+      "left",
+      "top",
+      "bottom"
+    ],
+    "contract_source": "backend/projection.py",
+    "face_size": 512
+  },
+  "camera_basis": {
+    "front": {
+      "forward": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "right": {
+      "forward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "back": {
+      "forward": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "left": {
+      "forward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "top": {
+      "forward": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "up": [
+        -1.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    "bottom": {
+      "forward": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "depth": {
+    "raw_representation": "world-position to camera-position Euclidean distance",
+    "units": "metres",
+    "conditioning": "backend.pass_pipeline.radial_depth_condition"
+  },
+  "ao": {
+    "representation": "lighting-independent Eevee Ambient Occlusion node factor",
+    "encoding": "8-bit grayscale; white=open, dark=occluded",
+    "distance_m": 3.0,
+    "samples": 16,
+    "only_local": true,
+    "engine_settings": {
+      "use_raytracing": true
+    }
+  },
+  "normal": {
+    "space": "world",
+    "encoding": "RGB = normal * 0.5 + 0.5"
+  },
+  "label_passes": {
+    "passes": [
+      "material_id",
+      "object_id"
+    ],
+    "anti_aliasing": "disabled during label renders (filter_size=0, taa_render_samples=1)",
+    "dither_intensity": 0.0,
+    "stitch_interpolation": "nearest",
+    "material_index_count": 196,
+    "object_index_count": 6426
+  },
+  "ids": {
+    "material_strategy": "stable sorted material-name IDs",
+    "object_strategy": "stable sorted imported-object-name IDs",
+    "object_identity_limit": "OBJ import only preserves identities exposed by imported object names/groups"
+  },
+  "materials": {
+    "source_material_count": 196,
+    "albedo_fallback": "diffuse_color when no node-based Principled Base Color exists"
+  },
+  "timings": {
+    "import_seconds": 3.84,
+    "faces": {
+      "front": 49.072,
+      "right": 19.397,
+      "back": 23.594,
+      "left": 24.273,
+      "top": 24.789,
+      "bottom": 23.442
+    }
+  },
+  "duration_seconds": 168.467
+}

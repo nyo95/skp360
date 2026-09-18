@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from backend.projection import FACE_BASIS, cubemap_to_erp
+from backend.projection import ERP_CONTRACT, FACE_BASIS, SKETCHUP_WORLD, cubemap_to_erp
 
 OUT = ROOT / "output" / "phase0l1"
 ORIENT_OUT = OUT / "orientation_test"
@@ -27,28 +27,40 @@ FACE_COLORS = {
     "bottom": (0, 255, 255),
 }
 
+# Probe points in ERP fractional coordinates, and the face each one must resolve to.
+PROBES = {
+    "front": (0.5, 0.5, "front"),
+    "right": (0.75, 0.5, "right"),
+    "left": (0.25, 0.5, "left"),
+    "back": (0.0, 0.5, "back"),
+    "zenith": (0.5, 0.0, "top"),
+    "nadir": (0.5, 1.0, "bottom"),
+}
+
+# Annotations must never touch the probe target, so the centre stays a pure face colour.
+CENTER_CLEAN_RADIUS_FRAC = 1.0 / 6.0
+
 
 def make_face(face: str, size: int = 256) -> np.ndarray:
     img = np.zeros((size, size, 3), dtype=np.uint8)
     color = FACE_COLORS[face]
     img[:] = (24, 24, 24)
     cv2.rectangle(img, (16, 16), (size - 17, size - 17), color, thickness=18)
-    cv2.circle(img, (size // 2, size // 2), size // 6, color, thickness=-1)
+    cv2.circle(img, (size // 2, size // 2), int(size * CENTER_CLEAN_RADIUS_FRAC), color, thickness=-1)
 
-    # Directional marker so face rotations are visible deterministically.
-    center = (size // 2, size // 2)
-    if face == "front":
-        cv2.arrowedLine(img, (size // 2, size - 40), (size // 2, 40), (255, 255, 255), 6)
-    elif face == "right":
-        cv2.arrowedLine(img, (40, size // 2), (size - 40, size // 2), (255, 255, 255), 6)
-    elif face == "back":
-        cv2.arrowedLine(img, (size // 2, size - 40), (size // 2, 40), (255, 255, 255), 6)
-    elif face == "left":
-        cv2.arrowedLine(img, (size - 40, size // 2), (40, size // 2), (255, 255, 255), 6)
-    elif face == "top":
-        cv2.arrowedLine(img, (size // 2, size - 40), (size // 2, 40), (255, 255, 255), 6)
+    # Directional marker so face rotations are visible deterministically. The marker is
+    # kept clear of the centre disc, otherwise the orientation probe samples annotation
+    # pixels instead of the face colour and reports a false failure.
+    margin = 28
+    offset = int(size * CENTER_CLEAN_RADIUS_FRAC) + 18
+    if face in ("front", "back", "top"):
+        cv2.arrowedLine(img, (size // 2 + offset, size - margin), (size // 2 + offset, margin), (255, 255, 255), 6)
     elif face == "bottom":
-        cv2.arrowedLine(img, (size // 2, 40), (size // 2, size - 40), (255, 255, 255), 6)
+        cv2.arrowedLine(img, (size // 2 + offset, margin), (size // 2 + offset, size - margin), (255, 255, 255), 6)
+    elif face == "right":
+        cv2.arrowedLine(img, (margin, size // 2 + offset), (size - margin, size // 2 + offset), (255, 255, 255), 6)
+    elif face == "left":
+        cv2.arrowedLine(img, (size - margin, size // 2 + offset), (margin, size // 2 + offset), (255, 255, 255), 6)
 
     pil = Image.fromarray(img[..., ::-1])
     draw = ImageDraw.Draw(pil)
@@ -59,9 +71,33 @@ def make_face(face: str, size: int = 256) -> np.ndarray:
         font = ImageFont.load_default()
     bbox = draw.textbbox((0, 0), label, font=font)
     x = (size - (bbox[2] - bbox[0])) // 2
-    y = size // 2 - 22
+    y = margin
     draw.text((x, y), label, fill=(255, 255, 255), font=font)
     return np.asarray(pil)[..., ::-1]
+
+
+def probe_face_color(erp: np.ndarray, x_frac: float, y_frac: float) -> tuple[int, int, int]:
+    """Return the dominant non-annotation colour at an ERP probe point.
+
+    The centre pixel alone is fragile: any annotation or resampling artefact flips the
+    result. The modal colour of a small patch, with white annotation and dark background
+    pixels excluded, is stable under resampling.
+    """
+    height, width = erp.shape[:2]
+    x = int(round(x_frac * (width - 1)))
+    y = int(round(y_frac * (height - 1)))
+    radius = max(4, height // 32)
+    y0, y1 = max(0, y - radius), min(height, y + radius + 1)
+    x0, x1 = max(0, x - radius), min(width, x + radius + 1)
+    patch = erp[y0:y1, x0:x1].reshape(-1, 3).astype(np.int16)
+    annotation = np.all(patch >= 236, axis=1)
+    background = np.all(np.abs(patch - 24) <= 8, axis=1)
+    candidates = patch[~(annotation | background)]
+    if candidates.size == 0:
+        candidates = patch
+    colors, counts = np.unique(candidates, axis=0, return_counts=True)
+    dominant = colors[int(np.argmax(counts))]
+    return tuple(int(v) for v in dominant)
 
 
 def generate_orientation_fixture() -> dict:
@@ -83,64 +119,29 @@ def generate_orientation_fixture() -> dict:
         "fixture": {
             "faces": sorted(cube.keys()),
             "size": [2048, 1024],
+            "probe_strategy": "modal non-annotation colour in a patch around the probe point",
         },
         "expected_regions": {},
+        "region_checks": {},
     }
 
-    def region_probe(name: str, x_frac: float, y_frac: float):
-        x = int(round(x_frac * (erp.shape[1] - 1)))
-        y = int(round(y_frac * (erp.shape[0] - 1)))
-        bgr = erp[y, x]
+    for name, (x_frac, y_frac, expected_face) in PROBES.items():
+        observed = probe_face_color(erp, x_frac, y_frac)
+        expected = FACE_COLORS[expected_face]
+        delta = int(np.linalg.norm(np.asarray(observed, dtype=np.int16) - np.asarray(expected, dtype=np.int16)))
         report["expected_regions"][name] = {
-            "xy": [x, y],
-            "rgb": [int(v) for v in bgr[::-1]],
-            "dominant_face": name,
+            "xy": [int(round(x_frac * (erp.shape[1] - 1))), int(round(y_frac * (erp.shape[0] - 1)))],
+            "observed_bgr": list(observed),
+            "expected_bgr": list(expected),
+            "dominant_face": expected_face,
         }
-
-    region_probe("front", 0.5, 0.5)
-    region_probe("right", 0.75, 0.5)
-    region_probe("left", 0.25, 0.5)
-    region_probe("back", 1.0, 0.5)
-    region_probe("zenith", 0.5, 0.0)
-    region_probe("nadir", 0.5, 1.0)
-
-    # Verify dominant face colors appear in each expected region.
-    region_checks = {}
-    for sample_name, expected in {
-        "front": "front",
-        "right": "right",
-        "left": "left",
-        "back": "back",
-        "zenith": "top",
-        "nadir": "bottom",
-    }.items():
-        x = int(round({
-            "front": 0.5,
-            "right": 0.75,
-            "left": 0.25,
-            "back": 1.0,
-            "zenith": 0.5,
-            "nadir": 0.5,
-        }[sample_name] * (erp.shape[1] - 1)))
-        y = int(round({
-            "front": 0.5,
-            "right": 0.5,
-            "left": 0.5,
-            "back": 0.5,
-            "zenith": 0.0,
-            "nadir": 1.0,
-        }[sample_name] * (erp.shape[0] - 1)))
-        pix = erp[y, x]
-        face_color = np.array(FACE_COLORS[expected], dtype=np.uint8)
-        delta = int(np.linalg.norm(np.asarray(pix, dtype=np.int16) - face_color))
-        region_checks[sample_name] = {
-            "expected_face": expected,
+        report["region_checks"][name] = {
+            "expected_face": expected_face,
             "distance_to_expected_color": delta,
-            "pass": delta < 150,
+            "pass": delta < 60,
         }
 
-    report["region_checks"] = region_checks
-    report["status"] = "PASS" if all(v["pass"] for v in region_checks.values()) else "FAIL"
+    report["status"] = "PASS" if all(v["pass"] for v in report["region_checks"].values()) else "FAIL"
     (ORIENT_OUT / "orientation_report.json").write_text(json.dumps(report, indent=2))
     return report
 
@@ -191,15 +192,10 @@ def write_phase0l1_report() -> dict:
         "projection_contract": {
             "source": "backend/projection.py",
             "sketchup_world_axes": {"x": "SketchUp +X", "y": "SketchUp +Y", "z": "SketchUp +Z"},
-            "camera_forward": [1.0, 0.0, 0.0],
-            "camera_right": [0.0, -1.0, 0.0],
-            "camera_up": [0.0, 0.0, 1.0],
-            "longitude_zero": "front (+X)",
-            "longitude_plus_90": "right (-Y)",
-            "longitude_minus_90": "left (+Y)",
-            "longitude_180": "back (-X)",
-            "zenith": "+Z",
-            "nadir": "-Z",
+            "camera_forward": [float(v) for v in SKETCHUP_WORLD["camera_forward"]],
+            "camera_right": [float(v) for v in SKETCHUP_WORLD["camera_right"]],
+            "camera_up": [float(v) for v in SKETCHUP_WORLD["camera_up"]],
+            **{key: value for key, value in ERP_CONTRACT.items()},
         },
         "rgb": {"path": str(rgb.relative_to(ROOT)), "width": 2048, "height": 1024},
         "depth": {"path": str(depth.relative_to(ROOT)), "width": 2048, "height": 1024},
@@ -211,7 +207,14 @@ def write_phase0l1_report() -> dict:
         "orientation_test": orient,
         "seam": {"status": "PASS", "note": "X=0 and X=max seam are continuous with canonical yaw contract"},
         "poles": {"status": "PASS", "note": "Top pole is +Z zenith, bottom pole is -Z nadir"},
-        "root_cause": "Phase 0L used a different yaw convention in its remap logic than the actual SketchUp/Phase 0C basis. The stitching formula inverted the ERP longitude sign and mismatched the face assignments so the panorama was effectively reversed relative to the Blender depth ERP.",
+        "root_cause": (
+            "Original Phase 0L stitching used a yaw convention that disagreed with the actual "
+            "SketchUp/Phase 0C basis, so the panorama was reversed relative to the Blender depth ERP. "
+            "backend/projection.py is now the single source of that convention and is asserted by "
+            "tests/test_projection_contract.py. The earlier 0L1 FAIL verdict was itself a fixture "
+            "defect: the probe sampled the centre pixel where the face label text is drawn, so every "
+            "region reported white instead of its face colour."
+        ),
         "files": {
             "diagnostic_report": "output/phase0l1/phase0l1_report.json",
             "orientation_fixture": "output/phase0l1/orientation_test/orientation_erp.png",

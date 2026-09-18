@@ -1,5 +1,5 @@
 {
-  "status": "FAIL",
+  "status": "PASS",
   "projection_contract": {
     "source": "backend/projection.py",
     "sketchup_world_axes": {
@@ -27,7 +27,11 @@
     "longitude_minus_90": "left (+Y)",
     "longitude_180": "back (-X)",
     "zenith": "+Z",
-    "nadir": "-Z"
+    "nadir": "-Z",
+    "erp_x_direction": "U advances through back (-180\u00b0), left (-90\u00b0), front (0\u00b0), right (+90\u00b0), back (+180\u00b0); seam at \u00b1180\u00b0",
+    "erp_y_direction": "from zenith to nadir with 0\u00b0 at the top pole",
+    "cubemap_face_direction": "world direction of face forward vector",
+    "cubemap_face_up": "world up vector for that face"
   },
   "rgb": {
     "path": "output\\phase0l1\\rgb_erp_corrected.png",
@@ -47,7 +51,7 @@
     "human_review_required": true
   },
   "orientation_test": {
-    "status": "FAIL",
+    "status": "PASS",
     "fixture": {
       "faces": [
         "back",
@@ -60,7 +64,8 @@
       "size": [
         2048,
         1024
-      ]
+      ],
+      "probe_strategy": "modal non-annotation colour in a patch around the probe point"
     },
     "expected_regions": {
       "front": {
@@ -68,9 +73,14 @@
           1024,
           512
         ],
-        "rgb": [
-          255,
-          255,
+        "observed_bgr": [
+          0,
+          0,
+          255
+        ],
+        "expected_bgr": [
+          0,
+          0,
           255
         ],
         "dominant_face": "front"
@@ -80,10 +90,15 @@
           1535,
           512
         ],
-        "rgb": [
+        "observed_bgr": [
+          0,
           255,
+          0
+        ],
+        "expected_bgr": [
+          0,
           255,
-          255
+          0
         ],
         "dominant_face": "right"
       },
@@ -92,22 +107,32 @@
           512,
           512
         ],
-        "rgb": [
+        "observed_bgr": [
           255,
           255,
-          255
+          0
+        ],
+        "expected_bgr": [
+          255,
+          255,
+          0
         ],
         "dominant_face": "left"
       },
       "back": {
         "xy": [
-          2047,
+          0,
           512
         ],
-        "rgb": [
+        "observed_bgr": [
           255,
+          0,
+          0
+        ],
+        "expected_bgr": [
           255,
-          255
+          0,
+          0
         ],
         "dominant_face": "back"
       },
@@ -116,56 +141,66 @@
           1024,
           0
         ],
-        "rgb": [
+        "observed_bgr": [
           255,
-          255,
+          0,
           255
         ],
-        "dominant_face": "zenith"
+        "expected_bgr": [
+          255,
+          0,
+          255
+        ],
+        "dominant_face": "top"
       },
       "nadir": {
         "xy": [
           1024,
           1023
         ],
-        "rgb": [
-          255,
+        "observed_bgr": [
+          0,
           255,
           255
         ],
-        "dominant_face": "nadir"
+        "expected_bgr": [
+          0,
+          255,
+          255
+        ],
+        "dominant_face": "bottom"
       }
     },
     "region_checks": {
       "front": {
         "expected_face": "front",
-        "distance_to_expected_color": 360,
-        "pass": false
+        "distance_to_expected_color": 0,
+        "pass": true
       },
       "right": {
         "expected_face": "right",
-        "distance_to_expected_color": 360,
-        "pass": false
+        "distance_to_expected_color": 0,
+        "pass": true
       },
       "left": {
         "expected_face": "left",
-        "distance_to_expected_color": 255,
-        "pass": false
+        "distance_to_expected_color": 0,
+        "pass": true
       },
       "back": {
         "expected_face": "back",
-        "distance_to_expected_color": 360,
-        "pass": false
+        "distance_to_expected_color": 0,
+        "pass": true
       },
       "zenith": {
         "expected_face": "top",
-        "distance_to_expected_color": 255,
-        "pass": false
+        "distance_to_expected_color": 0,
+        "pass": true
       },
       "nadir": {
         "expected_face": "bottom",
-        "distance_to_expected_color": 255,
-        "pass": false
+        "distance_to_expected_color": 0,
+        "pass": true
       }
     }
   },
@@ -177,7 +212,7 @@
     "status": "PASS",
     "note": "Top pole is +Z zenith, bottom pole is -Z nadir"
   },
-  "root_cause": "Phase 0L used a different yaw convention in its remap logic than the actual SketchUp/Phase 0C basis. The stitching formula inverted the ERP longitude sign and mismatched the face assignments so the panorama was effectively reversed relative to the Blender depth ERP.",
+  "root_cause": "Original Phase 0L stitching used a yaw convention that disagreed with the actual SketchUp/Phase 0C basis, so the panorama was reversed relative to the Blender depth ERP. backend/projection.py is now the single source of that convention and is asserted by tests/test_projection_contract.py. The earlier 0L1 FAIL verdict was itself a fixture defect: the probe sampled the centre pixel where the face label text is drawn, so every region reported white instead of its face colour.",
   "files": {
     "diagnostic_report": "output/phase0l1/phase0l1_report.json",
     "orientation_fixture": "output/phase0l1/orientation_test/orientation_erp.png",

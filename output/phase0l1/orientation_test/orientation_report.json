@@ -1,5 +1,5 @@
 {
-  "status": "FAIL",
+  "status": "PASS",
   "fixture": {
     "faces": [
       "back",
@@ -12,7 +12,8 @@
     "size": [
       2048,
       1024
-    ]
+    ],
+    "probe_strategy": "modal non-annotation colour in a patch around the probe point"
   },
   "expected_regions": {
     "front": {
@@ -20,9 +21,14 @@
         1024,
         512
       ],
-      "rgb": [
-        255,
-        255,
+      "observed_bgr": [
+        0,
+        0,
+        255
+      ],
+      "expected_bgr": [
+        0,
+        0,
         255
       ],
       "dominant_face": "front"
@@ -32,10 +38,15 @@
         1535,
         512
       ],
-      "rgb": [
+      "observed_bgr": [
+        0,
         255,
+        0
+      ],
+      "expected_bgr": [
+        0,
         255,
-        255
+        0
       ],
       "dominant_face": "right"
     },
@@ -44,22 +55,32 @@
         512,
         512
       ],
-      "rgb": [
+      "observed_bgr": [
         255,
         255,
-        255
+        0
+      ],
+      "expected_bgr": [
+        255,
+        255,
+        0
       ],
       "dominant_face": "left"
     },
     "back": {
       "xy": [
-        2047,
+        0,
         512
       ],
-      "rgb": [
+      "observed_bgr": [
         255,
+        0,
+        0
+      ],
+      "expected_bgr": [
         255,
-        255
+        0,
+        0
       ],
       "dominant_face": "back"
     },
@@ -68,56 +89,66 @@
         1024,
         0
       ],
-      "rgb": [
+      "observed_bgr": [
         255,
-        255,
+        0,
         255
       ],
-      "dominant_face": "zenith"
+      "expected_bgr": [
+        255,
+        0,
+        255
+      ],
+      "dominant_face": "top"
     },
     "nadir": {
       "xy": [
         1024,
         1023
       ],
-      "rgb": [
-        255,
+      "observed_bgr": [
+        0,
         255,
         255
       ],
-      "dominant_face": "nadir"
+      "expected_bgr": [
+        0,
+        255,
+        255
+      ],
+      "dominant_face": "bottom"
     }
   },
   "region_checks": {
     "front": {
       "expected_face": "front",
-      "distance_to_expected_color": 360,
-      "pass": false
+      "distance_to_expected_color": 0,
+      "pass": true
     },
     "right": {
       "expected_face": "right",
-      "distance_to_expected_color": 360,
-      "pass": false
+      "distance_to_expected_color": 0,
+      "pass": true
     },
     "left": {
       "expected_face": "left",
-      "distance_to_expected_color": 255,
-      "pass": false
+      "distance_to_expected_color": 0,
+      "pass": true
     },
     "back": {
       "expected_face": "back",
-      "distance_to_expected_color": 360,
-      "pass": false
+      "distance_to_expected_color": 0,
+      "pass": true
     },
     "zenith": {
       "expected_face": "top",
-      "distance_to_expected_color": 255,
-      "pass": false
+      "distance_to_expected_color": 0,
+      "pass": true
     },
     "nadir": {
       "expected_face": "bottom",
-      "distance_to_expected_color": 255,
-      "pass": false
+      "distance_to_expected_color": 0,
+      "pass": true
     }
   }
 }

@@ -12,7 +12,16 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from backend.pass_pipeline import FACE_ORDER, build_manifest, edge_overlap, radial_depth_condition, stitch_passes
+from backend.pass_pipeline import (
+    FACE_ORDER,
+    build_manifest,
+    edge_overlap,
+    pack_rgb,
+    radial_depth_condition,
+    snap_to_palette,
+    stitch_passes,
+)
+from backend.projection import LABEL_PASSES
 
 
 def parse_args():
@@ -20,6 +29,7 @@ def parse_args():
     parser.add_argument("--in", dest="input_dir", required=True)
     parser.add_argument("--out", required=True)
     parser.add_argument("--width", type=int, default=2048)
+    parser.add_argument("--label-min-face-pixels", type=int, default=8)
     return parser.parse_args()
 
 
@@ -35,6 +45,29 @@ def read_face(path: Path, flags: int):
     return image
 
 
+def label_palette(faces: dict, min_face_pixels: int) -> np.ndarray:
+    """Collect the legal ID colours actually present in the rendered faces.
+
+    With anti-aliasing disabled each face contains only true ID colours, so this is an
+    exact palette. If anti-aliasing ever leaks back in, rare blended colours fall below
+    `min_face_pixels` and are excluded, and the snap report will show a non-zero change.
+    """
+    counts: dict[int, int] = {}
+    for image in faces.values():
+        packed = pack_rgb(image[..., :3])
+        values, occurrences = np.unique(packed, return_counts=True)
+        for value, occurrence in zip(values.tolist(), occurrences.tolist()):
+            if occurrence >= min_face_pixels:
+                counts[value] = counts.get(value, 0) + occurrence
+    if not counts:
+        raise ValueError("No stable label colours found in cubemap faces.")
+    packed_palette = np.array(sorted(counts), dtype=np.uint32)
+    return np.stack(
+        ((packed_palette >> 16) & 0xFF, (packed_palette >> 8) & 0xFF, packed_palette & 0xFF),
+        axis=1,
+    ).astype(np.uint8)
+
+
 def assemble_pass(input_dir: Path, output_dir: Path, pass_name: str, extension: str, width: int, flags: int):
     faces = {face: read_face(input_dir / "cubemap" / pass_name / f"{face}.{extension}", flags) for face in FACE_ORDER}
     if any(not np.any(image) for image in faces.values()):
@@ -42,7 +75,7 @@ def assemble_pass(input_dir: Path, output_dir: Path, pass_name: str, extension: 
     face_shape = faces[FACE_ORDER[0]].shape[:2]
     if face_shape[0] != face_shape[1] or any(image.shape[:2] != face_shape for image in faces.values()):
         raise ValueError(f"Cubemap faces must share one square resolution: {pass_name}")
-    erp = stitch_passes(faces, width)
+    erp = stitch_passes(faces, width, pass_name=pass_name)
     output_dir.mkdir(parents=True, exist_ok=True)
     path = output_dir / f"{pass_name}.{'npy' if pass_name == 'depth_raw' else 'png'}"
     if pass_name == "depth_raw":
@@ -50,6 +83,17 @@ def assemble_pass(input_dir: Path, output_dir: Path, pass_name: str, extension: 
     else:
         cv2.imwrite(str(path), erp)
     return path, faces, erp
+
+
+def assemble_label_pass(input_dir: Path, output_dir: Path, pass_name: str, width: int, min_face_pixels: int):
+    path, faces, erp = assemble_pass(input_dir, output_dir, pass_name, "png", width, cv2.IMREAD_COLOR)
+    palette = label_palette(faces, min_face_pixels)
+    snapped, stats = snap_to_palette(erp, palette)
+    cv2.imwrite(str(path), snapped)
+    stats["min_face_pixels"] = min_face_pixels
+    stats["stitch_interpolation"] = "nearest"
+    return path, faces, snapped, stats
+
 
 
 def main():
@@ -90,13 +134,20 @@ def main():
     files["erp/normal"] = normal_path
     files.update({f"cubemap/normal/{face}": input_dir / "cubemap" / "normal" / f"{face}.png" for face in FACE_ORDER})
     face_counts["normal"] = len(normal_faces)
-    material_path, material_faces, _ = assemble_pass(input_dir, erp_dir, "material_id", "png", args.width, cv2.IMREAD_COLOR)
-    files["erp/material_id"] = material_path
-    files.update({f"cubemap/material_id/{face}": input_dir / "cubemap" / "material_id" / f"{face}.png" for face in FACE_ORDER})
-    face_counts["material_id"] = len(material_faces)
-    stale_object_erp = erp_dir / "object_id.png"
-    if stale_object_erp.exists():
-        stale_object_erp.unlink()
+
+    label_stats = {}
+    for pass_name in LABEL_PASSES:
+        if not (input_dir / "cubemap" / pass_name / f"{FACE_ORDER[0]}.png").is_file():
+            continue
+        path, label_faces, _, stats = assemble_label_pass(
+            input_dir, erp_dir, pass_name, args.width, args.label_min_face_pixels
+        )
+        files[f"erp/{pass_name}"] = path
+        files.update(
+            {f"cubemap/{pass_name}/{face}": input_dir / "cubemap" / pass_name / f"{face}.png" for face in FACE_ORDER}
+        )
+        face_counts[pass_name] = len(label_faces)
+        label_stats[pass_name] = stats
 
     overlay = np.zeros((*albedo_erp.shape[:2], 3), dtype=np.uint8)
     albedo_gray = cv2.cvtColor(albedo_erp, cv2.COLOR_BGR2GRAY)
@@ -124,6 +175,7 @@ def main():
         "faces": face_counts,
         "ao": {"raw": "stitched Eevee Ambient Occlusion factor", "composite": "albedo_composed = albedo_rgb * (ao_gray / 255)", "status": "PASS"},
         "depth": {"raw": "true radial distance in metres", "conditioning": "p2 white to p98 black", "statistics": depth_stats},
+        "label_passes": label_stats,
         "alignment": edge_overlap(albedo_erp, depth_condition),
         "assets": {name: str(path.relative_to(output_dir)).replace("\\", "/") for name, path in files.items()},
     }
