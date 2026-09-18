@@ -122,6 +122,25 @@ For Controlled Core:
 
 `run_controlled_material_id.ps1` renders deterministic material IDs and visible coverage. `run_controlled_package.ps1` builds `output/condition_package/`. `run_controlled_bakeoff.ps1` runs B0 FAST_BASELINE vs B1 CONTROLLED_CORE with the same Cloudflare model/source/settings and writes `output/generation_bakeoff/report.json`.
 
+### NEW — Single-click panorama pipeline (1x FLUX)
+
+One menu item inside SketchUp runs the full chain and produces a panorama with a single Cloudflare FLUX call:
+
+```text
+Extensions > RAD AI360 > Export AI360 & Render Panorama (1-Click Pipeline)
+```
+
+Flow: SketchUp Ruby exporter → `output/obj/` → Blender headless fast passes (`scripts/run_blender_fast_passes.ps1` equivalent) → self-contained harness condition package (fresh from ERP, no legacy phase reports) → one FLUX.2 Klein call → `output/pipeline/panorama.png` + `output/pipeline/report.json`.
+
+The same chain runs from PowerShell:
+
+```powershell
+.\scripts\run_pipeline.ps1
+# --skip-blender (reuse existing fast passes), --skip-flux (stop before the paid API call), --face-resolution, --erp-width, --guidance, --timeout
+```
+
+`output/pipeline/condition_package/` is rebuilt deterministically from the freshly rendered material-ID ERP (labels joined to OBJ material names via `output/fast_passes/id_index.json`, glazing via name/opacity heuristic). The harness monkeypatches `controlled_core_harness.PACKAGE_DIR` so prompt compilation, provenance, and QC read only pipeline-fresh assets.
+
 ## Required local inputs
 
 The current pipeline expects:

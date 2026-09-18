@@ -1,0 +1,1142 @@
+{
+  "schema": "rad-ai360-single-pipeline-materials",
+  "version": 1,
+  "source": "Observed material_id ERP coverage joined to OBJ-import material names via id_index.json.",
+  "semantic_interpretation_used": false,
+  "materials": [
+    {
+      "id": "MAT_079",
+      "name": "Plaster_1",
+      "base_color": [
+        0.8824,
+        0.8549,
+        0.6039
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 681082,
+      "visible_pixel_coverage": 0.324765
+    },
+    {
+      "id": "MAT_024",
+      "name": "Color_H03",
+      "base_color": [
+        0.5412,
+        0.9059,
+        0.6824
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 564455,
+      "visible_pixel_coverage": 0.269153
+    },
+    {
+      "id": "MAT_034",
+      "name": "FrontColor",
+      "base_color": [
+        0.6235,
+        0.5333,
+        0.9059
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 431907,
+      "visible_pixel_coverage": 0.205949
+    },
+    {
+      "id": "MAT_175",
+      "name": "kusen_coklat",
+      "base_color": [
+        0.6627,
+        0.9608,
+        0.8784
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 76677,
+      "visible_pixel_coverage": 0.036562
+    },
+    {
+      "id": "MAT_056",
+      "name": "M_6201W_F553_MRN_WAL_Material_1",
+      "base_color": [
+        0.8392,
+        0.8314,
+        0.8863
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 60615,
+      "visible_pixel_coverage": 0.028903
+    },
+    {
+      "id": "MAT_058",
+      "name": "M_71_dark__fine_wood_texture_seamless",
+      "base_color": [
+        0.7569,
+        0.6118,
+        0.7098
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 58842,
+      "visible_pixel_coverage": 0.028058
+    },
+    {
+      "id": "MAT_153",
+      "name": "_Translucent_Glass_Gray_1",
+      "base_color": [
+        0.9922,
+        0.6902,
+        0.851
+      ],
+      "opacity": 0.5,
+      "is_glazing": true,
+      "visible": true,
+      "visible_pixels": 41065,
+      "visible_pixel_coverage": 0.019581
+    },
+    {
+      "id": "MAT_095",
+      "name": "Tiles_04",
+      "base_color": [
+        0.9608,
+        0.5216,
+        0.6196
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 20757,
+      "visible_pixel_coverage": 0.009898
+    },
+    {
+      "id": "MAT_045",
+      "name": "Limestone__R3U0R2_",
+      "base_color": [
+        0.6431,
+        0.9882,
+        0.8824
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 19906,
+      "visible_pixel_coverage": 0.009492
+    },
+    {
+      "id": "MAT_103",
+      "name": "Wood_04__Brick_Bond",
+      "base_color": [
+        0.6353,
+        0.9294,
+        0.9137
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 14012,
+      "visible_pixel_coverage": 0.006681
+    },
+    {
+      "id": "MAT_096",
+      "name": "Translucent_Glass_Blue",
+      "base_color": [
+        0.9647,
+        1.0,
+        0.9961
+      ],
+      "opacity": 0.5,
+      "is_glazing": true,
+      "visible": true,
+      "visible_pixels": 13191,
+      "visible_pixel_coverage": 0.00629
+    },
+    {
+      "id": "MAT_001",
+      "name": "Abu_Muda",
+      "base_color": [
+        0.8275,
+        0.8784,
+        0.7059
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 12258,
+      "visible_pixel_coverage": 0.005845
+    },
+    {
+      "id": "MAT_097",
+      "name": "Translucent_Glass_Dark_Green",
+      "base_color": [
+        0.6353,
+        0.8667,
+        0.9804
+      ],
+      "opacity": 0.313,
+      "is_glazing": true,
+      "visible": true,
+      "visible_pixels": 11803,
+      "visible_pixel_coverage": 0.005628
+    },
+    {
+      "id": "MAT_151",
+      "name": "_Translucent_Glass_Dark_Green_2",
+      "base_color": [
+        0.6431,
+        0.9922,
+        0.5294
+      ],
+      "opacity": 0.5,
+      "is_glazing": true,
+      "visible": true,
+      "visible_pixels": 10798,
+      "visible_pixel_coverage": 0.005149
+    },
+    {
+      "id": "MAT_006",
+      "name": "Calacatta_Marble__IA408Q_",
+      "base_color": [
+        0.8275,
+        0.5137,
+        0.7647
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 8383,
+      "visible_pixel_coverage": 0.003997
+    },
+    {
+      "id": "MAT_010",
+      "name": "Ceramic_White",
+      "base_color": [
+        0.8,
+        0.6392,
+        0.9843
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 8073,
+      "visible_pixel_coverage": 0.00385
+    },
+    {
+      "id": "MAT_094",
+      "name": "Sudbrock_469_cashmere",
+      "base_color": [
+        0.8157,
+        0.8314,
+        0.8824
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 7509,
+      "visible_pixel_coverage": 0.003581
+    },
+    {
+      "id": "MAT_165",
+      "name": "billiani_doll1",
+      "base_color": [
+        0.6941,
+        0.6588,
+        0.8039
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 6166,
+      "visible_pixel_coverage": 0.00294
+    },
+    {
+      "id": "MAT_040",
+      "name": "KUSEN",
+      "base_color": [
+        0.8314,
+        0.6431,
+        0.8667
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 5504,
+      "visible_pixel_coverage": 0.002625
+    },
+    {
+      "id": "MAT_122",
+      "name": "_87",
+      "base_color": [
+        0.9882,
+        0.6784,
+        0.6941
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 5452,
+      "visible_pixel_coverage": 0.0026
+    },
+    {
+      "id": "MAT_158",
+      "name": "___",
+      "base_color": [
+        0.8196,
+        0.9961,
+        0.8667
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 4684,
+      "visible_pixel_coverage": 0.002234
+    },
+    {
+      "id": "MAT_030",
+      "name": "Color_M07",
+      "base_color": [
+        0.9255,
+        0.8275,
+        0.5255
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 3229,
+      "visible_pixel_coverage": 0.00154
+    },
+    {
+      "id": "MAT_028",
+      "name": "Color_M05",
+      "base_color": [
+        0.6275,
+        0.5961,
+        0.651
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 3220,
+      "visible_pixel_coverage": 0.001535
+    },
+    {
+      "id": "MAT_167",
+      "name": "billiani_doll_55",
+      "base_color": [
+        0.7333,
+        0.9294,
+        0.698
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 3003,
+      "visible_pixel_coverage": 0.001432
+    },
+    {
+      "id": "MAT_196",
+      "name": "xiadele_18___DefaultdrxcsseeffJzs",
+      "base_color": [
+        0.7608,
+        0.7725,
+        0.7922
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 2712,
+      "visible_pixel_coverage": 0.001293
+    },
+    {
+      "id": "MAT_107",
+      "name": "_10",
+      "base_color": [
+        0.9529,
+        0.6784,
+        0.8471
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 2130,
+      "visible_pixel_coverage": 0.001016
+    },
+    {
+      "id": "MAT_173",
+      "name": "dark_wood1",
+      "base_color": [
+        0.7333,
+        0.8431,
+        0.7176
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1972,
+      "visible_pixel_coverage": 0.00094
+    },
+    {
+      "id": "MAT_109",
+      "name": "_159",
+      "base_color": [
+        0.7373,
+        0.6863,
+        0.9961
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1868,
+      "visible_pixel_coverage": 0.000891
+    },
+    {
+      "id": "MAT_033",
+      "name": "Demountable_Ceiling_Tile_Stack__ENV3SF_1",
+      "base_color": [
+        0.9451,
+        0.6667,
+        0.7804
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1632,
+      "visible_pixel_coverage": 0.000778
+    },
+    {
+      "id": "MAT_037",
+      "name": "Grass_04",
+      "base_color": [
+        0.698,
+        0.7765,
+        0.9137
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1483,
+      "visible_pixel_coverage": 0.000707
+    },
+    {
+      "id": "MAT_026",
+      "name": "Color_M02",
+      "base_color": [
+        0.549,
+        0.9333,
+        0.7294
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1367,
+      "visible_pixel_coverage": 0.000652
+    },
+    {
+      "id": "MAT_111",
+      "name": "_18",
+      "base_color": [
+        0.5686,
+        0.498,
+        0.6706
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1366,
+      "visible_pixel_coverage": 0.000651
+    },
+    {
+      "id": "MAT_162",
+      "name": "_auto_7",
+      "base_color": [
+        0.8863,
+        0.702,
+        0.7608
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1264,
+      "visible_pixel_coverage": 0.000603
+    },
+    {
+      "id": "MAT_059",
+      "name": "Marmer",
+      "base_color": [
+        0.8118,
+        0.6784,
+        0.8235
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 1081,
+      "visible_pixel_coverage": 0.000515
+    },
+    {
+      "id": "MAT_098",
+      "name": "Translucent_Glass_Dark_Green1",
+      "base_color": [
+        0.8588,
+        0.9686,
+        0.5569
+      ],
+      "opacity": 0.5,
+      "is_glazing": true,
+      "visible": true,
+      "visible_pixels": 1055,
+      "visible_pixel_coverage": 0.000503
+    },
+    {
+      "id": "MAT_052",
+      "name": "M_2",
+      "base_color": [
+        0.9804,
+        0.6235,
+        0.6941
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 716,
+      "visible_pixel_coverage": 0.000341
+    },
+    {
+      "id": "MAT_136",
+      "name": "_Color_M08_3",
+      "base_color": [
+        0.9765,
+        0.8745,
+        0.8627
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 625,
+      "visible_pixel_coverage": 0.000298
+    },
+    {
+      "id": "MAT_185",
+      "name": "potahcr",
+      "base_color": [
+        0.4941,
+        0.8431,
+        0.6784
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 599,
+      "visible_pixel_coverage": 0.000286
+    },
+    {
+      "id": "MAT_019",
+      "name": "Color_C03",
+      "base_color": [
+        0.9294,
+        0.7569,
+        0.7333
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 515,
+      "visible_pixel_coverage": 0.000246
+    },
+    {
+      "id": "MAT_113",
+      "name": "_268",
+      "base_color": [
+        0.6549,
+        0.9333,
+        0.6157
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 414,
+      "visible_pixel_coverage": 0.000197
+    },
+    {
+      "id": "MAT_195",
+      "name": "vray_ChenZc_200606_DCZ22",
+      "base_color": [
+        0.5569,
+        0.6745,
+        0.8078
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 323,
+      "visible_pixel_coverage": 0.000154
+    },
+    {
+      "id": "MAT_014",
+      "name": "Color_007",
+      "base_color": [
+        0.9098,
+        0.5098,
+        0.8078
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 275,
+      "visible_pixel_coverage": 0.000131
+    },
+    {
+      "id": "MAT_117",
+      "name": "_46",
+      "base_color": [
+        0.8588,
+        0.8471,
+        0.8588
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 230,
+      "visible_pixel_coverage": 0.00011
+    },
+    {
+      "id": "MAT_159",
+      "name": "_____",
+      "base_color": [
+        0.6941,
+        0.9137,
+        0.6157
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 225,
+      "visible_pixel_coverage": 0.000107
+    },
+    {
+      "id": "MAT_163",
+      "name": "_auto_9",
+      "base_color": [
+        0.9412,
+        0.5529,
+        0.9922
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 221,
+      "visible_pixel_coverage": 0.000105
+    },
+    {
+      "id": "MAT_078",
+      "name": "Metal_Silver",
+      "base_color": [
+        0.9922,
+        0.7255,
+        0.9137
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 207,
+      "visible_pixel_coverage": 9.9e-05
+    },
+    {
+      "id": "MAT_169",
+      "name": "bnxxng0c8d850c1",
+      "base_color": [
+        0.8431,
+        0.8196,
+        0.9255
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 193,
+      "visible_pixel_coverage": 9.2e-05
+    },
+    {
+      "id": "MAT_101",
+      "name": "Watercolor_Leaves",
+      "base_color": [
+        0.9608,
+        0.949,
+        0.7451
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 168,
+      "visible_pixel_coverage": 8e-05
+    },
+    {
+      "id": "MAT_193",
+      "name": "vray_11012_5",
+      "base_color": [
+        0.7686,
+        0.9176,
+        0.9922
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 164,
+      "visible_pixel_coverage": 7.8e-05
+    },
+    {
+      "id": "MAT_081",
+      "name": "PodnozChrom",
+      "base_color": [
+        0.7412,
+        0.902,
+        0.749
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 150,
+      "visible_pixel_coverage": 7.2e-05
+    },
+    {
+      "id": "MAT_047",
+      "name": "M_0137_Black",
+      "base_color": [
+        0.9765,
+        0.851,
+        0.5176
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 136,
+      "visible_pixel_coverage": 6.5e-05
+    },
+    {
+      "id": "MAT_017",
+      "name": "Color_A04",
+      "base_color": [
+        0.9804,
+        0.5569,
+        0.5961
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 128,
+      "visible_pixel_coverage": 6.1e-05
+    },
+    {
+      "id": "MAT_002",
+      "name": "Aluminum",
+      "base_color": [
+        0.5647,
+        0.9373,
+        0.502
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 120,
+      "visible_pixel_coverage": 5.7e-05
+    },
+    {
+      "id": "MAT_190",
+      "name": "vray_11010",
+      "base_color": [
+        0.9216,
+        0.8314,
+        0.8196
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 103,
+      "visible_pixel_coverage": 4.9e-05
+    },
+    {
+      "id": "MAT_057",
+      "name": "M_7",
+      "base_color": [
+        0.8902,
+        0.5451,
+        0.7333
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 101,
+      "visible_pixel_coverage": 4.8e-05
+    },
+    {
+      "id": "MAT_009",
+      "name": "Carrera_Marble",
+      "base_color": [
+        0.5686,
+        0.7137,
+        0.7961
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 78,
+      "visible_pixel_coverage": 3.7e-05
+    },
+    {
+      "id": "MAT_157",
+      "name": "__",
+      "base_color": [
+        0.9922,
+        0.8431,
+        0.7804
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 75,
+      "visible_pixel_coverage": 3.6e-05
+    },
+    {
+      "id": "MAT_062",
+      "name": "Material_44",
+      "base_color": [
+        0.5569,
+        0.8,
+        0.7725
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 67,
+      "visible_pixel_coverage": 3.2e-05
+    },
+    {
+      "id": "MAT_072",
+      "name": "Material_54",
+      "base_color": [
+        0.6784,
+        0.8745,
+        0.5137
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 63,
+      "visible_pixel_coverage": 3e-05
+    },
+    {
+      "id": "MAT_194",
+      "name": "vray_11013",
+      "base_color": [
+        0.5529,
+        0.9098,
+        0.7843
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 62,
+      "visible_pixel_coverage": 3e-05
+    },
+    {
+      "id": "MAT_160",
+      "name": "______",
+      "base_color": [
+        0.8588,
+        0.5529,
+        0.8902
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 59,
+      "visible_pixel_coverage": 2.8e-05
+    },
+    {
+      "id": "MAT_065",
+      "name": "Material_47",
+      "base_color": [
+        0.7529,
+        0.7961,
+        1.0
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 53,
+      "visible_pixel_coverage": 2.5e-05
+    },
+    {
+      "id": "MAT_069",
+      "name": "Material_51",
+      "base_color": [
+        0.6784,
+        0.6549,
+        0.7412
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 51,
+      "visible_pixel_coverage": 2.4e-05
+    },
+    {
+      "id": "MAT_112",
+      "name": "_2",
+      "base_color": [
+        0.6353,
+        0.9725,
+        0.7882
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 46,
+      "visible_pixel_coverage": 2.2e-05
+    },
+    {
+      "id": "MAT_147",
+      "name": "_Metal_Corrogated_Shiny_4",
+      "base_color": [
+        0.5294,
+        0.8902,
+        0.5569
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 40,
+      "visible_pixel_coverage": 1.9e-05
+    },
+    {
+      "id": "MAT_108",
+      "name": "_14",
+      "base_color": [
+        0.898,
+        0.9098,
+        0.8471
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 40,
+      "visible_pixel_coverage": 1.9e-05
+    },
+    {
+      "id": "MAT_067",
+      "name": "Material_49",
+      "base_color": [
+        0.7451,
+        0.9804,
+        0.5765
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 36,
+      "visible_pixel_coverage": 1.7e-05
+    },
+    {
+      "id": "MAT_070",
+      "name": "Material_52",
+      "base_color": [
+        0.9765,
+        0.9137,
+        0.5882
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 34,
+      "visible_pixel_coverage": 1.6e-05
+    },
+    {
+      "id": "MAT_071",
+      "name": "Material_53",
+      "base_color": [
+        0.502,
+        0.8471,
+        0.7843
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 34,
+      "visible_pixel_coverage": 1.6e-05
+    },
+    {
+      "id": "MAT_029",
+      "name": "Color_M06",
+      "base_color": [
+        1.0,
+        0.5294,
+        0.8196
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 34,
+      "visible_pixel_coverage": 1.6e-05
+    },
+    {
+      "id": "MAT_066",
+      "name": "Material_48",
+      "base_color": [
+        0.9529,
+        0.9412,
+        0.8235
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 32,
+      "visible_pixel_coverage": 1.5e-05
+    },
+    {
+      "id": "MAT_084",
+      "name": "STAINLESS_KILAT",
+      "base_color": [
+        0.9294,
+        0.8392,
+        0.7373
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 26,
+      "visible_pixel_coverage": 1.2e-05
+    },
+    {
+      "id": "MAT_191",
+      "name": "vray_11011",
+      "base_color": [
+        0.9922,
+        0.949,
+        0.8078
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 25,
+      "visible_pixel_coverage": 1.2e-05
+    },
+    {
+      "id": "MAT_080",
+      "name": "Podnoz",
+      "base_color": [
+        0.6941,
+        0.6784,
+        0.8118
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 26,
+      "visible_pixel_coverage": 1.2e-05
+    },
+    {
+      "id": "MAT_063",
+      "name": "Material_45",
+      "base_color": [
+        0.7922,
+        0.5529,
+        0.698
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 24,
+      "visible_pixel_coverage": 1.1e-05
+    },
+    {
+      "id": "MAT_073",
+      "name": "Material_55",
+      "base_color": [
+        0.5961,
+        0.7608,
+        0.5333
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 22,
+      "visible_pixel_coverage": 1e-05
+    },
+    {
+      "id": "MAT_144",
+      "name": "_Metal_Corrogated_Shiny_1",
+      "base_color": [
+        0.949,
+        0.6549,
+        0.9608
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 22,
+      "visible_pixel_coverage": 1e-05
+    },
+    {
+      "id": "MAT_015",
+      "name": "Color_008",
+      "base_color": [
+        0.702,
+        0.5725,
+        0.498
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 18,
+      "visible_pixel_coverage": 9e-06
+    },
+    {
+      "id": "MAT_178",
+      "name": "m_t_b_p_iad",
+      "base_color": [
+        0.9216,
+        0.5255,
+        0.5451
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 18,
+      "visible_pixel_coverage": 9e-06
+    },
+    {
+      "id": "MAT_042",
+      "name": "Kolecka",
+      "base_color": [
+        0.8392,
+        0.502,
+        1.0
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 18,
+      "visible_pixel_coverage": 9e-06
+    },
+    {
+      "id": "MAT_064",
+      "name": "Material_46",
+      "base_color": [
+        0.8588,
+        0.9412,
+        0.9098
+      ],
+      "opacity": 1.0,
+      "is_glazing": false,
+      "visible": true,
+      "visible_pixels": 15,
+      "visible_pixel_coverage": 7e-06
+    }
+  ]
+}

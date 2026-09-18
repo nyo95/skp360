@@ -8,6 +8,7 @@ module RAD
     PLUGIN_NAME = 'RAD AI360'.freeze
     SCENE_PREFIX = 'AI360_'.freeze
     INCH_TO_MM = 25.4
+    DEFAULT_PIPELINE_ROOT = 'D:/Projects/skpto360'.freeze
 
     class << self
       def install_menu
@@ -15,36 +16,74 @@ module RAD
 
         menu = UI.menu('Extensions').add_submenu(PLUGIN_NAME)
         menu.add_item('Export AI360 Scene') { export_ai360_scene }
+        menu.add_separator
+        menu.add_item('Export AI360 & Render Panorama (1-Click Pipeline)') { render_ai360_panorama }
         @menu_installed = true
       end
 
+      def pipeline_root
+        return @pipeline_root if @pipeline_root
+
+        candidate = File.expand_path('../../..', __dir__)
+        @pipeline_root =
+          if ENV['RAD_AI360_PIPELINE_ROOT'] && File.exist?(ENV['RAD_AI360_PIPELINE_ROOT'])
+            ENV['RAD_AI360_PIPELINE_ROOT']
+          elsif File.directory?(File.join(candidate, 'scripts')) && File.exist?(File.join(candidate, 'scripts', 'run_pipeline.ps1'))
+            candidate
+          else
+            DEFAULT_PIPELINE_ROOT
+          end
+        @pipeline_root
+      end
+
       def export_ai360_scene
-        model = Sketchup.active_model
-        unless model
-          UI.messagebox('No active SketchUp model found.')
-          return
+        output_dir = UI.select_directory(title: 'Choose AI360 export folder')
+        return unless output_dir && !output_dir.empty?
+
+        result = export_ai360_scene_to!(output_dir)
+        UI.messagebox("AI360 export complete:\n\n#{result[:obj_path]}\n#{result[:mtl_path]}\n#{result[:json_path]}")
+      rescue StandardError => error
+        UI.messagebox("AI360 export failed:\n\n#{error.message}")
+      end
+
+      def render_ai360_panorama
+        root = pipeline_root
+        output_dir = File.join(root, 'output', 'obj')
+        export_ai360_scene_to!(output_dir)
+        launched = launch_pipeline(root)
+        UI.messagebox(
+          "AI360 1-click pipeline started.\n\n" \
+          "Exported to:\n#{output_dir}\n\n" \
+          "Pipeline: SketchUp export -> Blender headless -> harness -> Cloudflare FLUX -> panorama\n" \
+          "#{launched ? "Check output\\pipeline\\report.json when it finishes." : 'Pipeline launch failed; see Ruby console for details.'}"
+        )
+      rescue StandardError => error
+        UI.messagebox("AI360 pipeline failed to start:\n\n#{error.message}")
+      end
+
+      def launch_pipeline(root)
+        ps1 = File.join(root, 'scripts', 'run_pipeline.ps1')
+        unless File.exist?(ps1)
+          raise "Pipeline script not found: #{ps1}"
         end
+
+        command = %Q["powershell" -NoProfile -ExecutionPolicy Bypass -File "#{ps1}"]
+        system(%Q[cmd /c start "" /min #{command}])
+      end
+
+      def export_ai360_scene_to!(output_dir)
+        model = Sketchup.active_model
+        raise 'No active SketchUp model found.' unless model
 
         page = select_ai360_page(model)
-        return unless page
-
-        output_dir = UI.select_directory(title: 'Choose AI360 export folder')
-        unless output_dir && !output_dir.empty?
-          UI.messagebox('Export cancelled.')
-          return
-        end
+        raise 'AI360 scene cancelled.' unless page
 
         obj_path = File.join(output_dir, 'scene.obj')
         json_path = File.join(output_dir, 'scene.json')
-
-        begin
-          FileUtils.mkdir_p(output_dir)
-          export_obj!(model, obj_path)
-          write_scene_json!(model, page, json_path)
-          UI.messagebox("AI360 export complete:\n\n#{obj_path}\n#{File.join(output_dir, 'scene.mtl')}\n#{json_path}")
-        rescue StandardError => error
-          UI.messagebox("AI360 export failed:\n\n#{error.message}")
-        end
+        FileUtils.mkdir_p(output_dir)
+        export_obj!(model, obj_path)
+        write_scene_json!(model, page, json_path)
+        { obj_path: obj_path, mtl_path: File.join(output_dir, 'scene.mtl'), json_path: json_path }
       end
 
       private

@@ -1,0 +1,17 @@
+{
+  "schema": "rad-ai360-single-pipeline-lights",
+  "version": 1,
+  "source_boundary": "SOURCE_TRUTH_ONLY; no light emitters invented.",
+  "scene": "AI360_1",
+  "lights": [],
+  "unresolved_candidates": [],
+  "exporter_gap": {
+    "reliable_light_positions_available": false,
+    "needed_upstream_fields": [
+      "component names",
+      "instance names",
+      "tags/layers",
+      "world-space transforms"
+    ]
+  }
+}

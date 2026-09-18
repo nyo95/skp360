@@ -101,9 +101,30 @@
     "units": "metres",
     "conditioning": "backend.pass_pipeline.radial_depth_condition"
   },
+  "ao": {
+    "representation": "lighting-independent Eevee Ambient Occlusion node factor",
+    "encoding": "8-bit grayscale; white=open, dark=occluded",
+    "distance_m": 3.0,
+    "samples": 16,
+    "only_local": true,
+    "engine_settings": {
+      "use_raytracing": true
+    }
+  },
   "normal": {
     "space": "world",
     "encoding": "RGB = normal * 0.5 + 0.5"
+  },
+  "label_passes": {
+    "passes": [
+      "material_id",
+      "object_id"
+    ],
+    "anti_aliasing": "disabled during label renders (filter_size=0, taa_render_samples=1)",
+    "dither_intensity": 0.0,
+    "stitch_interpolation": "nearest",
+    "material_index_count": 196,
+    "object_index_count": 6426
   },
   "ids": {
     "material_strategy": "stable sorted material-name IDs",
@@ -115,15 +136,15 @@
     "albedo_fallback": "diffuse_color when no node-based Principled Base Color exists"
   },
   "timings": {
-    "import_seconds": 2.155,
+    "import_seconds": 3.33,
     "faces": {
-      "front": 3.694,
-      "right": 2.911,
-      "back": 2.822,
-      "left": 3.031,
-      "top": 3.067,
-      "bottom": 2.922
+      "front": 26.341,
+      "right": 16.851,
+      "back": 16.72,
+      "left": 16.634,
+      "top": 16.844,
+      "bottom": 16.68
     }
   },
-  "duration_seconds": 20.644
+  "duration_seconds": 113.451
 }

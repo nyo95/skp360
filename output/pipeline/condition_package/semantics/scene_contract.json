@@ -1,0 +1,66 @@
+{
+  "schema": "rad-ai360-single-pipeline-scene-contract",
+  "version": 1,
+  "source_boundary": "Deterministic source truth from fast ERP passes; no legacy phase reports.",
+  "camera": {
+    "scene_name": "AI360_1",
+    "eye_mm": [
+      9464.429208,
+      10229.563323,
+      2185.749039
+    ],
+    "target_mm": [
+      14854.840843,
+      10229.563323,
+      2185.749039
+    ],
+    "direction": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "projection": "perspective",
+    "fov_degrees": 35.0
+  },
+  "projection": {
+    "type": "equirectangular",
+    "width": 2048,
+    "height": 1024,
+    "source": "Blender Eevee fast geometry pass assembler"
+  },
+  "regions": {
+    "interior": {
+      "status": "IMPLICIT_SOURCE_RGB_NON_GLAZING"
+    },
+    "glazing": {
+      "status": "NAME_OPACITY_HEURISTIC",
+      "mask": "masks/glass.png"
+    },
+    "known_exterior": {
+      "status": "NOT_DETECTED",
+      "regions": []
+    },
+    "unknown": {
+      "status": "AVAILABLE_BY_EXCLUSION"
+    }
+  },
+  "constraints": {
+    "geometry": true,
+    "depth": true,
+    "normal": true,
+    "materials": true,
+    "glazing": "heuristic_only",
+    "exterior_context": false,
+    "lights": "partial"
+  },
+  "source_hashes": {
+    "obj": "67ecd63c26c91e07805412462d320391cb34f5889d69ba37d5c89f36b804913b",
+    "scene_json": "4608db39556743de05976a0b76bb6eb75900ba6537721e935e21017a440f91db",
+    "rgb_erp": "e800a9de1ab4b3e1d113f375cecf9f26ca0ce647da26299244fd7a60432fdd5c"
+  }
+}

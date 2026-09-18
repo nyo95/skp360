@@ -1,0 +1,10 @@
+{
+  "schema": "rad-ai360-single-pipeline-source-metrics",
+  "version": 1,
+  "rgb_erp_dims": [
+    2048,
+    1024
+  ],
+  "material_labels": 81,
+  "glazing_label_count": 5
+}

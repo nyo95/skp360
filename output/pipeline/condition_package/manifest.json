@@ -1,0 +1,60 @@
+{
+  "schema": "rad-ai360-single-pipeline-condition-package",
+  "version": 1,
+  "pipeline": "CONTROLLED_CORE_FAST",
+  "created_at_unix": 1789756047,
+  "source_truth_boundary": {
+    "source_truth": [
+      "scene.json camera",
+      "OBJ geometry",
+      "Blender fast ERP RGB/depth/normal",
+      "material_id ERP"
+    ],
+    "semantic_interpretation": [
+      "none"
+    ],
+    "ai_generation": [
+      "not part of condition package"
+    ]
+  },
+  "assets": {
+    "source": {
+      "rgb_erp": {
+        "path": "D:\\Projects\\skpto360\\output\\pipeline\\condition_package\\source\\rgb_erp.png",
+        "source": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\rgb_neutral_erp.png",
+        "bytes": 295287,
+        "sha256": "e800a9de1ab4b3e1d113f375cecf9f26ca0ce647da26299244fd7a60432fdd5c"
+      },
+      "depth_condition": {
+        "path": "D:\\Projects\\skpto360\\output\\pipeline\\condition_package\\source\\depth_condition.png",
+        "source": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\depth_condition.png",
+        "bytes": 226365,
+        "sha256": "8fe34d08f9024de70317dfcf1e22c91cfee8dc9baea3858249bf5af91b3f4351"
+      },
+      "normal_condition": {
+        "path": "D:\\Projects\\skpto360\\output\\pipeline\\condition_package\\source\\normal_condition.png",
+        "source": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\normal.png",
+        "bytes": 395783,
+        "sha256": "33de62c9491f3bc5ff060ec16c6e5fb1d97e511a0a3a0f3bc5f30dd45b8986e3"
+      }
+    },
+    "masks": {
+      "material_id": {
+        "path": "D:\\Projects\\skpto360\\output\\pipeline\\condition_package\\masks\\material_id.png",
+        "sha256": "e2f675b93f376160eca45313d713406bd48ad70fb55f6d797a358bbb926cf10c"
+      },
+      "glass": {
+        "path": "D:\\Projects\\skpto360\\output\\pipeline\\condition_package\\masks\\glass.png",
+        "sha256": "a408680702ab8dbc2d6ff7cff6c0206c474ef5b99a22fae77f95787f0e548461"
+      }
+    }
+  },
+  "semantics": {
+    "materials": "semantics/materials.json",
+    "lights": "semantics/lights.json",
+    "scene_contract": "semantics/scene_contract.json"
+  },
+  "qc": {
+    "source_metrics": "qc/source_metrics.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "rad-ai360-single-pipeline-report",
+  "version": 1,
+  "status": "WARNING_NO_FLUX",
+  "chain": "SketchUp Ruby -> OBJ -> Blender headless fast passes -> harness condition package -> Cloudflare FLUX.2 Klein (1 call)",
+  "flux_calls": 0,
+  "stages": {
+    "blender": {
+      "status": "SKIPPED",
+      "note": "Reused existing output/fast_passes."
+    },
+    "harness": {
+      "status": "PASS",
+      "package": "D:\\Projects\\skpto360\\output\\pipeline\\condition_package\\manifest.json",
+      "materials_observed": 81,
+      "glazing_heuristic_labels": 5
+    },
+    "flux": {
+      "status": "SKIPPED",
+      "prompt": "CONTROLLED AI360 GENERATION REQUEST\n\nINTENT: Photorealistic architectural interior panorama faithful to the SketchUp design, generated from the deterministic unlit albedo; improve realism while preserving the exact design.\n\nPRESERVE:\n- Exact equirectangular 2:1 panorama projection and camera composition.\n- Architecture, openings, wall/ceiling/floor geometry, cabinetry proportions, fixed furniture placement, and visible fixture count.\n- Do not redesign the interior, add furniture, remove objects, move objects, or change room proportions.\n\nMATERIAL:\n- Preserve source material identity, albedo relationships, visible material regions, glazing regions, and texture intent.\n- MAT_079 Plaster_1: preserve base color [0.8824, 0.8549, 0.6039] and opacity 1.0\n- MAT_024 Color_H03: preserve base color [0.5412, 0.9059, 0.6824] and opacity 1.0\n- MAT_034 FrontColor: preserve base color [0.6235, 0.5333, 0.9059] and opacity 1.0\n- MAT_175 kusen_coklat: preserve base color [0.6627, 0.9608, 0.8784] and opacity 1.0\n- MAT_056 M_6201W_F553_MRN_WAL_Material_1: preserve base color [0.8392, 0.8314, 0.8863] and opacity 1.0\n- MAT_058 M_71_dark__fine_wood_texture_seamless: preserve base color [0.7569, 0.6118, 0.7098] and opacity 1.0\n- MAT_153 _Translucent_Glass_Gray_1: preserve base color [0.9922, 0.6902, 0.851] and opacity 0.5\n- MAT_095 Tiles_04: preserve base color [0.9608, 0.5216, 0.6196] and opacity 1.0\n- MAT_045 Limestone__R3U0R2_: preserve base color [0.6431, 0.9882, 0.8824] and opacity 1.0\n- MAT_103 Wood_04__Brick_Bond: preserve base color [0.6353, 0.9294, 0.9137] and opacity 1.0\n- MAT_096 Translucent_Glass_Blue: preserve base color [0.9647, 1.0, 0.9961] and opacity 0.5\n- MAT_001 Abu_Muda: preserve base color [0.8275, 0.8784, 0.7059] and opacity 1.0\n- MAT_097 Translucent_Glass_Dark_Green: preserve base color [0.6353, 0.8667, 0.9804] and opacity 0.313\n- MAT_151 _Translucent_Glass_Dark_Green_2: preserve base color [0.6431, 0.9922, 0.5294] and opacity 0.5\n- MAT_006 Calacatta_Marble__IA408Q_: preserve base color [0.8275, 0.5137, 0.7647] and opacity 1.0\n- MAT_010 Ceramic_White: preserve base color [0.8, 0.6392, 0.9843] and opacity 1.0\n- MAT_094 Sudbrock_469_cashmere: preserve base color [0.8157, 0.8314, 0.8824] and opacity 1.0\n- MAT_165 billiani_doll1: preserve base color [0.6941, 0.6588, 0.8039] and opacity 1.0\n\nLIGHTING:\n- No reliable source-truth fixture positions are available; do not invent arbitrary new luminaires.\n- Improve photographic illumination and reflections without changing source design intent.\n\nEXTERIOR:\n- Preserve 0 glazing regions with deterministic scene geometry visible behind them; do not replace known exterior/context pixels with unrelated scenery.\n- Treat UNKNOWN glazing separately from known exterior/context regions.\n\nREALISM:\n- Improve realistic material response, microtexture, exposure, subtle reflections, and believable architectural photography.\n- Preserve the 0/360 panorama seam."
+    }
+  },
+  "panorama": null,
+  "panorama_sha256": null,
+  "prompt": "D:\\Projects\\skpto360\\output\\pipeline\\compiled_prompt.json",
+  "duration_seconds": 8.699,
+  "created_at_unix": 1789756047
+}
