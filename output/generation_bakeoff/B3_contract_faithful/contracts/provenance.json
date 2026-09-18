@@ -1,0 +1,16 @@
+{
+  "schema": "rad-ai360-b3-provenance",
+  "canonical_scene": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+  "canonical_geometry": "D:\\Projects\\skpto360\\output\\obj\\scene.obj",
+  "source_pass_report": "D:\\Projects\\skpto360\\output\\fast_passes\\pass_generation_report.json",
+  "projection_report": "D:\\Projects\\skpto360\\output\\fast_passes\\assembly_report.json",
+  "projection_contract": "backend/projection.py frozen after regression gate",
+  "renderer": "Blender Eevee fast geometry pass generator",
+  "photometric_policy": "No lighting, AO, shadows, exposure, reflections, or geometry edits baked into B3 RGB.",
+  "flux_stage": "NOT RUN; B3 is a pre-Flux canonical ERP source.",
+  "source_hashes": {
+    "scene_json": "4608db39556743de05976a0b76bb6eb75900ba6537721e935e21017a440f91db",
+    "scene_obj": "67ecd63c26c91e07805412462d320391cb34f5889d69ba37d5c89f36b804913b",
+    "albedo_erp": "2de25761a800d6989d652a6a29f0e53707b6a4160339af0a0a65100ee16ec0d8"
+  }
+}

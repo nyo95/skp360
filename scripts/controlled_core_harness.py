@@ -315,20 +315,22 @@ def build_package(args: argparse.Namespace) -> None:
     print(f"RAD_CONTROLLED_PACKAGE={PACKAGE_DIR / 'manifest.json'}")
 
 
-def prompt_from_package(intent: str) -> str:
+def prompt_from_package(intent: str, concise: bool = False) -> str:
     scene = read_json(PACKAGE_DIR / "semantics" / "scene_contract.json")
     materials = read_json(PACKAGE_DIR / "semantics" / "materials.json")
     lights = read_json(PACKAGE_DIR / "semantics" / "lights.json")
     visible_glass = [r for r in scene["regions"]["known_exterior"]["regions"] if r["context_source"] == "SCENE_GEOMETRY"]
     visible_materials = [m for m in materials["materials"] if m["visible"]]
     material_lines = []
-    for item in sorted(visible_materials, key=lambda x: x["visible_pixel_coverage"], reverse=True)[:18]:
-        material_lines.append(
-            f"- {item['id']} {item['name']}: preserve base color {item['base_color']} and opacity {item['opacity']}"
-        )
+    if not concise:
+        for item in sorted(visible_materials, key=lambda x: x["visible_pixel_coverage"], reverse=True)[:18]:
+            material_lines.append(
+                f"- {item['id']} {item['name']}: preserve base color {item['base_color']} and opacity {item['opacity']}"
+            )
+    known_lights = lights.get("lights", lights.get("fixtures", []))
     light_line = (
         "- No reliable source-truth fixture positions are available; do not invent arbitrary new luminaires."
-        if not lights["lights"] else
+        if not known_lights else
         "- Preserve known fixture positions from lights.json."
     )
     exterior_line = (
@@ -345,7 +347,7 @@ def prompt_from_package(intent: str) -> str:
         "- Do not redesign the interior, add furniture, remove objects, move objects, or change room proportions.",
         "",
         "MATERIAL:",
-        "- Preserve source material colors, visible material regions, glazing regions, and texture intent.",
+        "- Preserve source material identity, albedo relationships, visible material regions, glazing regions, and texture intent.",
         *material_lines,
         "",
         "LIGHTING:",

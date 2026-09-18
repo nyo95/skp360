@@ -1,0 +1,40 @@
+{
+  "rules": [
+    {
+      "prompt_rule": "preserve exact equirectangular 2:1 panorama projection",
+      "source_contract": "scene_contract",
+      "evidence": "scene.json camera and frozen projection regression",
+      "confidence": 1.0
+    },
+    {
+      "prompt_rule": "preserve critical architectural geometry",
+      "source_contract": "geometry_contract",
+      "evidence": "structured B2 geometry preservation policy",
+      "confidence": 1.0
+    },
+    {
+      "prompt_rule": "preserve visible material colors and texture intent",
+      "source_contract": "materials_contract",
+      "evidence": "condition package material manifest and visibility data",
+      "confidence": 0.8
+    },
+    {
+      "prompt_rule": "do not invent fixture positions or photometric precision",
+      "source_contract": "lighting_contract",
+      "evidence": "lights.json unresolved fixture candidates",
+      "confidence": 1.0
+    },
+    {
+      "prompt_rule": "preserve known glazing/exterior geometry",
+      "source_contract": "glazing_contract",
+      "evidence": "scene contract glazing and exterior regions",
+      "confidence": 0.8
+    },
+    {
+      "prompt_rule": "preserve the 0/360 seam",
+      "source_contract": "scene_contract",
+      "evidence": "validated ERP ratio and seam checks",
+      "confidence": 1.0
+    }
+  ]
+}

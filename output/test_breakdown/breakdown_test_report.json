@@ -1,0 +1,309 @@
+{
+  "basis": {
+    "status": "PASS",
+    "checks": [
+      {
+        "face": "front",
+        "test": "normalized",
+        "pass": true
+      },
+      {
+        "face": "front",
+        "test": "orthogonal",
+        "pass": true
+      },
+      {
+        "face": "front",
+        "test": "right_handed_right_is_f_cross_up",
+        "pass": true
+      },
+      {
+        "face": "right",
+        "test": "normalized",
+        "pass": true
+      },
+      {
+        "face": "right",
+        "test": "orthogonal",
+        "pass": true
+      },
+      {
+        "face": "right",
+        "test": "right_handed_right_is_f_cross_up",
+        "pass": true
+      },
+      {
+        "face": "back",
+        "test": "normalized",
+        "pass": true
+      },
+      {
+        "face": "back",
+        "test": "orthogonal",
+        "pass": true
+      },
+      {
+        "face": "back",
+        "test": "right_handed_right_is_f_cross_up",
+        "pass": true
+      },
+      {
+        "face": "left",
+        "test": "normalized",
+        "pass": true
+      },
+      {
+        "face": "left",
+        "test": "orthogonal",
+        "pass": true
+      },
+      {
+        "face": "left",
+        "test": "right_handed_right_is_f_cross_up",
+        "pass": true
+      },
+      {
+        "face": "top",
+        "test": "normalized",
+        "pass": true
+      },
+      {
+        "face": "top",
+        "test": "orthogonal",
+        "pass": true
+      },
+      {
+        "face": "top",
+        "test": "right_handed_right_is_f_cross_up",
+        "pass": true
+      },
+      {
+        "face": "bottom",
+        "test": "normalized",
+        "pass": true
+      },
+      {
+        "face": "bottom",
+        "test": "orthogonal",
+        "pass": true
+      },
+      {
+        "face": "bottom",
+        "test": "right_handed_right_is_f_cross_up",
+        "pass": true
+      }
+    ]
+  },
+  "candidates": {
+    "phase0k_build_erp": {
+      "ALL": {
+        "mean_deg": 15.98,
+        "p95_deg": 116.542,
+        "bad_pct": 17.791,
+        "valid_pixels": 2093520
+      },
+      "front": {
+        "mean_deg": 48.508,
+        "p95_deg": 136.066,
+        "bad_pct": 45.693,
+        "valid_pixels": 242637
+      },
+      "right": {
+        "mean_deg": 42.814,
+        "p95_deg": 135.99,
+        "bad_pct": 47.786,
+        "valid_pixels": 242146
+      },
+      "back": {
+        "mean_deg": 16.845,
+        "p95_deg": 77.667,
+        "bad_pct": 21.877,
+        "valid_pixels": 243892
+      },
+      "left": {
+        "mean_deg": 26.417,
+        "p95_deg": 77.667,
+        "bad_pct": 31.893,
+        "valid_pixels": 244261
+      },
+      "top": {
+        "mean_deg": 1.175,
+        "p95_deg": 0.0,
+        "bad_pct": 2.177,
+        "valid_pixels": 561047
+      },
+      "bottom": {
+        "mean_deg": 0.173,
+        "p95_deg": 0.0,
+        "bad_pct": 0.428,
+        "valid_pixels": 559537
+      }
+    },
+    "phase0l_stitch": {
+      "ALL": {
+        "mean_deg": 3.226,
+        "p95_deg": 0.0,
+        "bad_pct": 4.682,
+        "valid_pixels": 2092414
+      },
+      "front": {
+        "mean_deg": 2.751,
+        "p95_deg": 22.499,
+        "bad_pct": 6.207,
+        "valid_pixels": 242305
+      },
+      "right": {
+        "mean_deg": 6.786,
+        "p95_deg": 50.108,
+        "bad_pct": 12.906,
+        "valid_pixels": 241398
+      },
+      "back": {
+        "mean_deg": 14.386,
+        "p95_deg": 123.821,
+        "bad_pct": 13.644,
+        "valid_pixels": 243886
+      },
+      "left": {
+        "mean_deg": 0.741,
+        "p95_deg": 0.0,
+        "bad_pct": 1.59,
+        "valid_pixels": 244241
+      },
+      "top": {
+        "mean_deg": 1.175,
+        "p95_deg": 0.0,
+        "bad_pct": 2.177,
+        "valid_pixels": 561047
+      },
+      "bottom": {
+        "mean_deg": 0.173,
+        "p95_deg": 0.0,
+        "bad_pct": 0.428,
+        "valid_pixels": 559537
+      }
+    },
+    "ai360_worker_stitch": {
+      "ALL": {
+        "mean_deg": 25.924,
+        "p95_deg": 135.389,
+        "bad_pct": 26.346,
+        "valid_pixels": 2091675
+      },
+      "front": {
+        "mean_deg": 19.431,
+        "p95_deg": 88.793,
+        "bad_pct": 25.996,
+        "valid_pixels": 241682
+      },
+      "right": {
+        "mean_deg": 66.319,
+        "p95_deg": 135.689,
+        "bad_pct": 65.417,
+        "valid_pixels": 242204
+      },
+      "back": {
+        "mean_deg": 0.212,
+        "p95_deg": 0.0,
+        "bad_pct": 0.514,
+        "valid_pixels": 243886
+      },
+      "left": {
+        "mean_deg": 67.739,
+        "p95_deg": 135.689,
+        "bad_pct": 64.883,
+        "valid_pixels": 242674
+      },
+      "top": {
+        "mean_deg": 26.066,
+        "p95_deg": 136.033,
+        "bad_pct": 26.209,
+        "valid_pixels": 561527
+      },
+      "bottom": {
+        "mean_deg": 4.177,
+        "p95_deg": 0.0,
+        "bad_pct": 4.275,
+        "valid_pixels": 559702
+      }
+    }
+  },
+  "best_search": {
+    "a": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "b": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "c": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "u_flip": 1,
+    "v_flip": 1,
+    "mean_deg": 15.98
+  },
+  "edge_continuity": {
+    "status": "FAIL",
+    "checks": [
+      {
+        "pair": "front|right",
+        "mean_rgb_delta": 0.2044,
+        "pass": false
+      },
+      {
+        "pair": "right|back",
+        "mean_rgb_delta": 0.1276,
+        "pass": false
+      },
+      {
+        "pair": "back|left",
+        "mean_rgb_delta": 0.0667,
+        "pass": true
+      },
+      {
+        "pair": "left|front",
+        "mean_rgb_delta": 0.1157,
+        "pass": false
+      },
+      {
+        "pair": "front|top",
+        "min_mean_rgb_delta": 0.3904
+      },
+      {
+        "pair": "front|bottom",
+        "min_mean_rgb_delta": 0.0993
+      },
+      {
+        "pair": "right|top",
+        "min_mean_rgb_delta": 0.0264
+      },
+      {
+        "pair": "right|bottom",
+        "min_mean_rgb_delta": 0.0274
+      },
+      {
+        "pair": "back|top",
+        "min_mean_rgb_delta": 0.0285
+      },
+      {
+        "pair": "back|bottom",
+        "min_mean_rgb_delta": 0.0334
+      },
+      {
+        "pair": "left|top",
+        "min_mean_rgb_delta": 0.0512
+      },
+      {
+        "pair": "left|bottom",
+        "min_mean_rgb_delta": 0.025
+      }
+    ]
+  },
+  "conclusion": "Best convention search hit mean error 15.980 deg. phase0k=15.980 / phase0l=3.226 / worker=25.924 deg. q=max error."
+}

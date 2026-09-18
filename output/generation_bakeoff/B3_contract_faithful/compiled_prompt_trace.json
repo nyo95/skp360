@@ -1,0 +1,29 @@
+{
+  "rules": [
+    {
+      "prompt_rule": "preserve exact camera and ERP orientation",
+      "source_contract": "scene_contract",
+      "confidence": 1.0
+    },
+    {
+      "prompt_rule": "preserve walls, openings, ceilings, arches, doors, windows, furniture silhouettes and placement",
+      "source_contract": "geometry_contract",
+      "confidence": 1.0
+    },
+    {
+      "prompt_rule": "preserve source material identity and base color",
+      "source_contract": "materials_contract",
+      "confidence": 0.8
+    },
+    {
+      "prompt_rule": "do not invent fixture positions or photometric precision",
+      "source_contract": "lighting_contract",
+      "confidence": 1.0
+    },
+    {
+      "prompt_rule": "preserve known glazing and exterior behavior",
+      "source_contract": "glazing_contract",
+      "confidence": 0.8
+    }
+  ]
+}

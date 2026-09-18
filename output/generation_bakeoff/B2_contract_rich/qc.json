@@ -1,0 +1,50 @@
+{
+  "geometry": "WARNING",
+  "camera": "PASS",
+  "projection": "PASS",
+  "seam": "PASS",
+  "glazing": "WARNING",
+  "exterior_context": "WARNING",
+  "material_regions": "WARNING",
+  "lighting_positions": "UNKNOWN",
+  "output_validity": {
+    "path": "D:\\Projects\\skpto360\\output\\generation_bakeoff\\B2_contract_rich\\output.png",
+    "exists": true,
+    "valid_image": true,
+    "dimensions": [
+      1920,
+      960
+    ],
+    "ratio": 2.0,
+    "ratio_2_to_1": true,
+    "alpha_min": 1.0,
+    "alpha_max": 1.0,
+    "no_unexpected_alpha": true,
+    "blank_warning": false,
+    "has_visible_pixels": true,
+    "mean_rgb_seam_delta": 0.098369,
+    "max_rgb_seam_delta": 0.661438,
+    "top_pole_has_visible_pixels": true,
+    "bottom_pole_has_visible_pixels": true
+  },
+  "edge_similarity": {
+    "status": "WARNING_SIGNAL_ONLY",
+    "method": "Canny edge density/difference after resizing output to source dimensions when needed.",
+    "source_edge_density": 0.011448,
+    "output_edge_density": 0.029027,
+    "edge_difference_density": 0.038603,
+    "note": "This is not semantic architecture understanding; use as a local drift warning only."
+  },
+  "mask_checks": {
+    "glass": {
+      "status": "WARNING_SIGNAL_ONLY",
+      "active_pixels": 79320,
+      "mean_rgb_delta_0_1": 0.152452
+    },
+    "known_exterior": {
+      "status": "WARNING_SIGNAL_ONLY",
+      "active_pixels": 73379,
+      "mean_rgb_delta_0_1": 0.153259
+    }
+  }
+}

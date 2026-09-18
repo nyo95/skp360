@@ -1,0 +1,55 @@
+{
+  "schema": "rad-ai360-b4-provenance",
+  "baseline": "B3_contract_faithful",
+  "baseline_sha256": "2de25761a800d6989d652a6a29f0e53707b6a4160339af0a0a65100ee16ec0d8",
+  "flux_source": "D:\\Projects\\skpto360\\output\\generation_bakeoff\\B3_contract_faithful\\output.png",
+  "flux_source_sha256": "2de25761a800d6989d652a6a29f0e53707b6a4160339af0a0a65100ee16ec0d8",
+  "compiled_prompt_sha256": "5cf359797f5b46aa5a12dbf05201d7f036cfed2db64da7b21392d2b3bb81e802",
+  "canonical_scene": "D:\\Projects\\skpto360\\output\\obj\\scene.json",
+  "contracts": "D:\\Projects\\skpto360\\output\\condition_package\\manifest.json",
+  "projection": "backend/projection.py; unchanged",
+  "provider": "@cf/black-forest-labs/flux-2-klein-4b",
+  "controls": {
+    "image_sources": [
+      "B3 canonical ERP only"
+    ],
+    "depth": false,
+    "normal": false,
+    "material_id": false,
+    "controlnet": false
+  },
+  "diagnostic_overlay": {
+    "path": "D:\\Projects\\skpto360\\output\\generation_bakeoff\\B4_controlled_flux\\diagnostic_structural_overlay.png",
+    "depth_edge_pixels": 11478,
+    "normal_edge_pixels": 34959,
+    "opacity": 0.2,
+    "color": "dark_gray",
+    "sent_to_flux": false
+  },
+  "supported_parameters": {
+    "guidance": 3.5,
+    "timeout_seconds": 300,
+    "width": "provider-derived",
+    "height": "provider-derived"
+  },
+  "unsupported_parameters": {
+    "image_strength_control": "unsupported",
+    "denoise": "unsupported",
+    "seed": "unsupported",
+    "depth_weight": "unsupported",
+    "normal_weight": "unsupported"
+  },
+  "provider_parameters_sent": {
+    "prompt": "CONTROLLED AI360 GENERATION REQUEST\n\nINTENT: Photorealistic architectural visualization with exact design preservation.\n\nPRESERVE:\n- Exact equirectangular 2:1 panorama projection and camera composition.\n- Architecture, openings, wall/ceiling/floor geometry, cabinetry proportions, fixed furniture placement, and visible fixture count.\n- Do not redesign the interior, add furniture, remove objects, move objects, or change room proportions.\n\nMATERIAL:\n- Preserve source material identity, albedo relationships, visible material regions, glazing regions, and texture intent.\n\nLIGHTING:\n- No reliable source-truth fixture positions are available; do not invent arbitrary new luminaires.\n- Improve photographic illumination and reflections without changing source design intent.\n\nEXTERIOR:\n- Preserve 2 glazing regions with deterministic scene geometry visible behind them; do not replace known exterior/context pixels with unrelated scenery.\n- Treat UNKNOWN glazing separately from known exterior/context regions.\n\nREALISM:\n- Improve realistic material response, microtexture, exposure, subtle reflections, and believable architectural photography.\n- Preserve the 0/360 panorama seam.",
+    "width": "1920",
+    "height": "960",
+    "guidance": "3.5"
+  },
+  "provider_response_metadata": {
+    "provider_request_id": "a3d1bd597ab6e78d-CGK",
+    "cloudflare_success": true,
+    "cloudflare_errors": [],
+    "cloudflare_messages": []
+  },
+  "generation_status": "ok"
+}

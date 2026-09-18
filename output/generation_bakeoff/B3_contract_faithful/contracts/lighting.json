@@ -1,0 +1,33 @@
+{
+  "schema": "rad-ai360-lights",
+  "version": 2,
+  "date": "2026-09-17",
+  "source_boundary": "SOURCE_TRUTH_ONLY; no light emitters invented.",
+  "entity_metadata_available": false,
+  "scene": "AI360_1",
+  "projection": {
+    "type": "equirectangular",
+    "width": 2048,
+    "height": 1024
+  },
+  "fixtures": [],
+  "unresolved_candidates": [
+    {
+      "id": "fixture_fallback_0000",
+      "source_name": "Light_metal",
+      "world_position_mm": null,
+      "confidence": 0.25,
+      "evidence": [
+        "material name contains LIGHT"
+      ],
+      "status": "UNKNOWN",
+      "reason_not_promoted": "Material-name evidence only; world position unavailable until SketchUp entity export is run."
+    }
+  ],
+  "exporter_gap": {
+    "reliable_light_positions_available": false,
+    "entity_metadata_run": false,
+    "needed_upstream_action": "Run Extensions \u2192 RAD AI360 Visualizer \u2192 Export Entity Metadata and save to D:\\Projects\\skpto360\\output\\obj"
+  },
+  "prompt_constraint": "LIGHTING CONSTRAINTS:\nNo confirmed light fixture positions are available from source metadata.\nDo not add any new ceiling lights, downlights, pendants, track lights,\n  wall lights, sconces, or luminaires.\nDo not create bright hotspots that imply nonexistent architectural luminaires.\nIllumination must derive from light sources visible in the input image."
+}

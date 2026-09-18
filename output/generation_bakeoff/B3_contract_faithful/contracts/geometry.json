@@ -1,0 +1,29 @@
+{
+  "schema": "rad-ai360-b2-geometry-contract",
+  "source": "condition_package/semantics/scene_contract.json",
+  "preserve": {
+    "CRITICAL": [
+      "wall boundaries",
+      "openings",
+      "doors/windows",
+      "ceiling/scallop geometry",
+      "stairs",
+      "fixed cabinetry",
+      "major furniture placement",
+      "custom furniture shapes"
+    ],
+    "HIGH": [
+      "fixture count",
+      "dining table/chair count",
+      "TV wall composition",
+      "bathroom fixture placement"
+    ],
+    "SOFT": [
+      "cushions",
+      "small accessories",
+      "plants",
+      "micro decorative details"
+    ]
+  },
+  "policy": "Critical and high geometry outrank decorative realism; do not redesign or relocate source elements."
+}

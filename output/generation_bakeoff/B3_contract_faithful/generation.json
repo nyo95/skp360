@@ -1,0 +1,18 @@
+{
+  "schema": "rad-ai360-b3-generation",
+  "status": "PRE_FLUX_CANONICAL_SOURCE",
+  "provider": null,
+  "note": "No AI generation run. B3 is the contract-faithful photometric ERP source for a later Flux stage.",
+  "source_albedo": {
+    "path": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\albedo.png",
+    "source": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\albedo.png",
+    "bytes": 795239,
+    "sha256": "2de25761a800d6989d652a6a29f0e53707b6a4160339af0a0a65100ee16ec0d8"
+  },
+  "output": {
+    "path": "D:\\Projects\\skpto360\\output\\generation_bakeoff\\B3_contract_faithful\\output.png",
+    "source": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\albedo.png",
+    "bytes": 795239,
+    "sha256": "2de25761a800d6989d652a6a29f0e53707b6a4160339af0a0a65100ee16ec0d8"
+  }
+}

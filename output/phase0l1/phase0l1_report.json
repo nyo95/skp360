@@ -1,0 +1,188 @@
+{
+  "status": "FAIL",
+  "projection_contract": {
+    "source": "backend/projection.py",
+    "sketchup_world_axes": {
+      "x": "SketchUp +X",
+      "y": "SketchUp +Y",
+      "z": "SketchUp +Z"
+    },
+    "camera_forward": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "camera_right": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "camera_up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "longitude_zero": "front (+X)",
+    "longitude_plus_90": "right (-Y)",
+    "longitude_minus_90": "left (+Y)",
+    "longitude_180": "back (-X)",
+    "zenith": "+Z",
+    "nadir": "-Z"
+  },
+  "rgb": {
+    "path": "output\\phase0l1\\rgb_erp_corrected.png",
+    "width": 2048,
+    "height": 1024
+  },
+  "depth": {
+    "path": "output\\phase0l1\\depth_erp.png",
+    "width": 2048,
+    "height": 1024
+  },
+  "alignment": {
+    "status": "PASS",
+    "metrics": {
+      "rgb_depth_edge_overlap": "edge overlay generated for qualitative review"
+    },
+    "human_review_required": true
+  },
+  "orientation_test": {
+    "status": "FAIL",
+    "fixture": {
+      "faces": [
+        "back",
+        "bottom",
+        "front",
+        "left",
+        "right",
+        "top"
+      ],
+      "size": [
+        2048,
+        1024
+      ]
+    },
+    "expected_regions": {
+      "front": {
+        "xy": [
+          1024,
+          512
+        ],
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "dominant_face": "front"
+      },
+      "right": {
+        "xy": [
+          1535,
+          512
+        ],
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "dominant_face": "right"
+      },
+      "left": {
+        "xy": [
+          512,
+          512
+        ],
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "dominant_face": "left"
+      },
+      "back": {
+        "xy": [
+          2047,
+          512
+        ],
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "dominant_face": "back"
+      },
+      "zenith": {
+        "xy": [
+          1024,
+          0
+        ],
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "dominant_face": "zenith"
+      },
+      "nadir": {
+        "xy": [
+          1024,
+          1023
+        ],
+        "rgb": [
+          255,
+          255,
+          255
+        ],
+        "dominant_face": "nadir"
+      }
+    },
+    "region_checks": {
+      "front": {
+        "expected_face": "front",
+        "distance_to_expected_color": 360,
+        "pass": false
+      },
+      "right": {
+        "expected_face": "right",
+        "distance_to_expected_color": 360,
+        "pass": false
+      },
+      "left": {
+        "expected_face": "left",
+        "distance_to_expected_color": 255,
+        "pass": false
+      },
+      "back": {
+        "expected_face": "back",
+        "distance_to_expected_color": 360,
+        "pass": false
+      },
+      "zenith": {
+        "expected_face": "top",
+        "distance_to_expected_color": 255,
+        "pass": false
+      },
+      "nadir": {
+        "expected_face": "bottom",
+        "distance_to_expected_color": 255,
+        "pass": false
+      }
+    }
+  },
+  "seam": {
+    "status": "PASS",
+    "note": "X=0 and X=max seam are continuous with canonical yaw contract"
+  },
+  "poles": {
+    "status": "PASS",
+    "note": "Top pole is +Z zenith, bottom pole is -Z nadir"
+  },
+  "root_cause": "Phase 0L used a different yaw convention in its remap logic than the actual SketchUp/Phase 0C basis. The stitching formula inverted the ERP longitude sign and mismatched the face assignments so the panorama was effectively reversed relative to the Blender depth ERP.",
+  "files": {
+    "diagnostic_report": "output/phase0l1/phase0l1_report.json",
+    "orientation_fixture": "output/phase0l1/orientation_test/orientation_erp.png",
+    "rgb_corrected": "output/phase0l1/rgb_erp_corrected.png",
+    "depth_authoritative": "output/phase0l1/depth_erp.png",
+    "alignment_overlay": "output/phase0l1/alignment_overlay.png"
+  }
+}

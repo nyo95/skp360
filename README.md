@@ -47,6 +47,10 @@ D:\Projects\skpto360
 
 ## Current validated flow
 
+Phase 0C and Phase 0D remain available as `LEGACY / R&D` historical paths. They are not the production-critical Blender path: Phase 0C creates preview guide lights and Phase 0D uses native Blender ERP plus view-Z/far-clip depth.
+
+The lightweight replacement is `scripts/run_blender_fast_passes.ps1`. It imports the OBJ once, uses Eevee rasterization with no lights, generates six canonical cubemap faces for unlit albedo, true radial depth, world normals, material IDs, and object IDs, then assembles every pass through `backend/projection.py`. It writes raw radial depth, percentile-conditioned depth, alignment diagnostics, hashes, and a pass report under `output/fast_passes/`.
+
 Ada dua pipeline yang sengaja dipertahankan:
 
 ```text

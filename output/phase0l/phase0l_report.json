@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "files": {
+    "rgb_erp": "output/phase0l/rgb_erp.png",
+    "depth_erp": "output/phase0l/depth_erp.png",
+    "final_erp": "output/phase0l/final_erp.png"
+  },
+  "qc_checks": [
+    {
+      "name": "dimensions_2_to_1",
+      "pass": true,
+      "details": "2048x1024"
+    },
+    {
+      "name": "x_wrap_seam_check",
+      "pass": true,
+      "details": "Mean difference: 11.81"
+    }
+  ]
+}

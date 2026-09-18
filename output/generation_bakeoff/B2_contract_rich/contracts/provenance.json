@@ -1,0 +1,9 @@
+{
+  "schema": "rad-ai360-b2-provenance",
+  "source_albedo": "D:\\Projects\\skpto360\\output\\fast_passes\\erp\\albedo.png",
+  "source_albedo_sha256": "2de25761a800d6989d652a6a29f0e53707b6a4160339af0a0a65100ee16ec0d8",
+  "b1_reference": "D:\\Projects\\skpto360\\output\\generation_bakeoff\\B1_controlled_harness",
+  "projection_frozen": true,
+  "depth_control": "NOT USED: provider structural depth control is not independently proven for this B2.",
+  "provider": "@cf/black-forest-labs/flux-2-klein-4b"
+}

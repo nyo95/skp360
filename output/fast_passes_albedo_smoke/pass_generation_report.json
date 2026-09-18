@@ -1,0 +1,129 @@
+{
+  "schema": "rad-ai360-fast-passes",
+  "status": "PASS",
+  "legacy_paths": {
+    "phase0c": "LEGACY / R&D",
+    "phase0d": "LEGACY / R&D"
+  },
+  "engine": "BLENDER_EEVEE",
+  "lighting": {
+    "lights_created": false,
+    "lighting_dependent": false
+  },
+  "projection": {
+    "face_order": [
+      "front",
+      "right",
+      "back",
+      "left",
+      "top",
+      "bottom"
+    ],
+    "contract_source": "backend/projection.py",
+    "face_size": 64
+  },
+  "camera_basis": {
+    "front": {
+      "forward": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "right": {
+      "forward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "back": {
+      "forward": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "left": {
+      "forward": [
+        -0.0,
+        1.0,
+        -0.0
+      ],
+      "up": [
+        -0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "top": {
+      "forward": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "up": [
+        -1.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    "bottom": {
+      "forward": [
+        0.0,
+        -0.0,
+        -1.0
+      ],
+      "up": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "depth": {
+    "raw_representation": "world-position to camera-position Euclidean distance",
+    "units": "metres",
+    "conditioning": "backend.pass_pipeline.radial_depth_condition"
+  },
+  "normal": {
+    "space": "world",
+    "encoding": "RGB = normal * 0.5 + 0.5"
+  },
+  "ids": {
+    "material_strategy": "stable sorted material-name IDs",
+    "object_strategy": "stable sorted imported-object-name IDs",
+    "object_identity_limit": "OBJ import only preserves identities exposed by imported object names/groups"
+  },
+  "materials": {
+    "source_material_count": 196,
+    "albedo_fallback": "diffuse_color when no node-based Principled Base Color exists"
+  },
+  "timings": {
+    "import_seconds": 2.292,
+    "faces": {
+      "front": 3.511,
+      "right": 3.136,
+      "back": 2.657,
+      "left": 3.079,
+      "top": 3.131,
+      "bottom": 2.818
+    }
+  },
+  "duration_seconds": 20.67
+}

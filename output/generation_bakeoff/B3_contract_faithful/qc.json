@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "canonical_pixel_identity": {
+    "changed_pixels": 0,
+    "mae_0_255": 0.0,
+    "max_delta": 0
+  },
+  "projection": {
+    "dimensions": [
+      2048,
+      1024
+    ],
+    "ratio_2_to_1": true,
+    "orientation": "frozen canonical projection; no mirror or rotation applied in B3",
+    "seam_source_mean_delta": 0.0004046670510433614,
+    "seam_status": "PASS"
+  },
+  "structural_edges": {
+    "source_pixels": 31128,
+    "output_pixels": 31128,
+    "iou": 1.0,
+    "status": "PASS"
+  },
+  "normal_erp": {
+    "exists": true,
+    "dimensions": [
+      2048,
+      1024
+    ],
+    "aligned_dimensions": true
+  },
+  "contract_checks": {
+    "geometry_changes": "PASS: B3 RGB is an exact canonical albedo copy; no geometry operation performed.",
+    "object_additions_removals": "PASS: no generation or scene mutation performed.",
+    "material_correspondence": "PASS: B3 RGB is byte-identical to authoritative albedo ERP.",
+    "glazing_openings": "PASS: no pixel edits or opaque replacement performed.",
+    "photometric_baking": "PASS: no lighting/AO/shadow/exposure/reflection pass applied."
+  }
+}

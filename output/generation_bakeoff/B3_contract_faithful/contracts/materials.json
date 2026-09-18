@@ -1,0 +1,3599 @@
+{
+  "schema": "rad-ai360-controlled-material-contract",
+  "version": 1,
+  "source": "Phase 0E material manifest + Phase 0G deterministic glass candidates + Controlled material-ID visibility pass.",
+  "semantic_interpretation_used": false,
+  "materials": [
+    {
+      "id": "MAT_001",
+      "name": "_",
+      "base_color": [
+        0.85098,
+        0.85098,
+        0.85098
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 506,
+      "visible_pixel_coverage": 0.00024128,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_002",
+      "name": "_0137_Black_1",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 180000,
+      "visible_pixel_coverage": 0.08583069,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_003",
+      "name": "_10",
+      "base_color": [
+        0.807843,
+        0.729412,
+        0.627451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 451,
+      "visible_pixel_coverage": 0.00021505,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_10.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_004",
+      "name": "_14",
+      "base_color": [
+        0.156863,
+        0.156863,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 10,
+      "visible_pixel_coverage": 4.77e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_14.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_005",
+      "name": "_159",
+      "base_color": [
+        0.403922,
+        0.368627,
+        0.329412
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 246,
+      "visible_pixel_coverage": 0.0001173,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_159.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_006",
+      "name": "_16",
+      "base_color": [
+        0.517647,
+        0.47451,
+        0.423529
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 636,
+      "visible_pixel_coverage": 0.00030327,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_16.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_007",
+      "name": "_18",
+      "base_color": [
+        0.411765,
+        0.415686,
+        0.403922
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 160076,
+      "visible_pixel_coverage": 0.07633018,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_18.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_008",
+      "name": "_2",
+      "base_color": [
+        0.639216,
+        0.639216,
+        0.639216
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7398,
+      "visible_pixel_coverage": 0.00352764,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_009",
+      "name": "_268",
+      "base_color": [
+        0.109804,
+        0.109804,
+        0.109804
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1263,
+      "visible_pixel_coverage": 0.00060225,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_010",
+      "name": "_3",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 651,
+      "visible_pixel_coverage": 0.00031042,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_011",
+      "name": "_4",
+      "base_color": [
+        0.007843,
+        0.007843,
+        0.007843
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 15509,
+      "visible_pixel_coverage": 0.00739527,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_012",
+      "name": "_42",
+      "base_color": [
+        0.619608,
+        0.603922,
+        0.568627
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 50397,
+      "visible_pixel_coverage": 0.02403116,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_013",
+      "name": "_46",
+      "base_color": [
+        0.686275,
+        0.556863,
+        0.262745
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 36569,
+      "visible_pixel_coverage": 0.01743746,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_46.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_014",
+      "name": "_5",
+      "base_color": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 710,
+      "visible_pixel_coverage": 0.00033855,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_5.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_015",
+      "name": "_6",
+      "base_color": [
+        0.607843,
+        0.45098,
+        0.231373
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 614,
+      "visible_pixel_coverage": 0.00029278,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_6.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_016",
+      "name": "_7",
+      "base_color": [
+        0.329412,
+        0.368627,
+        0.376471
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 777,
+      "visible_pixel_coverage": 0.0003705,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_7.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_017",
+      "name": "_8",
+      "base_color": [
+        0.407843,
+        0.333333,
+        0.254902
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2739,
+      "visible_pixel_coverage": 0.00130606,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_018",
+      "name": "_87",
+      "base_color": [
+        0.458824,
+        0.588235,
+        0.643137
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 92,
+      "visible_pixel_coverage": 4.387e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_87.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_019",
+      "name": "_9",
+      "base_color": [
+        0.627451,
+        0.627451,
+        0.627451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 200950,
+      "visible_pixel_coverage": 0.09582043,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_020",
+      "name": "_97",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 0.0,
+      "visible": true,
+      "visible_pixels": 1950,
+      "visible_pixel_coverage": 0.00092983,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_021",
+      "name": "__",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 9635,
+      "visible_pixel_coverage": 0.00459433,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_022",
+      "name": "___",
+      "base_color": [
+        0.835294,
+        0.835294,
+        0.835294
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2169,
+      "visible_pixel_coverage": 0.00103426,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/___.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_023",
+      "name": "_____",
+      "base_color": [
+        0.176471,
+        0.176471,
+        0.176471
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7,
+      "visible_pixel_coverage": 3.34e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_024",
+      "name": "______",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 321,
+      "visible_pixel_coverage": 0.00015306,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_025",
+      "name": "_auto_1",
+      "base_color": [
+        0.356863,
+        0.356863,
+        0.356863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 16834,
+      "visible_pixel_coverage": 0.00802708,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_026",
+      "name": "_auto_7",
+      "base_color": [
+        0.239216,
+        0.239216,
+        0.239216
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 768,
+      "visible_pixel_coverage": 0.00036621,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_027",
+      "name": "_auto_9",
+      "base_color": [
+        0.243137,
+        0.243137,
+        0.243137
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4,
+      "visible_pixel_coverage": 1.91e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_028",
+      "name": "_Charcoal_2",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 90,
+      "visible_pixel_coverage": 4.292e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_029",
+      "name": "_Color_001_1",
+      "base_color": [
+        0.768627,
+        0.768627,
+        0.768627
+      ],
+      "opacity": 0.5,
+      "visible": true,
+      "visible_pixels": 1476,
+      "visible_pixel_coverage": 0.00070381,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_030",
+      "name": "_Color_009_1",
+      "base_color": [
+        0.247059,
+        0.247059,
+        0.247059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 641,
+      "visible_pixel_coverage": 0.00030565,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_031",
+      "name": "_Color_A08_1",
+      "base_color": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 14,
+      "visible_pixel_coverage": 6.68e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_032",
+      "name": "_Color_H03_1",
+      "base_color": [
+        0.819608,
+        0.819608,
+        0.819608
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 522,
+      "visible_pixel_coverage": 0.00024891,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Color_H03_1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_033",
+      "name": "_Color_I07_1",
+      "base_color": [
+        0.0,
+        0.0,
+        0.6
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 640,
+      "visible_pixel_coverage": 0.00030518,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_034",
+      "name": "_Color_M01_1",
+      "base_color": [
+        0.129412,
+        0.129412,
+        0.129412
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1353,
+      "visible_pixel_coverage": 0.00064516,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_035",
+      "name": "_Color_M03_1",
+      "base_color": [
+        0.666667,
+        0.666667,
+        0.666667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 14980,
+      "visible_pixel_coverage": 0.00714302,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_036",
+      "name": "_Color_M04_1",
+      "base_color": [
+        0.607843,
+        0.607843,
+        0.607843
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 614,
+      "visible_pixel_coverage": 0.00029278,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_037",
+      "name": "_Color_M08_1",
+      "base_color": [
+        0.219608,
+        0.219608,
+        0.219608
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 181,
+      "visible_pixel_coverage": 8.631e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_038",
+      "name": "_Color_M08_2",
+      "base_color": [
+        0.337255,
+        0.337255,
+        0.337255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 104,
+      "visible_pixel_coverage": 4.959e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_039",
+      "name": "_Color_M08_3",
+      "base_color": [
+        0.247059,
+        0.247059,
+        0.247059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 566,
+      "visible_pixel_coverage": 0.00026989,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_040",
+      "name": "_Color_M08_4",
+      "base_color": [
+        0.309804,
+        0.309804,
+        0.309804
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 502,
+      "visible_pixel_coverage": 0.00023937,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_041",
+      "name": "_Color_M08_6",
+      "base_color": [
+        0.286275,
+        0.286275,
+        0.286275
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 614,
+      "visible_pixel_coverage": 0.00029278,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_042",
+      "name": "_Color_M09_1",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 165,
+      "visible_pixel_coverage": 7.868e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_043",
+      "name": "_Color_M09_4",
+      "base_color": [
+        0.047059,
+        0.047059,
+        0.047059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 992,
+      "visible_pixel_coverage": 0.00047302,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_044",
+      "name": "_DimGray_2",
+      "base_color": [
+        0.164706,
+        0.203922,
+        0.239216
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 345,
+      "visible_pixel_coverage": 0.00016451,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_045",
+      "name": "_Fencing_Lattice_Natural_1",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 501,
+      "visible_pixel_coverage": 0.0002389,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Fencing_Lattice_Natural_1.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_046",
+      "name": "_Ivory_3",
+      "base_color": [
+        1.0,
+        1.0,
+        0.937255
+      ],
+      "opacity": 0.48,
+      "visible": true,
+      "visible_pixels": 2,
+      "visible_pixel_coverage": 9.5e-07,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_047",
+      "name": "_Metal_Corrogated_Shiny_1",
+      "base_color": [
+        0.752941,
+        0.752941,
+        0.752941
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 209,
+      "visible_pixel_coverage": 9.966e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Metal_Corrogated_Shiny_1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_048",
+      "name": "_Metal_Corrogated_Shiny_2",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 909,
+      "visible_pixel_coverage": 0.00043344,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Metal_Corrogated_Shiny_2.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_049",
+      "name": "_Metal_Corrogated_Shiny_3",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 91,
+      "visible_pixel_coverage": 4.339e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Metal_Corrogated_Shiny_3.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_050",
+      "name": "_Metal_Corrogated_Shiny_4",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7,
+      "visible_pixel_coverage": 3.34e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Metal_Corrogated_Shiny_4.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_051",
+      "name": "_Metal_Corrogated_Shiny_5",
+      "base_color": [
+        0.403922,
+        0.403922,
+        0.403922
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4060,
+      "visible_pixel_coverage": 0.00193596,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Metal_Corrogated_Shiny_5.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_052",
+      "name": "_Metal_Corrogated_Shiny_6",
+      "base_color": [
+        0.752941,
+        0.752941,
+        0.752941
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1171,
+      "visible_pixel_coverage": 0.00055838,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Metal_Corrogated_Shiny_6.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_053",
+      "name": "_Slate_2",
+      "base_color": [
+        0.294118,
+        0.317647,
+        0.313725
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4157,
+      "visible_pixel_coverage": 0.00198221,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Slate_2.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_054",
+      "name": "_Translucent_Glass_Dark_Green_2",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.756863
+      ],
+      "opacity": 0.5,
+      "visible": true,
+      "visible_pixels": 13,
+      "visible_pixel_coverage": 6.2e-06,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_055",
+      "name": "_Translucent_Glass_Dark_Green_3",
+      "base_color": [
+        0.243137,
+        0.356863,
+        0.019608
+      ],
+      "opacity": 0.5,
+      "visible": true,
+      "visible_pixels": 78,
+      "visible_pixel_coverage": 3.719e-05,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_056",
+      "name": "_Translucent_Glass_Gray_1",
+      "base_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "opacity": 0.5,
+      "visible": true,
+      "visible_pixels": 420,
+      "visible_pixel_coverage": 0.00020027,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_057",
+      "name": "_Wood__Floor_2",
+      "base_color": [
+        0.533333,
+        0.466667,
+        0.415686
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 290,
+      "visible_pixel_coverage": 0.00013828,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Wood__Floor_2.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_058",
+      "name": "_Wood_Floor_2",
+      "base_color": [
+        0.388235,
+        0.27451,
+        0.196078
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1010,
+      "visible_pixel_coverage": 0.00048161,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Wood_Floor_2.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_059",
+      "name": "_Wood_Veneer_01_2",
+      "base_color": [
+        0.376471,
+        0.305882,
+        0.184314
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 846,
+      "visible_pixel_coverage": 0.0004034,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/_Wood_Veneer_01_2.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_060",
+      "name": "Abu_Muda",
+      "base_color": [
+        0.607843,
+        0.607843,
+        0.607843
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 555,
+      "visible_pixel_coverage": 0.00026464,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_061",
+      "name": "Aluminum",
+      "base_color": [
+        0.701961,
+        0.701961,
+        0.701961
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 3365,
+      "visible_pixel_coverage": 0.00160456,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Aluminum.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_062",
+      "name": "Asphalt_New",
+      "base_color": [
+        0.262745,
+        0.235294,
+        0.243137
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 56,
+      "visible_pixel_coverage": 2.67e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Asphalt_New.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_063",
+      "name": "benteng",
+      "base_color": [
+        0.337255,
+        0.337255,
+        0.337255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 9,
+      "visible_pixel_coverage": 4.29e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_064",
+      "name": "billiani_doll1",
+      "base_color": [
+        0.827451,
+        0.823529,
+        0.803922
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 298,
+      "visible_pixel_coverage": 0.0001421,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/billiani_doll1.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_065",
+      "name": "billiani_doll3",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1126,
+      "visible_pixel_coverage": 0.00053692,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_066",
+      "name": "billiani_doll_55",
+      "base_color": [
+        0.517647,
+        0.431373,
+        0.333333
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 11536,
+      "visible_pixel_coverage": 0.00550079,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/billiani_doll_55.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_067",
+      "name": "black",
+      "base_color": [
+        0.321569,
+        0.282353,
+        0.235294
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 253,
+      "visible_pixel_coverage": 0.00012064,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/black.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_068",
+      "name": "Blacktop_Old_01",
+      "base_color": [
+        0.517647,
+        0.533333,
+        0.545098
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 445,
+      "visible_pixel_coverage": 0.00021219,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Blacktop_Old_01.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_069",
+      "name": "bnxxng0c8d850c1",
+      "base_color": [
+        0.458824,
+        0.431373,
+        0.384314
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 8,
+      "visible_pixel_coverage": 3.81e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/bnxxng0c8d850c1.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_070",
+      "name": "Calacatta_Marble__IA408Q_",
+      "base_color": [
+        0.898039,
+        0.886275,
+        0.882353
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 96,
+      "visible_pixel_coverage": 4.578e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Calacatta_Marble__IA408Q_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_071",
+      "name": "Cama1",
+      "base_color": [
+        0.647059,
+        0.647059,
+        0.647059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2182,
+      "visible_pixel_coverage": 0.00104046,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Cama1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_072",
+      "name": "Carpet_Plush_Forest",
+      "base_color": [
+        0.709804,
+        0.635294,
+        0.584314
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1763,
+      "visible_pixel_coverage": 0.00084066,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Carpet_Plush_Forest.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_073",
+      "name": "carport",
+      "base_color": [
+        0.380392,
+        0.388235,
+        0.384314
+      ],
+      "opacity": 1.0,
+      "visible": false,
+      "visible_pixels": 0,
+      "visible_pixel_coverage": 0.0,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/carport.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_074",
+      "name": "Carrera_Marble",
+      "base_color": [
+        0.486275,
+        0.486275,
+        0.486275
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 135,
+      "visible_pixel_coverage": 6.437e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Carrera_Marble.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_075",
+      "name": "CELING_LUAR",
+      "base_color": [
+        0.839216,
+        0.839216,
+        0.839216
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1477,
+      "visible_pixel_coverage": 0.00070429,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_076",
+      "name": "Ceramic_White",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 522,
+      "visible_pixel_coverage": 0.00024891,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_077",
+      "name": "Chrome",
+      "base_color": [
+        0.576471,
+        0.576471,
+        0.576471
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 8467,
+      "visible_pixel_coverage": 0.00403738,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_078",
+      "name": "chrome_Glaze",
+      "base_color": [
+        0.568627,
+        0.568627,
+        0.568627
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 433,
+      "visible_pixel_coverage": 0.00020647,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_079",
+      "name": "Chrome_Polished",
+      "base_color": [
+        0.007843,
+        0.007843,
+        0.007843
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 514,
+      "visible_pixel_coverage": 0.00024509,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_080",
+      "name": "cluster_60x120_taupe_06_abeff",
+      "base_color": [
+        0.631373,
+        0.631373,
+        0.619608
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 123,
+      "visible_pixel_coverage": 5.865e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/cluster_60x120_taupe_06_abeff.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_081",
+      "name": "Color_001",
+      "base_color": [
+        0.886275,
+        0.886275,
+        0.886275
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 21263,
+      "visible_pixel_coverage": 0.01013899,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_082",
+      "name": "Color_007",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7,
+      "visible_pixel_coverage": 3.34e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_083",
+      "name": "Color_008",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 140,
+      "visible_pixel_coverage": 6.676e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Color_008.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_084",
+      "name": "Color_A02",
+      "base_color": [
+        0.188235,
+        0.188235,
+        0.184314
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 969,
+      "visible_pixel_coverage": 0.00046206,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_085",
+      "name": "Color_A04",
+      "base_color": [
+        0.537255,
+        0.392157,
+        0.392157
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7597,
+      "visible_pixel_coverage": 0.00362253,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_086",
+      "name": "Color_C02",
+      "base_color": [
+        1.0,
+        0.8,
+        0.6
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1,
+      "visible_pixel_coverage": 4.8e-07,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_087",
+      "name": "Color_C03",
+      "base_color": [
+        1.0,
+        0.698039,
+        0.396078
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 375,
+      "visible_pixel_coverage": 0.00017881,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_088",
+      "name": "Color_C07",
+      "base_color": [
+        0.6,
+        0.6,
+        0.588235
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2629,
+      "visible_pixel_coverage": 0.0012536,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_089",
+      "name": "Color_C08",
+      "base_color": [
+        0.568627,
+        0.568627,
+        0.568627
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 5956,
+      "visible_pixel_coverage": 0.00284004,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Color_C08.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_090",
+      "name": "Color_C25",
+      "base_color": [
+        0.2,
+        0.176471,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 389,
+      "visible_pixel_coverage": 0.00018549,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_091",
+      "name": "Color_G03",
+      "base_color": [
+        0.643137,
+        0.611765,
+        0.545098
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 253,
+      "visible_pixel_coverage": 0.00012064,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Color_G03.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_092",
+      "name": "Color_H03",
+      "base_color": [
+        0.839216,
+        0.839216,
+        0.839216
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 3,
+      "visible_pixel_coverage": 1.43e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Color_H03.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_093",
+      "name": "Color_M00",
+      "base_color": [
+        0.807843,
+        0.807843,
+        0.807843
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 92,
+      "visible_pixel_coverage": 4.387e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_094",
+      "name": "Color_M02",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.776471
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 73506,
+      "visible_pixel_coverage": 0.03505039,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_095",
+      "name": "Color_M04",
+      "base_color": [
+        0.717647,
+        0.717647,
+        0.717647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1771,
+      "visible_pixel_coverage": 0.00084448,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_096",
+      "name": "Color_M05",
+      "base_color": [
+        0.447059,
+        0.447059,
+        0.447059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 48,
+      "visible_pixel_coverage": 2.289e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_097",
+      "name": "Color_M06",
+      "base_color": [
+        0.337255,
+        0.337255,
+        0.337255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1546,
+      "visible_pixel_coverage": 0.00073719,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_098",
+      "name": "Color_M07",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1381,
+      "visible_pixel_coverage": 0.00065851,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_099",
+      "name": "Color_M07__Besi_",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 943,
+      "visible_pixel_coverage": 0.00044966,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_100",
+      "name": "dark_wood1",
+      "base_color": [
+        0.376471,
+        0.329412,
+        0.270588
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 594,
+      "visible_pixel_coverage": 0.00028324,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/dark_wood1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_101",
+      "name": "Demountable_Ceiling_Tile_Stack__ENV3SF_",
+      "base_color": [
+        0.466667,
+        0.466667,
+        0.466667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2875,
+      "visible_pixel_coverage": 0.00137091,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Demountable_Ceiling_Tile_Stack__ENV3SF_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_102",
+      "name": "Demountable_Ceiling_Tile_Stack__ENV3SF_1",
+      "base_color": [
+        0.376471,
+        0.376471,
+        0.376471
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 228,
+      "visible_pixel_coverage": 0.00010872,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Demountable_Ceiling_Tile_Stack__ENV3SF_1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_103",
+      "name": "Dots Stroke",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 331,
+      "visible_pixel_coverage": 0.00015783,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_104",
+      "name": "FrontColor",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 38,
+      "visible_pixel_coverage": 1.812e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_105",
+      "name": "Gdblack",
+      "base_color": [
+        0.094118,
+        0.07451,
+        0.047059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 10,
+      "visible_pixel_coverage": 4.77e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_106",
+      "name": "genteng",
+      "base_color": [
+        0.188235,
+        0.176471,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 86355,
+      "visible_pixel_coverage": 0.04117727,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/genteng.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_107",
+      "name": "Granite_Stack__USPW7I_",
+      "base_color": [
+        0.607843,
+        0.607843,
+        0.6
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 294,
+      "visible_pixel_coverage": 0.00014019,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Granite_Stack__USPW7I_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_108",
+      "name": "Grass_04",
+      "base_color": [
+        0.415686,
+        0.45098,
+        0.262745
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 219,
+      "visible_pixel_coverage": 0.00010443,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Grass_04.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_109",
+      "name": "Groundcover_Rock_Crushed_2_inch",
+      "base_color": [
+        0.509804,
+        0.498039,
+        0.501961
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1,
+      "visible_pixel_coverage": 4.8e-07,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Groundcover_Rock_Crushed_2_inch.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_110",
+      "name": "Hood",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 217,
+      "visible_pixel_coverage": 0.00010347,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_111",
+      "name": "Kolecka",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 141,
+      "visible_pixel_coverage": 6.723e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Kolecka.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_112",
+      "name": "KUSEN",
+      "base_color": [
+        0.337255,
+        0.227451,
+        0.129412
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 104,
+      "visible_pixel_coverage": 4.959e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_113",
+      "name": "KUSEN1",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 398,
+      "visible_pixel_coverage": 0.00018978,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_114",
+      "name": "kusen_coklat",
+      "base_color": [
+        0.309804,
+        0.203922,
+        0.121569
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 828,
+      "visible_pixel_coverage": 0.00039482,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_115",
+      "name": "Len_ol",
+      "base_color": [
+        0.898039,
+        0.894118,
+        0.87451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 8,
+      "visible_pixel_coverage": 3.81e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Len_ol.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_116",
+      "name": "Light_metal",
+      "base_color": [
+        0.054902,
+        0.058824,
+        0.066667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4146,
+      "visible_pixel_coverage": 0.00197697,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_117",
+      "name": "Limestone__R3U0R2_",
+      "base_color": [
+        0.458824,
+        0.458824,
+        0.458824
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 143,
+      "visible_pixel_coverage": 6.819e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Limestone__R3U0R2_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_118",
+      "name": "lisplang2",
+      "base_color": [
+        0.227451,
+        0.227451,
+        0.227451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 394,
+      "visible_pixel_coverage": 0.00018787,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_119",
+      "name": "lukisan",
+      "base_color": [
+        0.909804,
+        0.886275,
+        0.862745
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 578,
+      "visible_pixel_coverage": 0.00027561,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/lukisan.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_120",
+      "name": "M_0136_Charcoal",
+      "base_color": [
+        0.137255,
+        0.137255,
+        0.137255
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2539,
+      "visible_pixel_coverage": 0.00121069,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_121",
+      "name": "M_0137_Black",
+      "base_color": [
+        0.858824,
+        0.858824,
+        0.858824
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2946,
+      "visible_pixel_coverage": 0.00140476,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_122",
+      "name": "M_03030002",
+      "base_color": [
+        0.321569,
+        0.258824,
+        0.160784
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1786,
+      "visible_pixel_coverage": 0.00085163,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_123",
+      "name": "M_100_2149",
+      "base_color": [
+        0.619608,
+        0.556863,
+        0.533333
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1446,
+      "visible_pixel_coverage": 0.00068951,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_100_2149.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_124",
+      "name": "M_160",
+      "base_color": [
+        0.164706,
+        0.211765,
+        0.160784
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 5,
+      "visible_pixel_coverage": 2.38e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_160.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_125",
+      "name": "M_19_slab_marble_black_Sienna_texture_seamless1",
+      "base_color": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 8415,
+      "visible_pixel_coverage": 0.00401258,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_19_slab_marble_black_Sienna_texture_seamless1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_126",
+      "name": "M_2",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 654,
+      "visible_pixel_coverage": 0.00031185,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_127",
+      "name": "M_5108_MR060060",
+      "base_color": [
+        0.788235,
+        0.788235,
+        0.788235
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 51,
+      "visible_pixel_coverage": 2.432e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_5108_MR060060.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_128",
+      "name": "M_5118_V_060060",
+      "base_color": [
+        0.8,
+        0.8,
+        0.788235
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 5,
+      "visible_pixel_coverage": 2.38e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_5118_V_060060.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_129",
+      "name": "M_60_carrara_white_slab_marble_veined_texture_seamless",
+      "base_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 679,
+      "visible_pixel_coverage": 0.00032377,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_60_carrara_white_slab_marble_veined_texture_seamless.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_130",
+      "name": "M_6201W_F553_MRN_WAL_Material_1",
+      "base_color": [
+        0.639216,
+        0.639216,
+        0.615686
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 545,
+      "visible_pixel_coverage": 0.00025988,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_6201W_F553_MRN_WAL_Material_1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_131",
+      "name": "M_7",
+      "base_color": [
+        0.839216,
+        0.839216,
+        0.839216
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7469,
+      "visible_pixel_coverage": 0.0035615,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_132",
+      "name": "M_71_dark__fine_wood_texture_seamless",
+      "base_color": [
+        0.407843,
+        0.317647,
+        0.254902
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 55527,
+      "visible_pixel_coverage": 0.02647734,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/M_71_dark__fine_wood_texture_seamless.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_133",
+      "name": "m_t_b_p_iad",
+      "base_color": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 7113,
+      "visible_pixel_coverage": 0.00339174,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_134",
+      "name": "macchiatto",
+      "base_color": [
+        0.498039,
+        0.388235,
+        0.266667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4063,
+      "visible_pixel_coverage": 0.00193739,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/macchiatto.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_135",
+      "name": "Marmer",
+      "base_color": [
+        0.882353,
+        0.882353,
+        0.882353
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 242,
+      "visible_pixel_coverage": 0.00011539,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Marmer.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_136",
+      "name": "Material",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 218,
+      "visible_pixel_coverage": 0.00010395,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_137",
+      "name": "Material_22",
+      "base_color": [
+        0.321569,
+        0.152941,
+        0.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 806,
+      "visible_pixel_coverage": 0.00038433,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_138",
+      "name": "Material_24",
+      "base_color": [
+        0.658824,
+        0.623529,
+        0.572549
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 12253,
+      "visible_pixel_coverage": 0.00584269,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_139",
+      "name": "Material_44",
+      "base_color": [
+        0.533333,
+        0.533333,
+        0.52549
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 47426,
+      "visible_pixel_coverage": 0.02261448,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_44.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_140",
+      "name": "Material_45",
+      "base_color": [
+        0.509804,
+        0.521569,
+        0.52549
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1221,
+      "visible_pixel_coverage": 0.00058222,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_45.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_141",
+      "name": "Material_46",
+      "base_color": [
+        0.14902,
+        0.14902,
+        0.141176
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 639,
+      "visible_pixel_coverage": 0.0003047,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_46.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_142",
+      "name": "Material_47",
+      "base_color": [
+        0.14902,
+        0.160784,
+        0.12549
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1238,
+      "visible_pixel_coverage": 0.00059032,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_47.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_143",
+      "name": "Material_48",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.113725
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 9487,
+      "visible_pixel_coverage": 0.00452375,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_48.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_144",
+      "name": "Material_49",
+      "base_color": [
+        0.529412,
+        0.52549,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1003,
+      "visible_pixel_coverage": 0.00047827,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_49.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_145",
+      "name": "Material_50",
+      "base_color": [
+        0.501961,
+        0.470588,
+        0.431373
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 3936,
+      "visible_pixel_coverage": 0.00187683,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_50.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_146",
+      "name": "Material_51",
+      "base_color": [
+        0.521569,
+        0.521569,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 41,
+      "visible_pixel_coverage": 1.955e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_51.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_147",
+      "name": "Material_52",
+      "base_color": [
+        0.329412,
+        0.32549,
+        0.317647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2,
+      "visible_pixel_coverage": 9.5e-07,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_52.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_148",
+      "name": "Material_53",
+      "base_color": [
+        0.152941,
+        0.156863,
+        0.156863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 75,
+      "visible_pixel_coverage": 3.576e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_53.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_149",
+      "name": "Material_54",
+      "base_color": [
+        0.52549,
+        0.501961,
+        0.482353
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1482,
+      "visible_pixel_coverage": 0.00070667,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_54.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_150",
+      "name": "Material_55",
+      "base_color": [
+        0.486275,
+        0.482353,
+        0.478431
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 157,
+      "visible_pixel_coverage": 7.486e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material_55.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_151",
+      "name": "Material__0_0_1",
+      "base_color": [
+        0.392157,
+        0.392157,
+        0.4
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 383,
+      "visible_pixel_coverage": 0.00018263,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Material__0_0_1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_152",
+      "name": "Material__1_0_2",
+      "base_color": [
+        0.247059,
+        0.247059,
+        0.247059
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 174748,
+      "visible_pixel_coverage": 0.08332634,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_153",
+      "name": "Metal_Aluminum_Anodized",
+      "base_color": [
+        0.784314,
+        0.819608,
+        0.854902
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 756,
+      "visible_pixel_coverage": 0.00036049,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Metal_Aluminum_Anodized.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_154",
+      "name": "Metal_Seamed",
+      "base_color": [
+        0.462745,
+        0.466667,
+        0.45098
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4956,
+      "visible_pixel_coverage": 0.0023632,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Metal_Seamed.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_155",
+      "name": "Metal_Silver",
+      "base_color": [
+        0.917647,
+        0.913725,
+        0.933333
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2201,
+      "visible_pixel_coverage": 0.00104952,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Metal_Silver.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_156",
+      "name": "mirror",
+      "base_color": [
+        0.756863,
+        0.756863,
+        0.756863
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 803,
+      "visible_pixel_coverage": 0.0003829,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_157",
+      "name": "mmjhfdghd176",
+      "base_color": [
+        0.647059,
+        0.643137,
+        0.623529
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 244,
+      "visible_pixel_coverage": 0.00011635,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/mmjhfdghd176.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_158",
+      "name": "mmjhfdghd187",
+      "base_color": [
+        0.529412,
+        0.501961,
+        0.466667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 312,
+      "visible_pixel_coverage": 0.00014877,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/mmjhfdghd187.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_159",
+      "name": "mmjhfdghd188",
+      "base_color": [
+        0.788235,
+        0.784314,
+        0.768627
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 12,
+      "visible_pixel_coverage": 5.72e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/mmjhfdghd188.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_160",
+      "name": "mmjhfdghd189",
+      "base_color": [
+        0.501961,
+        0.447059,
+        0.396078
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1031,
+      "visible_pixel_coverage": 0.00049162,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/mmjhfdghd189.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_161",
+      "name": "Plaster_1",
+      "base_color": [
+        0.807843,
+        0.807843,
+        0.807843
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 103,
+      "visible_pixel_coverage": 4.911e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Plaster_1.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_162",
+      "name": "Podnoz",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.776471
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 183,
+      "visible_pixel_coverage": 8.726e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Podnoz.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_163",
+      "name": "PodnozChrom",
+      "base_color": [
+        0.886275,
+        0.886275,
+        0.886275
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 482,
+      "visible_pixel_coverage": 0.00022984,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/PodnozChrom.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_164",
+      "name": "Polished_Concrete_New",
+      "base_color": [
+        0.784314,
+        0.784314,
+        0.796078
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 149,
+      "visible_pixel_coverage": 7.105e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_165",
+      "name": "potahcr",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 406,
+      "visible_pixel_coverage": 0.0001936,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/potahcr.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_166",
+      "name": "PotahPodrucky",
+      "base_color": [
+        0.117647,
+        0.117647,
+        0.117647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 112,
+      "visible_pixel_coverage": 5.341e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/PotahPodrucky.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_167",
+      "name": "STAINLESS_KILAT",
+      "base_color": [
+        0.109804,
+        0.109804,
+        0.109804
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 177,
+      "visible_pixel_coverage": 8.44e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_168",
+      "name": "Standalone_1175X1290",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 370783,
+      "visible_pixel_coverage": 0.17680311,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_169",
+      "name": "Standalone_1175X1290_1_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 448,
+      "visible_pixel_coverage": 0.00021362,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_1_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_170",
+      "name": "Standalone_1175X1290_2_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 16,
+      "visible_pixel_coverage": 7.63e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_2_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_171",
+      "name": "Standalone_1175X1290_3_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 226,
+      "visible_pixel_coverage": 0.00010777,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_3_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_172",
+      "name": "Standalone_1175X1290_4_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 571,
+      "visible_pixel_coverage": 0.00027227,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_4_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_173",
+      "name": "Standalone_1175X1290_5_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2463,
+      "visible_pixel_coverage": 0.00117445,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_5_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_174",
+      "name": "Standalone_1175X1290_6_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 52,
+      "visible_pixel_coverage": 2.48e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_6_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_175",
+      "name": "Standalone_1175X1290_7_",
+      "base_color": [
+        0.517647,
+        0.513725,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 114817,
+      "visible_pixel_coverage": 0.05474901,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Standalone_1175X1290_7_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_176",
+      "name": "Steel",
+      "base_color": [
+        0.584314,
+        0.584314,
+        0.6
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 23083,
+      "visible_pixel_coverage": 0.01100683,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_177",
+      "name": "Sudbrock_469_cashmere",
+      "base_color": [
+        0.478431,
+        0.466667,
+        0.435294
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 624,
+      "visible_pixel_coverage": 0.00029755,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_178",
+      "name": "sudbrock_FARBE_419",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 11678,
+      "visible_pixel_coverage": 0.0055685,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/sudbrock_FARBE_419.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_179",
+      "name": "sudbrock_RUECKWANDFARBE_419",
+      "base_color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 2319,
+      "visible_pixel_coverage": 0.00110579,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/sudbrock_RUECKWANDFARBE_419.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_180",
+      "name": "sudbrock_RW_BLIND",
+      "base_color": [
+        0.65098,
+        0.560784,
+        0.45098
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1697,
+      "visible_pixel_coverage": 0.00080919,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/sudbrock_RW_BLIND.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_181",
+      "name": "sudbrock_ZARGEFARBE_023",
+      "base_color": [
+        0.960784,
+        0.898039,
+        0.666667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 118,
+      "visible_pixel_coverage": 5.627e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/sudbrock_ZARGEFARBE_023.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_182",
+      "name": "Tiles_04",
+      "base_color": [
+        0.666667,
+        0.666667,
+        0.666667
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 120,
+      "visible_pixel_coverage": 5.722e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Tiles_04.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_183",
+      "name": "Translucent_Glass_Blue",
+      "base_color": [
+        0.282353,
+        0.282353,
+        0.282353
+      ],
+      "opacity": 0.5,
+      "visible": false,
+      "visible_pixels": 0,
+      "visible_pixel_coverage": 0.0,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_184",
+      "name": "Translucent_Glass_Dark_Green",
+      "base_color": [
+        0.705882,
+        0.705882,
+        0.678431
+      ],
+      "opacity": 0.313,
+      "visible": true,
+      "visible_pixels": 21130,
+      "visible_pixel_coverage": 0.01007557,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_185",
+      "name": "Translucent_Glass_Dark_Green1",
+      "base_color": [
+        0.776471,
+        0.776471,
+        0.756863
+      ],
+      "opacity": 0.5,
+      "visible": true,
+      "visible_pixels": 605,
+      "visible_pixel_coverage": 0.00028849,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_186",
+      "name": "Translucent_Glass_Safety",
+      "base_color": [
+        0.8,
+        0.921569,
+        0.956863
+      ],
+      "opacity": 0.5,
+      "visible": true,
+      "visible_pixels": 3145,
+      "visible_pixel_coverage": 0.00149965,
+      "is_glazing": true,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": [
+        "source material name indicates glass/translucency",
+        "source opacity < 1.0"
+      ]
+    },
+    {
+      "id": "MAT_187",
+      "name": "vray_11010",
+      "base_color": [
+        0.792157,
+        0.792157,
+        0.784314
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 1890,
+      "visible_pixel_coverage": 0.00090122,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/vray_11010.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_188",
+      "name": "vray_11011",
+      "base_color": [
+        0.054902,
+        0.039216,
+        0.035294
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 238,
+      "visible_pixel_coverage": 0.00011349,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/vray_11011.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_189",
+      "name": "vray_11012_1",
+      "base_color": [
+        0.54902,
+        0.54902,
+        0.54902
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 4,
+      "visible_pixel_coverage": 1.91e-06,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/vray_11012_1.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_190",
+      "name": "vray_11012_5",
+      "base_color": [
+        0.227451,
+        0.368627,
+        0.105882
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 115,
+      "visible_pixel_coverage": 5.484e-05,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/vray_11012_5.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_191",
+      "name": "vray_11013",
+      "base_color": [
+        0.560784,
+        0.529412,
+        0.517647
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 3118,
+      "visible_pixel_coverage": 0.00148678,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/vray_11013.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_192",
+      "name": "vray_ChenZc_200606_DCZ22",
+      "base_color": [
+        0.498039,
+        0.486275,
+        0.47451
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 178792,
+      "visible_pixel_coverage": 0.08525467,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/vray_ChenZc_200606_DCZ22.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_193",
+      "name": "Water_Pool",
+      "base_color": [
+        0.25098,
+        0.584314,
+        0.654902
+      ],
+      "opacity": 1.0,
+      "visible": false,
+      "visible_pixels": 0,
+      "visible_pixel_coverage": 0.0,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Water_Pool.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_194",
+      "name": "Watercolor_Leaves",
+      "base_color": [
+        0.501961,
+        0.501961,
+        0.501961
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 390,
+      "visible_pixel_coverage": 0.00018597,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Watercolor_Leaves.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_195",
+      "name": "Western_Red_Cedar_Stack__ZEC6QK_",
+      "base_color": [
+        0.521569,
+        0.384314,
+        0.278431
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 723,
+      "visible_pixel_coverage": 0.00034475,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Western_Red_Cedar_Stack__ZEC6QK_.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_196",
+      "name": "Wood_04__Brick_Bond",
+      "base_color": [
+        0.368627,
+        0.317647,
+        0.254902
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 313,
+      "visible_pixel_coverage": 0.00014925,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/Wood_04__Brick_Bond.png",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_197",
+      "name": "xiadele_18___DefaultdrxcsseeffJzs",
+      "base_color": [
+        0.435294,
+        0.435294,
+        0.435294
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 617,
+      "visible_pixel_coverage": 0.00029421,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": "output/obj/textures/xiadele_18___DefaultdrxcsseeffJzs.jpg",
+      "semantic_class": null,
+      "evidence": []
+    },
+    {
+      "id": "MAT_198",
+      "name": "YS_Metal_Chrome1",
+      "base_color": [
+        0.509804,
+        0.509804,
+        0.509804
+      ],
+      "opacity": 1.0,
+      "visible": true,
+      "visible_pixels": 17551,
+      "visible_pixel_coverage": 0.00836897,
+      "is_glazing": false,
+      "is_exterior_facing": null,
+      "source_texture": null,
+      "semantic_class": null,
+      "evidence": []
+    }
+  ]
+}

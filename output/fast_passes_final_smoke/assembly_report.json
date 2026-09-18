@@ -1,0 +1,291 @@
+{
+  "schema": "rad-ai360-assembled-passes",
+  "status": "PASS",
+  "projection": {
+    "source": "backend/projection.py",
+    "face_order": [
+      "front",
+      "right",
+      "back",
+      "left",
+      "top",
+      "bottom"
+    ],
+    "face_width": 64,
+    "face_height": 64,
+    "erp_width": 128,
+    "erp_height": 64
+  },
+  "faces": {
+    "albedo": 6,
+    "depth_raw": 6,
+    "normal": 6,
+    "material_id": 6,
+    "object_id": 6
+  },
+  "depth": {
+    "raw": "true radial distance in metres",
+    "conditioning": "p2 white to p98 black",
+    "statistics": {
+      "min_m": 0.26514318585395813,
+      "max_m": 10.292240142822266,
+      "p2_m": 0.3174678087234497,
+      "p50_m": 1.9400620460510254,
+      "p98_m": 6.256822404861451,
+      "mean_m": 2.4795732498168945,
+      "std_m": 1.581276297569275,
+      "unique_8bit_values": 255,
+      "clipped_near_percent": 2.01416015625,
+      "clipped_far_percent": 2.001953125,
+      "valid_pixel_count": 8192,
+      "status": "PASS"
+    }
+  },
+  "alignment": {
+    "albedo_edge_pixels": 1169,
+    "depth_edge_pixels": 1044,
+    "overlap_pixels": 240,
+    "iou": 0.12164216928535225,
+    "status": "PASS"
+  },
+  "assets": {
+    "erp/albedo": "erp/albedo.png",
+    "cubemap/albedo/front": "cubemap/albedo/front.png",
+    "cubemap/albedo/right": "cubemap/albedo/right.png",
+    "cubemap/albedo/back": "cubemap/albedo/back.png",
+    "cubemap/albedo/left": "cubemap/albedo/left.png",
+    "cubemap/albedo/top": "cubemap/albedo/top.png",
+    "cubemap/albedo/bottom": "cubemap/albedo/bottom.png",
+    "erp/depth_raw": "erp/depth_raw.npy",
+    "cubemap/depth_raw/front": "cubemap/depth_raw/front.exr",
+    "cubemap/depth_raw/right": "cubemap/depth_raw/right.exr",
+    "cubemap/depth_raw/back": "cubemap/depth_raw/back.exr",
+    "cubemap/depth_raw/left": "cubemap/depth_raw/left.exr",
+    "cubemap/depth_raw/top": "cubemap/depth_raw/top.exr",
+    "cubemap/depth_raw/bottom": "cubemap/depth_raw/bottom.exr",
+    "erp/depth_condition": "erp/depth_condition.png",
+    "erp/normal": "erp/normal.png",
+    "cubemap/normal/front": "cubemap/normal/front.png",
+    "cubemap/normal/right": "cubemap/normal/right.png",
+    "cubemap/normal/back": "cubemap/normal/back.png",
+    "cubemap/normal/left": "cubemap/normal/left.png",
+    "cubemap/normal/top": "cubemap/normal/top.png",
+    "cubemap/normal/bottom": "cubemap/normal/bottom.png",
+    "erp/material_id": "erp/material_id.png",
+    "cubemap/material_id/front": "cubemap/material_id/front.png",
+    "cubemap/material_id/right": "cubemap/material_id/right.png",
+    "cubemap/material_id/back": "cubemap/material_id/back.png",
+    "cubemap/material_id/left": "cubemap/material_id/left.png",
+    "cubemap/material_id/top": "cubemap/material_id/top.png",
+    "cubemap/material_id/bottom": "cubemap/material_id/bottom.png",
+    "erp/object_id": "erp/object_id.png",
+    "cubemap/object_id/front": "cubemap/object_id/front.png",
+    "cubemap/object_id/right": "cubemap/object_id/right.png",
+    "cubemap/object_id/back": "cubemap/object_id/back.png",
+    "cubemap/object_id/left": "cubemap/object_id/left.png",
+    "cubemap/object_id/top": "cubemap/object_id/top.png",
+    "cubemap/object_id/bottom": "cubemap/object_id/bottom.png",
+    "alignment_overlay": "alignment_overlay.png"
+  },
+  "manifest": {
+    "schema": "rad-ai360-pass-manifest",
+    "metadata": {
+      "projection_source": "backend/projection.py",
+      "face_order": [
+        "front",
+        "right",
+        "back",
+        "left",
+        "top",
+        "bottom"
+      ]
+    },
+    "assets": {
+      "alignment_overlay": {
+        "path": "alignment_overlay.png",
+        "bytes": 2562,
+        "sha256": "0b6629f37d7dbc8b8956c2f0ed81fbd596ef26a7cbc49fcb358d3d80d9c9112a"
+      },
+      "cubemap/albedo/back": {
+        "path": "cubemap/albedo/back.png",
+        "bytes": 2896,
+        "sha256": "f97a1dac68b17e636cc8a7198fb6063fb97a8a2dfd12e5fe522012b49620f869"
+      },
+      "cubemap/albedo/bottom": {
+        "path": "cubemap/albedo/bottom.png",
+        "bytes": 3295,
+        "sha256": "e063568058494af523ccf7cf071989e084c98edd9f4c22216a6c19b7696819b7"
+      },
+      "cubemap/albedo/front": {
+        "path": "cubemap/albedo/front.png",
+        "bytes": 3713,
+        "sha256": "7cb26c1edd5f9f00d24996e1b6bcdf593e88db22e0d272d3cdabee40bd92a325"
+      },
+      "cubemap/albedo/left": {
+        "path": "cubemap/albedo/left.png",
+        "bytes": 5136,
+        "sha256": "328bc758c4d50d59b8b0ee943654087de6d5eecf7d7280fb3cb614da3861e5b7"
+      },
+      "cubemap/albedo/right": {
+        "path": "cubemap/albedo/right.png",
+        "bytes": 4282,
+        "sha256": "054b0555d2efc2a839ab6253084ef3e055ecefd76c3ec4aad99baaa5a5ddb0fe"
+      },
+      "cubemap/albedo/top": {
+        "path": "cubemap/albedo/top.png",
+        "bytes": 3543,
+        "sha256": "be6fd2f9a12108bb205f5d36e5992d105447a7a1f52c51b24ee4171ae748ba7e"
+      },
+      "cubemap/depth_raw/back": {
+        "path": "cubemap/depth_raw/back.exr",
+        "bytes": 11038,
+        "sha256": "25af0a3b86c73228cc07d144782a796c156627090b54f669a122f258b8d8b9ff"
+      },
+      "cubemap/depth_raw/bottom": {
+        "path": "cubemap/depth_raw/bottom.exr",
+        "bytes": 9837,
+        "sha256": "daba0a52cb59d3f8cd79818a07c4f8d2e9bea75eac4d5a6547a3cbfdd4395f50"
+      },
+      "cubemap/depth_raw/front": {
+        "path": "cubemap/depth_raw/front.exr",
+        "bytes": 9737,
+        "sha256": "2c25e21460054ec4795d846e8e007bda941ff8e13dbbbe12f95d11e7ec22c345"
+      },
+      "cubemap/depth_raw/left": {
+        "path": "cubemap/depth_raw/left.exr",
+        "bytes": 11406,
+        "sha256": "d944e3fbd4d3536806ac79095506a48601081881375ba095fbcce79942eff34f"
+      },
+      "cubemap/depth_raw/right": {
+        "path": "cubemap/depth_raw/right.exr",
+        "bytes": 11045,
+        "sha256": "6bcf9d9c5550e958286d2d80bfe3b6badc55d7e40836ac5df9a8561ce58b807b"
+      },
+      "cubemap/depth_raw/top": {
+        "path": "cubemap/depth_raw/top.exr",
+        "bytes": 10049,
+        "sha256": "fa56da085e59c0f732808c6d79234db93e91f628a67d924421da89177cf7299d"
+      },
+      "cubemap/material_id/back": {
+        "path": "cubemap/material_id/back.png",
+        "bytes": 4331,
+        "sha256": "480b8a2c6a03cb73f955fa580ae0c09a639f2c297a86a7b193318f6e3c4efe5e"
+      },
+      "cubemap/material_id/bottom": {
+        "path": "cubemap/material_id/bottom.png",
+        "bytes": 4675,
+        "sha256": "9c985f9ee2d708f85d443221a5a26a7923eb9d3835c8a750a697fe0f5bb4f013"
+      },
+      "cubemap/material_id/front": {
+        "path": "cubemap/material_id/front.png",
+        "bytes": 4940,
+        "sha256": "324dc0d74e269c3f22f5f60b0359d0b0b213bf1f9c2d5d0c22301810c455a3d6"
+      },
+      "cubemap/material_id/left": {
+        "path": "cubemap/material_id/left.png",
+        "bytes": 5765,
+        "sha256": "5eeaecdf1617d0b9a53391e12ae8288e8e978cbc0137f2b52d1e7648c92c41ec"
+      },
+      "cubemap/material_id/right": {
+        "path": "cubemap/material_id/right.png",
+        "bytes": 5206,
+        "sha256": "be93c2d7b7f697ac5d2355b3927c575679638bb7d9755ddb49caba21bd56184c"
+      },
+      "cubemap/material_id/top": {
+        "path": "cubemap/material_id/top.png",
+        "bytes": 4926,
+        "sha256": "88227cfe127891ca6600b34045a36a2a0d01d7a4ea84d3bc144778d8fef60efc"
+      },
+      "cubemap/normal/back": {
+        "path": "cubemap/normal/back.png",
+        "bytes": 4367,
+        "sha256": "1300790347f23aefee33dc0cc8337bfe81eef0299d106d26c6e56e435c5f4789"
+      },
+      "cubemap/normal/bottom": {
+        "path": "cubemap/normal/bottom.png",
+        "bytes": 4309,
+        "sha256": "376d708f37e498b4b577b34f6566d9653351d66ddda05af637ea2b7a0b0c6358"
+      },
+      "cubemap/normal/front": {
+        "path": "cubemap/normal/front.png",
+        "bytes": 5447,
+        "sha256": "29fd885cae3b8e5f02f75f672c4fe86af2c28c9df44c23e274a4a01bd1832497"
+      },
+      "cubemap/normal/left": {
+        "path": "cubemap/normal/left.png",
+        "bytes": 6108,
+        "sha256": "feb516e8eb710b6bb7ae14d9beba1751aa6df6ca44bbe1eaf9124c6ca410f5ab"
+      },
+      "cubemap/normal/right": {
+        "path": "cubemap/normal/right.png",
+        "bytes": 5211,
+        "sha256": "f680fb1faf10a7df714cff8f6a1535bfdc686c9aa9c02d17c68b83618dff25ac"
+      },
+      "cubemap/normal/top": {
+        "path": "cubemap/normal/top.png",
+        "bytes": 4875,
+        "sha256": "cdb4c45249bcc043c7b610c02943bcab968444905b23a419e5e97d95f865915e"
+      },
+      "cubemap/object_id/back": {
+        "path": "cubemap/object_id/back.png",
+        "bytes": 3723,
+        "sha256": "46c41e81736fa43f7fbcc2424977e6778b751b03bdcb8f369e8b2fc142adaf4e"
+      },
+      "cubemap/object_id/bottom": {
+        "path": "cubemap/object_id/bottom.png",
+        "bytes": 3723,
+        "sha256": "2ba31d4697f8879e4869b7d9d3eaf14c8311bd738160e637e6385f3f33d71ee9"
+      },
+      "cubemap/object_id/front": {
+        "path": "cubemap/object_id/front.png",
+        "bytes": 3723,
+        "sha256": "d2a392983480e1db0620f2804fa3391ff3293250b757cc40044e3217493e60dd"
+      },
+      "cubemap/object_id/left": {
+        "path": "cubemap/object_id/left.png",
+        "bytes": 3723,
+        "sha256": "3ff1954eeeba3ef903611deb42c5b30db1ec631744932d4a320b7ba2bad3c896"
+      },
+      "cubemap/object_id/right": {
+        "path": "cubemap/object_id/right.png",
+        "bytes": 3723,
+        "sha256": "1a7950d6a86fa037fdcb7f5556db35c115766d806b0e86049485e804aae7ff16"
+      },
+      "cubemap/object_id/top": {
+        "path": "cubemap/object_id/top.png",
+        "bytes": 3723,
+        "sha256": "938db81ce8705aa0d19b1f2fb8b755847ec4b587bb9659b8b2c3e502149c151b"
+      },
+      "erp/albedo": {
+        "path": "erp/albedo.png",
+        "bytes": 8736,
+        "sha256": "7993ebf943ea6e4b7ec5fc4347b23a574e48b35a539381f8091997f424d8f688"
+      },
+      "erp/depth_condition": {
+        "path": "erp/depth_condition.png",
+        "bytes": 3624,
+        "sha256": "432a3cd926d3811fb606462d326a0ad5c60be250206fd583164dfca10baac5fa"
+      },
+      "erp/depth_raw": {
+        "path": "erp/depth_raw.npy",
+        "bytes": 32896,
+        "sha256": "c5ae95e605f754b4b4961a53dd68b902fd5f7a797043758a9a15d2a36fb4914a"
+      },
+      "erp/material_id": {
+        "path": "erp/material_id.png",
+        "bytes": 10873,
+        "sha256": "1ac4176b6bb94e6d93267c42ce721cac83cd0d1f7973c1a50e00625c020426ec"
+      },
+      "erp/normal": {
+        "path": "erp/normal.png",
+        "bytes": 10715,
+        "sha256": "5b273e912b9eb0878d954c78c0968a0050098a935dbd4f4620fa7c65c5567b2e"
+      },
+      "erp/object_id": {
+        "path": "erp/object_id.png",
+        "bytes": 4235,
+        "sha256": "3cf50d39752482f1be6f34dce60db0695e52e5b6994f63090a1b65e61537b63f"
+      }
+    }
+  }
+}
